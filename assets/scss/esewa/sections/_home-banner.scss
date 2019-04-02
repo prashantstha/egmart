@@ -1,0 +1,101 @@
+.section-banner{
+	.banner-wrapper{
+		.home-main-banner {
+			.banner-content{
+				text-align: center;
+				img {
+					width: auto;
+					margin: 0 auto;
+				}
+			}
+		}
+	}
+}
+.owl-carousel{
+	.owl-nav {
+    	button.owl-prev, button.owl-next {
+        	@include y-center;
+                font-size: rem(30px);
+                color: $black-color;
+                width: rem(35px);
+			    height: rem(50px);
+			    line-height: rem(50px);
+			    background: $white-color;
+                display: block;
+                text-align: center;
+                opacity: 0;
+                visibility: hidden;
+				@include transitions(all 0.5s ease);
+				@include breakpoint(lg){
+					width: rem(40px);
+			    	height: rem(64px);
+			    	line-height: rem(64px);
+					}
+                &:hover {
+                	background: $black-bg;
+                    color: $white-color;
+                }
+                &:focus {
+                    outline: none;
+                    border: none;
+                }
+            }
+            .owl-prev {
+                left: rem(50px);
+                border-radius: rem(0 5px 5px 0);
+                
+                
+            }
+            .owl-next {
+                right:rem(50px);
+                border-radius: rem(5px 0 0 5px);                  
+            }
+        }
+        &:hover{
+        	button.owl-prev, button.owl-next {
+        		 opacity: 1;
+                visibility: visible;
+        	}
+			.owl-prev {
+                left: rem(0px);
+ 
+            }
+            .owl-next {
+                right:rem(0px);                
+            }
+        }
+        .owl-dots {
+       		display: none;
+       			@include breakpoint(lg){
+       				display: block;
+       			}
+            margin-top: rem(30px);
+            text-align: center;
+            position: absolute;
+            bottom: rem(18px);
+            right: rem(35px);
+            .owl-dot {
+                margin-right: rem(10px);
+                span {
+                    display: block;
+                    width: rem(7px);
+                    height: rem(7px);
+                    background: $gray;
+                    border-radius: rem(100px);
+                    @include breakpoint(medium) {
+                        width: rem(7px);
+                        height: rem(7px);
+                    }
+                }
+                &:focus {
+                    border: none;
+                    outline: none;
+                }
+                &.active {
+                    span {
+                        background: $text-color-light;
+                    }
+                }
+            }
+        }
+}

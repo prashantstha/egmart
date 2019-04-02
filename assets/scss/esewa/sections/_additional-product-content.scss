@@ -1,0 +1,27 @@
+.section-additional-product-content {
+  .card-header {
+    background: $smoke-bg;
+  }
+  .card-body {
+    .tab-content {
+      ul li {
+        line-height: rem(27px);
+        font-weight: $font-weight-light;
+        font-size: rem(16px);
+      }
+    }
+    .revew-info {
+      text-transform: uppercase;
+      font-size: rem(20px);
+      font-weight: $font-weight-bold;
+      margin-bottom: rem(10px);
+    }
+    .control-label {
+      font-weight: $font-weight-bold;
+    }
+    .product-review-wrapper {
+      padding: rem(20px);
+      border: rem(1px) solid $border-color-light;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+  .page-title {
+    letter-spacing: rem(0.65px);
+    @extend .h4;
+    margin-bottom: rem(20px);
+    margin-top: rem(20px);
+    text-transform: uppercase;
+    @include breakpoint(md) {
+      margin-top: 0;
+    }
+  }

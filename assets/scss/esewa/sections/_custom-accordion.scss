@@ -1,0 +1,56 @@
+ul.accordion {
+  list-style: none;
+  @include ul;
+  &>li {
+    border-bottom: rem(1px) solid $border-color-light;
+    padding: rem(0 15px);
+    &:last-child {
+      border-bottom: 0;
+    }
+    a.accordion-title {
+      width: 100%;
+      display: block;
+      padding: rem(15px 0);
+      color: $text-color-dark;
+      font-size: rem(16px);
+      font-weight: $font-weight-bold;
+      text-decoration: none;
+      text-transform: uppercase;
+      position: relative;
+      &:after {
+        content: '\f107';
+        @extend .far;
+        @include y_center;
+        right: 0;
+      }
+      &.open {
+        &:after {
+          content: '\f106';
+        }
+      }
+      &:hover {}
+      .sub-total-amount {
+        float: right;
+      }
+    }
+  }
+  .accordion-content {
+    padding-left: 0;
+    overflow: hidden;
+    display: none;
+    padding-bottom: rem(20px);
+    li {
+      border: none;
+      padding: rem(5px 0);
+      a {
+        color: $text-color-dark;
+      }
+      &.active {
+        font-weight: $font-weight-bold;
+      }
+    }
+    &.show {
+      // display: block;
+    }
+  }
+}

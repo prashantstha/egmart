@@ -1,0 +1,175 @@
+.navbar {
+  padding: 0;
+  background: $green-bg;
+  a {
+    vertical-align: middle;
+    color: $white-color;
+    padding: rem(11px 20px);
+    display: block;
+    &:hover {
+      text-decoration: none;
+      color: $black-color;
+    }
+  }
+  .navbar-nav {
+    @include breakpoint(lg) {
+      margin-left: rem(20px);
+    }
+    li {
+      &.hasChild {
+        position: relative;
+        &>a {
+          position: relative;
+          &:after {
+            content: '\f105';
+            @extend .fal;
+            font-size: rem(18px);
+            @include y_center;
+            right: rem(20px);
+            @include breakpoint(lg) {
+              content: '\f107';
+              right: 0;
+            }
+          }
+        }
+        &.open {
+          &>a:after {
+            content: '\f107';
+          }
+        } // Sube menu 1
+        .full-width {
+          display: none;
+          @include breakpoint(lg) {
+            background: $white-color;
+            position: absolute;
+            left: 0;
+            width: 200px;
+            padding: rem(10px);
+            z-index: 99999;
+            border-radius: 0 0 5px 5px;
+            box-shadow: 5px 0px 60px 0 rgba(0, 0, 0, 0.3);
+          }
+          .container {
+            @include breakpoint_max(lg) {
+              max-width: 100%;
+              padding: 0;
+            }
+          }
+          ul {
+            @include ul;
+            padding-left: rem(30px);
+            margin-bottom: rem(20px);
+            @include breakpoint(lg) {
+              margin-bottom: 0;
+              padding-left: 0;
+            }
+            li {
+              list-style: none;
+              a {
+                padding: rem(5px 0);
+                text-transform: uppercase;
+                font-size: rem(13px);
+                @include breakpoint(lg) {
+                  color: $gray;
+                  padding: rem(5px 10px);
+                  &:hover {
+                    color: $link-hover;
+                  }
+                }
+              } // submenu 2
+              ul {
+                padding-left: rem(0px);
+                margin-bottom: rem(20px);
+                li {
+                  a {
+                    text-transform: none;
+                    color: $gray;
+                  }
+                }
+              }
+            }
+          }
+        }
+        &:hover {
+          @include breakpoint(lg) {
+            .full-width {
+              display: block;
+            }
+          }
+        }
+      }
+      &.megamenu {
+        position: static;
+        .full-width {
+          @include breakpoint(lg) {
+            width: 100%;
+            padding: rem(15px 0);
+          }
+          ul {
+            @include clearfix;
+            @include breakpoint(lg) {
+              margin: 0;
+              padding: 0;
+            }
+            &>li {
+              @include breakpoint(lg) {
+                float: left;
+                width: 25%;
+              }
+              &>a {
+                @include breakpoint(lg) {
+                  text-transform: uppercase;
+                  color: $black-color;
+                  font-size: rem(14px);
+                  font-weight: $font-weight-bold;
+                  padding: rem(5px 0);
+                }
+              }
+              &.hasChild a {
+                @include breakpoint(lg) {
+                  &:after {
+                    display: none;
+                  }
+                }
+              }
+              ul {
+                li {
+                  width: 100%;
+                  a {
+                    font-weight: $font-weight-normal;
+                    font-size: rem(13px);
+                    padding: rem(3px 0);
+                    &:hover {
+                      color: $link-hover;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.bg-default {
+  background-color: $default-color !important;
+}
+.bg-primary {
+  background-color: $primary-color !important;
+}
+.bg-info {
+  background-color: $info-color !important;
+}
+.bg-success {
+  background-color: $success-color !important;
+}
+.bg-danger {
+  background-color: $danger-color !important;
+}
+.bg-warning {
+  background-color: $warning-color !important;
+}
+.bg-white {
+  background-color: $white-color !important;
+}

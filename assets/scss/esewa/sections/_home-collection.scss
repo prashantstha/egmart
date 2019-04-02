@@ -1,0 +1,19 @@
+.home-collection {
+	padding: rem(15px);
+	.col-lg-2 {
+		padding: rem(0 5px);
+	}
+	.collection-inner {
+		.img-wrapper {
+			overflow: hidden;
+			img{
+				@include transitions(all 1s ease);
+			}
+			&:hover{
+				img{
+					@include transform(scale(1.1));
+				}
+			}
+		}
+	}
+}

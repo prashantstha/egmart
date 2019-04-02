@@ -1,0 +1,113 @@
+.product-slider-wrapper {
+  @include clearfix;
+  .big-image {
+    @include calc(width, '100% - 115px');
+    float: right;
+    position: relative;
+    img {
+      width: 100%;
+    }
+    .slick-arrow {
+      background: none;
+      border: none;
+      font-size: rem(35px);
+      color: $black-color;
+      cursor: pointer;
+      @include y_center;
+      z-index: 999;
+      visibility: hidden;
+      opacity: 0;
+      &:hover {
+        color: $brand-primary;
+      }
+      @include transitions(all 0.5s);
+      &:focus {
+        border: none;
+        outline: none;
+      }
+      &.slick-prev {
+        left: 0;
+      }
+      &.slick-next {
+        right: 0;
+      }
+    }
+  }
+  .thumb {
+    width: rem(100px);
+    margin-right: rem(15px);
+    float: left;
+    .thumb__item {
+      height: rem(100px);
+      margin-bottom: rem(10px);
+      border: rem(2px) solid transparent;
+      text-align: center;
+      img {
+        max-height: 100%;
+        margin: 0 auto;
+      }
+      &.slick-current {
+        border: rem(2px) solid $brand-primary;
+      }
+      &:focus {
+        border: rem(2px) solid $brand-primary;
+        outline: none;
+      }
+    }
+  }
+  &:hover {
+    .big-image {
+      .slick-arrow {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+}
+// ---------------
+// slick-lightbox
+// ---------------
+.slick-lightbox {
+  .slick-arrow {
+    background: none;
+    border: none;
+    font-size: rem(0);
+    line-height: 0;
+    color: $white-color;
+    cursor: pointer;
+    @include y_center;
+    z-index: 999;
+    &:hover {
+      color: $brand-primary;
+    }
+    @include transitions(all 0.5s);
+    &:focus {
+      border: none;
+      outline: none;
+    }
+    &:before {
+      @extend .fal;
+      font-size: rem(35px);
+    }
+    &.slick-prev {
+      left: 0;
+      &:before {
+        content: '\f177';
+      }
+    }
+    &.slick-next {
+      right: 0;
+      &:before {
+        content: '\f178';
+      }
+    }
+  }
+  .slick-lightbox-close {
+    &:before {
+      font-size: rem(35px);
+    }
+    &:hover {
+      color: $brand-primary;
+    }
+  }
+}

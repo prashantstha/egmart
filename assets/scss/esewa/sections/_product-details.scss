@@ -1,0 +1,184 @@
+.product-essential {
+  padding-top: rem(0px);
+}
+.short-description {
+  font-size: rem(16px);
+  margin-top: rem(20px);
+  margin-bottom: rem(20px);
+  @include breakpoint(xl) {
+    padding-right: 100px;
+  }
+}
+.product-variation {
+  .poduct-pv-title {
+    font-weight: $font-weight-light;
+  }
+  .poduct-pv-color {
+    .form-check.form-check-radio {
+      display: inline-block;
+      .form-check-label {
+        display: block;
+        line-height: rem(30px);
+        padding-left: rem(40px);
+        height: rem(40px);
+        .form-check-sign {
+          &:before,
+          &:after {
+            width: rem(30px);
+            height: rem(30px);
+          }
+        }
+      }
+      input[type="radio"]:checked+.form-check-sign::after {
+        width: rem(20px);
+        height: rem(20px);
+        top: rem(8px);
+        left: rem(8px);
+      }
+      &.pv-black {
+        input[type="radio"]:checked+.form-check-sign::after {
+          background: $black-bg;
+          border-color: $black-bg;
+        }
+      }
+      &.pv-white {
+        input[type="radio"]:checked+.form-check-sign::after {
+          background: $smoke-bg;
+          border-color: $smoke-bg;
+        }
+      }
+      &.pv-red {
+        input[type="radio"]:checked+.form-check-sign::after {
+          background: $danger-color;
+          border-color: $danger-color;
+        }
+      }
+      &.pv-green {
+        input[type="radio"]:checked+.form-check-sign::after {
+          background: $green-bg;
+          border-color: $green-bg;
+        }
+      }
+      &.pv-pink {
+        input[type="radio"]:checked+.form-check-sign::after {
+          background: #E91E63;
+          border-color: #E91E63;
+        }
+      }
+    }
+  }
+  .poduct-pv-size {
+    margin-top: rem(20px);
+    margin-bottom: rem(20px);
+    .form-check.form-check-radio {
+      display: inline-block;
+      margin-right: rem(5px);
+      .form-check-label {
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+.product-compare {
+  a {
+    color: $text-color-dark;
+  }
+}
+.product-info-price {
+  margin-top: rem(20px);
+  .product-info-stock-sku {
+    font-size: rem(15px);
+    text-transform: uppercase;
+    color: $text-color-dark;
+    .label {
+      font-weight: $font-weight-bold;
+    }
+  }
+  .product-price {
+    margin-top: rem(12px);
+    .final-price {
+      font-size: rem(26px);
+      color: $text-color-dark;
+      color: $text-color-dark;
+      font-weight: $font-weight-bold;
+      text-transform: none;
+    }
+    .old-price {
+      text-decoration: line-through;
+    }
+  }
+}
+.add-to-cart-action {
+  margin-top: rem(15px);
+  label {
+    display: block;
+  }
+  .form-group {
+    display: inline-block;
+    border: rem(1px) solid $border-color-light;
+    text-align: center;
+    padding: rem(5px 14px);
+    border-radius: rem(3px);
+    .input-group-btn {
+      display: inline-block;
+      button {
+        width: rem(26px);
+        height: rem(26px);
+        line-height: rem(24px);
+        border: rem(1px) solid $border-color-light;
+        border-radius: 100%;
+        background: $white-bg;
+        color: $black-color;
+        cursor: pointer;
+        &:hover,
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+    .form-control {
+      display: inline-block;
+      width: rem(65px);
+      padding: rem(0 10px);
+      border: none;
+      border-radius: 0;
+      text-align: center;
+    }
+  }
+  .product-action {
+    .btn {
+      margin: rem(20px 0);
+      width: 100%;
+      font-size: rem(18px);
+      letter-spacing: rem(.6px);
+      text-transform: uppercase;
+    }
+  }
+}
+.product-info-action {
+  .social-icon {
+    margin-top: rem(20px);
+    padding-top: rem(20px);
+    border-top: rem(1px) solid $border-color-light;
+    h3 {
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-right: rem(15px);
+      font-size: rem(14px);
+      text-transform: uppercase;
+      color: $black-color;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    ul {
+      display: inline-block;
+      vertical-align: middle;
+      li {
+        margin-right: rem(10px);
+        a {
+          color: $black-color;
+        }
+      }
+    }
+  }
+}

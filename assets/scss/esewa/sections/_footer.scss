@@ -1,0 +1,120 @@
+.footer {
+	background: $black-bg;
+	// -----------------------
+	// Footer Top
+	// -----------------------
+	.footer-top{
+		padding: rem(25px 0 15px);
+	}
+	// -----------------------
+	// Footer Bottom
+	// -----------------------
+	.footer-bottom{
+		border-top: rem(1px) solid $border-color-dark;
+		padding: rem(10px 0);
+	}
+}
+.footer-widget {
+	.widget-title {
+		text-transform: uppercase;
+		color: $white-color;
+		letter-spacing: rem(.4px);
+		margin-bottom: rem(15px);
+		position: relative;
+		&:after{
+			content: "\f107";
+			@extend .far;
+			@include y_center;
+			right: 0;
+			color: $gray;
+			@include breakpoint(md){
+				display: none;
+			}
+		}
+		&.open{
+			&:after{
+				content: "\f106";
+			}
+		}
+	}
+	.widget-content {
+		color: $gray;
+		margin-top: rem(10px);
+		margin-bottom: rem(10px);
+		display: none;
+			@include breakpoint(md){
+				margin-bottom: rem(0px);
+				display: block;
+			}
+		ul {
+			@include ul();
+			list-style: none;
+			li{
+				line-height: rem(35px);
+				.icon-wrap{
+					margin-right: rem(5px);
+				}
+				a {
+					color: $gray;
+					&:hover{
+						text-decoration: none;
+						color: $link-hover;
+					}
+				}
+				&.phone {
+					a {
+						cursor: pointer;
+						&:hover{
+							color: $gray;
+						}
+					}	
+				}
+				&.email{
+					text-transform: uppercase;
+				}
+			}
+		}
+		img {
+			margin-top: rem(18px);
+		}
+	}
+	&.image-widget {
+		.widget-content{
+			display: block;
+		}
+	}
+	.social-icon {
+		margin-top: rem(30px);
+		margin-bottom: rem(20px);
+			@include breakpoint(md){
+				margin-bottom: 0;
+			}
+	}
+}
+.social-icon {
+	ul {
+		@include ul();
+		list-style: none;
+		li{
+			font-size: 0px;
+			display: inline-block;
+			margin-right: rem(20px);
+			vertical-align: top;
+			a{
+				font-size: rem(18px);
+				display: block;
+				width: rem(43px);
+				height: rem(43px);
+				text-align: center;
+				line-height: rem(43px);
+				background: $white-color;
+				color: $socia-icon-color;
+				border-radius: 100%;
+				&:hover{
+					color: $black-color;
+					background: $brand-primary;
+				}				
+			}
+		}
+	}
+}

@@ -1,0 +1,76 @@
+ .review-form {
+   display: none;
+   .form-default {
+     margin-top: rem(30px);
+   }
+   .form-group {
+     margin-bottom: rem(20px);
+     .form-control {
+       padding: rem(14px 18px);
+     }
+   }
+ }
+ .pr-summury {
+   span {
+     display: block;
+     @include breakpoint(md) {
+       display: inline-block;
+     }
+   }
+   .pr-summary-caption {
+     @include breakpoint(md) {
+       margin-left: rem(15px);
+     }
+   }
+   .pr-summary-actions {
+     float: right;
+     a {
+       color: $text-color-dark;
+     }
+   }
+ }
+ .pr-header {
+   padding-bottom: rem(20px);
+   margin-bottom: rem(20px);
+   border-bottom: rem(1px) solid $border-color-light;
+   @include clearfix;
+ }
+ .pr-body {
+   .pr-reviews {
+     .pr-review {
+       padding: rem(30px 0);
+       border-bottom: rem(1px) solid $border-color-light;
+       &:last-child {
+         border-bottom: none;
+       }
+       .pr-review-header {
+         margin-bottom: rem(20px);
+         .pr-starratings {
+           margin-bottom: rem(15px);
+           display: block;
+         }
+         .pr-review-header-title {
+           margin-bottom: 0;
+           font-weight: $font-weight-normal;
+         }
+         .pr-review-header-byline {
+           color: $text-color-light;
+         }
+       }
+       &.pr-review-reply {
+         margin-left: rem(15px);
+         border-left: rem(3px) solid $green-bg;
+         padding: rem(20px 0px 20px 20px);
+       }
+       &.reply-from-customer {
+         border-left: rem(3px) solid $brand-primary;
+       }
+       .pr-review-content-body {
+         font-size: rem(14px);
+         p {
+           font-size: rem(14px);
+         }
+       }
+     }
+   }
+ }

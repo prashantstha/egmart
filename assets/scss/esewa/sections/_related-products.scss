@@ -1,0 +1,21 @@
+.section-related-block {
+    .block-heading {
+        position: relative;
+        &:after {
+            content: '';
+            width: 100%;
+            height: 1px;
+            background: $border-color-light;
+            @include y_center;
+            right: 0;
+        }
+        h4 {
+            background: $white-color;
+            position: relative;
+            z-index: 11;
+            display: inline-block;
+            margin: 0;
+            padding-right: rem(20px);
+        }
+    }
+}

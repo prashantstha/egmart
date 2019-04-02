@@ -1,0 +1,10 @@
+.breadcrumb {
+  border-radius: 0px;
+  background: transparent;
+  margin-bottom: rem(30px);
+  .breadcrumb-item {
+    a {
+      color: $text-color-dark;
+    }
+  }
+}

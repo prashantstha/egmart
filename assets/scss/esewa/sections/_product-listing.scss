@@ -26,11 +26,12 @@
       }
     }
     .block-title {
-      font-size: rem(18);
+      font-size: rem(18px);
       text-transform: uppercase;
       margin-bottom: 0;
       float: left;
       margin-top: 0;
+      padding: 0;
     }
     .block-action {
       float: right;
@@ -93,7 +94,7 @@
         .nav-tabs {
           display: inline-block;
           vertical-align: middle;
-          padding: 0;
+          padding: 0 !important;
           margin-bottom: rem(10px);
           @include breakpoint(lg) {
             margin-bottom: rem(0px);
@@ -145,23 +146,26 @@
             width: rem(35px);
             height: rem(50px);
             line-height: rem(50px);
+            border-radius: 0px;
             @include breakpoint(xl) {
               top: 35%;
             }
             &:hover {
               background: $brand-primary;
-              color: $black-color;
+              color: $white-color;
             }
           }
-          .owl-prev {
+          button.owl-prev {
             box-shadow: -3px 0 3px 0 rgba(50, 50, 50, .2);
             -moz-box-shadow: -3px 0 3px 0 rgba(50, 50, 50, .2);
             -webkit-box-shadow: -3px 0 3px 0 rgba(50, 50, 50, .2);
+            border-radius: 4px 0 0 4px;
           }
-          .owl-next {
+          button.owl-next {
             box-shadow: -3px 0 3px 0 rgba(50, 50, 50, .2);
             -moz-box-shadow: -3px 0 3px 0 rgba(50, 50, 50, .2);
             -webkit-box-shadow: -3px 0 3px 0 rgba(50, 50, 50, .2);
+            border-radius: 0 4px 4px 0;
           }
         }
       }
@@ -388,7 +392,7 @@
   padding: rem(20px 0px);
   background: $smoke-bg;
   @include breakpoint(lg) {
-    padding: rem(20px 50px);
+    // padding: rem(20px 50px);
   }
   .product-listing-block {
     padding: rem(20px);

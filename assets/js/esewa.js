@@ -131,7 +131,7 @@ $(document).ready(function() {
                     items: 3
                 },
                 768: {
-                    items: 4,
+                    items: 3,
                 }
             }
         });
@@ -153,7 +153,7 @@ $(document).ready(function() {
                     items: 3
                 },
                 768: {
-                    items: 4,
+                    items: 3,
                 }
             }
         });
@@ -181,7 +181,7 @@ $(document).ready(function() {
                     items: 6,
                 },
                 1024: {
-                    items: 8,
+                    items: 6,
                 }
             }
         });
@@ -206,7 +206,7 @@ $(document).ready(function() {
                     items: 6,
                 },
                 1024: {
-                    items: 8,
+                    items: 6,
                 }
             }
         });
@@ -231,7 +231,7 @@ $(document).ready(function() {
                     items: 6,
                 },
                 1024: {
-                    items: 8,
+                    items: 6,
                 }
             }
         });

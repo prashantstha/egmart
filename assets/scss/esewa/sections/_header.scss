@@ -1,421 +1,422 @@
 .page-header {
-    .top-banner {
-        // height: rem(84px);
-        background-repeat: no-repeat;
-        background-position: center top;
-        background-size: cover;
-        position: relative;
-        text-align: left;
+  .top-banner {
+    // height: rem(84px);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    position: relative;
+    text-align: left;
+    line-height: rem(20px);
+    display: none;
+    @include breakpoint(lg) {
+      display: block;
+    }
+    .full-width {}
+    .promotion-offer {
+      position: relative;
+      height: rem(84px);
+      .header-offer-close {
+        position: absolute;
+        top: rem(10px);
+        right: rem(0px);
+        width: rem(20px);
+        height: rem(20px);
         line-height: rem(20px);
-        display: none;
-        @include breakpoint(lg) {
-            display: block;
-        }
-        .full-width {}
-        .promotion-offer {
-            position: relative;
-            height: rem(84px);
-            .header-offer-close {
-                position: absolute;
-                top: rem(10px);
-                right: rem(0px);
-                width: rem(20px);
-                height: rem(20px);
-                line-height: rem(20px);
-                text-align: center;
-                background: $black-color;
-                color: $white-color;
-                border-radius: 100%;
-            }
-        }
+        text-align: center;
+        background: $black-color;
+        color: $white-color;
+        border-radius: 100%;
+      }
     }
-    .header-content {
-        background: $header-color;
-        padding: rem(12px) 0;
-        width: 100%;
+  }
+  .header-content {
+    background: $white-bg;
+    padding: rem(12px) 0;
+    width: 100%;
+    position: relative;
+    z-index: 111;
+    &.sticky-header {
+      @include breakpoint(lg) {
+        background: $white-bg;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0;
+        padding: 0;
+        z-index: 999;
+        animation-duration: .45s;
+        animation-fill-mode: both;
+        animation-name: fadeInDown;
+        box-shadow: 0 0 3px #666;
+        -moz-box-shadow: 0 0 3px #666;
+        -webkit-box-shadow: 0 0 3px #666;
+        -o-box-shadow: 0 0 3px #666;
+        -ms-box-shadow: 0 0 3px #666;
+      }
+    }
+    .nav-toggle {
+      font-size: rem(30px);
+      color: $black-color;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: rem(15px);
+      width: rem(26px);
+      text-align: center;
+    } // -----------------------
+    // Header Logo
+    // -----------------------
+    .logo {
+      max-width: rem(160px);
+      display: inline-block;
+      vertical-align: middle;
+      @include breakpoint(lg) {
+        max-width: rem(200px);
+      }
+    }
+  } // -----------------------
+  // Header Search Box
+  // -----------------------
+  .header-search-box {
+    margin-top: rem(15px);
+    @include breakpoint(lg) {
+      margin-top: 0;
+    }
+    .header-search-form {
+      .input-group {
+        margin-bottom: 0;
+        .form-control {
+          background-color: $white-color;
+          border: rem(2px) solid $brand-primary;
+          border-right: 1px solid $border-color-light;
+          border-radius: rem(30px 0 0 30px);
+        }
+        .input-group-append {
+          width: 68px;
+          text-align: center;
+          display: inline-block;
+          .input-group-text {
+            padding: 0;
+            border: rem(2px) solid $brand-primary;
+            border-left: 0px;
+            border-radius: rem(0 30px 30px 0);
+            .search-action {
+              border: none;
+              box-shadow: none;
+              background: none;
+              height: rem(37px);
+              width: 100%;
+              padding: 0;
+              cursor: pointer;
+              &:hover,
+              &:focus {
+                color: $brand-primary;
+                outline: none;
+                border: none;
+                box-shadow: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  } // -----------------------
+  // Header Icons and Mini Cart Start
+  // -----------------------
+  .header-icons.content-cart {
+    ul {
+      @include ul();
+      text-align: right;
+      &>li {
+        cursor: pointer;
+        list-style: none;
+        display: inline-block;
+        color: $black-color;
+        margin-right: 10px;
         position: relative;
-        z-index: 111;
-        &.sticky-header {
-            @include breakpoint(lg) {
-                background: $green-bg;
-                position: fixed;
-                top: 0px;
-                left: 0px;
-                right: 0;
-                padding: 0;
-                z-index: 999;
-                animation-duration: .45s;
-                animation-fill-mode: both;
-                animation-name: fadeInDown;
-                box-shadow: 0 0 3px #666;
-                -moz-box-shadow: 0 0 3px #666;
-                -webkit-box-shadow: 0 0 3px #666;
-                -o-box-shadow: 0 0 3px #666;
-                -ms-box-shadow: 0 0 3px #666;
-            }
+        &:last-child {
+          margin-right: 0;
         }
-        .nav-toggle {
+        .icon-wrap {
+          font-size: rem(18px);
+          display: inline-block;
+          ;
+          vertical-align: middle;
+          line-height: 1;
+          @include breakpoint(sm) {
+            margin-right: 10px;
             font-size: rem(30px);
-            color: $white-color;
+          }
+        }
+        .header-icon-item-content {
+          vertical-align: middle;
+          font-size: rem(14px);
+          line-height: 15px;
+          display: none;
+          text-align: left;
+          @include breakpoint(sm) {
             display: inline-block;
-            vertical-align: middle;
-            margin-right: rem(15px);
-            width: rem(26px);
-            text-align: center;
-        } // -----------------------
-        // Header Logo
-        // -----------------------
-        .logo {
-            max-width: rem(160px);
-            display: inline-block;
-            vertical-align: middle;
-            @include breakpoint(lg) {
-                max-width: rem(200px);
+          }
+          .title {
+            padding-top: 0;
+            font-weight: $font-weight-bold;
+          }
+          .sub-title {
+            font-size: rem(13px);
+          }
+        }
+        &.mini-cart {
+          .icon-wrap {
+            position: relative;
+            font-size: rem(18px);
+            @include breakpoint(sm) {
+              font-size: rem(28px);
             }
-        }
-    } // -----------------------
-    // Header Search Box
-    // -----------------------
-    .header-search-box {
-        margin-top: rem(15px);
-        @include breakpoint(lg) {
-            margin-top: 0;
-        }
-        .header-search-form {
-            .input-group {
-                margin-bottom: 0;
-                .form-control {
-                    background-color: $white-color;
-                    border: rem(2px) solid $brand-primary;
-                    border-right: 1px solid $border-color-light;
-                    border-radius: rem(30px 0 0 30px);
-                }
-                .input-group-append {
-                    width: 68px;
-                    text-align: center;
-                    display: inline-block;
-                    .input-group-text {
-                        padding: 0;
-                        border: rem(2px) solid $brand-primary;
-                        border-left: 0px;
-                        border-radius: rem(0 30px 30px 0);
-                        .search-action {
-                            border: none;
-                            box-shadow: none;
-                            background: none;
-                            height: rem(37px);
-                            width: 100%;
-                            padding: 0;
-                            cursor: pointer;
-                            &:hover, &:focus {
-                                color: $brand-primary;
-                                outline: none;
-                                border: none;
-                                box-shadow: none;
-                            }
-                        }
-                    }
-                }
+            .cart-item {
+              width: rem(20px);
+              height: rem(20px);
+              line-height: rem(20px);
+              background: $danger-color;
+              text-align: center;
+              color: $white-color;
+              border-radius: 100%;
+              font-size: 12px;
+              font-weight: $font-weight-bold;
+              position: absolute;
+              right: - rem(10px);
+              top: - rem(10px);
+              @include breakpoint(sm) {
+                width: rem(26px);
+                height: rem(26px);
+                line-height: rem(26px);
+                font-size: rem(14px);
+              }
             }
+          }
         }
-    } // -----------------------
-    // Header Icons and Mini Cart Start
-    // -----------------------
-    .header-icons.content-cart {
-        ul {
-            @include ul();
-            text-align: right;
-            &>li {
-                cursor: pointer;
-                list-style: none;
-                display: inline-block;
-                ;
-                color: $white-color;
-                margin-right: 10px;
-                position: relative;
-                &:last-child {
-                    margin-right: 0;
-                }
-                .icon-wrap {
-                    font-size: rem(18px);
-                    display: inline-block;
-                    ;
-                    vertical-align: middle;
-                    line-height: 1;
-                    @include breakpoint(sm) {
-                        margin-right: 10px;
-                        font-size: rem(30px);
-                    }
-                }
-                .header-icon-item-content {
-                    vertical-align: middle;
-                    font-size: rem(14px);
-                    line-height: 15px;
-                    display: none;
-                    text-align: left;
-                    @include breakpoint(sm) {
-                        display: inline-block;
-                    }
-                    .title {
-                        padding-top: 0;
-                        font-weight: $font-weight-bold;
-                    }
-                    .sub-title {
-                        font-size: rem(13px);
-                    }
-                }
-                &.mini-cart {
-                    .icon-wrap {
-                        position: relative;
-                        font-size: rem(18px);
-                        @include breakpoint(sm) {
-                            font-size: rem(28px);
-                        }
-                        .cart-item {
-                            width: rem(20px);
-                            height: rem(20px);
-                            line-height: rem(20px);
-                            background: $brand-primary;
-                            text-align: center;
-                            color: $black-color;
-                            border-radius: 100%;
-                            font-size: 12px;
-                            font-weight: $font-weight-bold;
-                            position: absolute;
-                            right: - rem(10px);
-                            top: - rem(10px);
-                            @include breakpoint(sm) {
-                                width: rem(26px);
-                                height: rem(26px);
-                                line-height: rem(26px);
-                                font-size: rem(14px);
-                            }
-                        }
-                    }
-                }
-            }
-        }
+      }
     }
+  }
 }
 .toggle-content {
+  position: absolute;
+  right: rem(15px);
+  top: rem(48px);
+  width: rem(230px);
+  padding: rem(20px);
+  background: $white-bg;
+  border-radius: rem(3px);
+  border-top: 5px solid #445268;
+  box-shadow: 0 0 8px 0 rgba(50, 50, 50, .4);
+  display: none;
+  &:before {
+    background-color: #445268;
+    content: "";
+    height: rem(14px);
+    margin: auto;
     position: absolute;
-    right: rem(15px);
-    top: rem(48px);
-    width: rem(230px);
-    padding: rem(20px);
-    background: $white-bg;
-    border-radius: rem(3px);
-    border-top: 5px solid #445268;
-    box-shadow: 0 0 8px 0 rgba(50, 50, 50, .4);
-    display: none;
-    &:before {
-        background-color: #445268;
-        content: "";
-        height: rem(14px);
-        margin: auto;
-        position: absolute;
-        @include breakpoint(xs) {
-            right: rem(35px);
-        }
-        right: rem(40px);
-        top: - rem(11px);
-        @include transform(rotate(45deg));
-        width: rem(14px);
-        z-index: -1;
+    @include breakpoint(xs) {
+      right: rem(35px);
     }
-    &.account {
-        @include breakpoint(md) {
-            right: rem(120px);
-        }
+    right: rem(40px);
+    top: - rem(11px);
+    @include transform(rotate(45deg));
+    width: rem(14px);
+    z-index: -1;
+  }
+  &.account {
+    @include breakpoint(md) {
+      right: rem(120px);
     }
-    .header-icon-links {
-        @include ul;
-        li {
-            display: block !important;
-            margin-right: 0 !important;
-            font-size: rem(14px);
-            text-align: center;
-            .btn {
-                display: block;
-            }
-            a {
-                font-weight: $font-weight-bold;
-                color: $black-color;
-                &:hover {
-                    text-decoration: none;
-                    color: $danger-color;
-                }
-            }
-            &.signin {
-                .btn-primary {
-                    &:hover {
-                        background: $primary-color;
-                        color: $danger-color !important;
-                        border-color: $button-border-color !important;
-                    }
-                }
-            }
-        }
-    }
-    &.mini-cart-content {
-        @include breakpoint(xs) {
-            width: rem(290px);
-        }
-        width: rem(360px);
-        height: rem(450px);
-        overflow-y: scroll;
-        font-size: rem(14px);
-        color: $black-color;
+  }
+  .header-icon-links {
+    @include ul;
+    li {
+      display: block !important;
+      margin-right: 0 !important;
+      font-size: rem(14px);
+      text-align: center;
+      .btn {
+        display: block;
+      }
+      a {
         font-weight: $font-weight-bold;
-        text-align: left;
-        .close-mini-cart {
-            position: absolute;
-            right: 10px;
-            top: 10px;
-            color: $gray;
-            &:hover {
-                color: $black-color;
-            }
+        color: $black-color;
+        &:hover {
+          text-decoration: none;
+          color: $danger-color;
         }
-        .item-totals {
-            .sub-total {
-                .label {
-                    text-transform: uppercase;
-                }
-                .price {
-                    color: $danger-color;
-                    font-size: rem(18px);
-                }
-            }
+      }
+      &.signin {
+        .btn-primary {
+          &:hover {
+            background: $primary-color;
+            color: $danger-color !important;
+            border-color: $button-border-color !important;
+          }
         }
-        .btn-wrapper {
-            text-align: center;
-            .btn {
-                &:hover, &:focus {
-                    border-color: $button-border-color;
-                    color: $danger-color;
-                }
-            }
-        }
-        .mini-cart-items-wrapper {
-            margin-top: rem(25px);
-            margin-bottom: rem(50px);
-            ul {
-                li.product-item {
-                    font-size: rem(14px);
-                    font-size: $font-weight-semi;
-                    @include flexbox;
-                    @include flex-wrap(wrap);
-                    text-align: left;
-                    padding-bottom: rem(20px);
-                    padding-top: rem(20px);
-                    border-bottom: rem(1px) solid $border-color-light;
-                    &:first-child {
-                        padding-top: 0;
-                    }
-                    &:last-child {
-                        border-bottom: none;
-                    }
-                    .product-image {
-                        border: rem(1px) solid $border-color-light;
-                        max-width: rem(85px);
-                        max-height: rem(85px);
-                    }
-                    .product-item-details {
-                        @include calc(width, '100% - 85px');
-                        padding-left: 20px;
-                        a {
-                            color: $blue-color;
-                            &:hover {
-                                text-decoration: none;
-                                color: $link-hover;
-                            }
-                        }
-                        .product-item-price {
-                            margin-top: rem(5px);
-                            font-size: rem(20px);
-                            color: $black-color;
-                        }
-                        .procut-item-actions {
-                            .product-qty {
-                                @include clearfix;
-                            }
-                            .form-group {
-                                @include flexbox;
-                                @include align-items(center);
-                                margin-bottom: 0;
-                                float: left;
-                                label {
-                                    color: $gray;
-                                    font-weight: $font-weight-bold;
-                                    width: rem(45px);
-                                    margin-bottom: 0;
-                                }
-                                .form-control {
-                                    border-radius: 0;
-                                    width: rem(60px);
-                                    height: rem(32px);
-                                    text-align: center;
-                                }
-                            }
-                            .edit-remove {
-                                float: right;
-                                a {
-                                    color: $gray;
-                                    display: inline-block;
-                                    vertical-align: middle;
-                                    width: rem(20px);
-                                    text-align: center;
-                                    line-height: rem(32px);
-                                    &:hover {
-                                        color: $black-color;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
+      }
     }
+  }
+  &.mini-cart-content {
+    @include breakpoint(xs) {
+      width: rem(290px);
+    }
+    width: rem(360px);
+    height: rem(450px);
+    overflow-y: scroll;
+    font-size: rem(14px);
+    color: $black-color;
+    font-weight: $font-weight-bold;
+    text-align: left;
+    .close-mini-cart {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      color: $gray;
+      &:hover {
+        color: $black-color;
+      }
+    }
+    .item-totals {
+      .sub-total {
+        .label {
+          text-transform: uppercase;
+        }
+        .price {
+          color: $danger-color;
+          font-size: rem(18px);
+        }
+      }
+    }
+    .btn-wrapper {
+      text-align: center;
+      .btn {
+        &:hover,
+        &:focus {
+          border-color: $button-border-color;
+          color: $danger-color;
+        }
+      }
+    }
+    .mini-cart-items-wrapper {
+      margin-top: rem(25px);
+      margin-bottom: rem(50px);
+      ul {
+        li.product-item {
+          font-size: rem(14px);
+          font-size: $font-weight-semi;
+          @include flexbox;
+          @include flex-wrap(wrap);
+          text-align: left;
+          padding-bottom: rem(20px);
+          padding-top: rem(20px);
+          border-bottom: rem(1px) solid $border-color-light;
+          &:first-child {
+            padding-top: 0;
+          }
+          &:last-child {
+            border-bottom: none;
+          }
+          .product-image {
+            border: rem(1px) solid $border-color-light;
+            max-width: rem(85px);
+            max-height: rem(85px);
+          }
+          .product-item-details {
+            @include calc(width, '100% - 85px');
+            padding-left: 20px;
+            a {
+              color: $blue-color;
+              &:hover {
+                text-decoration: none;
+                color: $link-hover;
+              }
+            }
+            .product-item-price {
+              margin-top: rem(5px);
+              font-size: rem(20px);
+              color: $black-color;
+            }
+            .procut-item-actions {
+              .product-qty {
+                @include clearfix;
+              }
+              .form-group {
+                @include flexbox;
+                @include align-items(center);
+                margin-bottom: 0;
+                float: left;
+                label {
+                  color: $gray;
+                  font-weight: $font-weight-bold;
+                  width: rem(45px);
+                  margin-bottom: 0;
+                }
+                .form-control {
+                  border-radius: 0;
+                  width: rem(60px);
+                  height: rem(32px);
+                  text-align: center;
+                }
+              }
+              .edit-remove {
+                float: right;
+                a {
+                  color: $gray;
+                  display: inline-block;
+                  vertical-align: middle;
+                  width: rem(20px);
+                  text-align: center;
+                  line-height: rem(32px);
+                  &:hover {
+                    color: $black-color;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 @-webkit-keyframes fadeInDown {
-    0% {
-        opacity: 0;
-        @include transform(translate3d(0px, -100%, 0px));
-    }
-    100% {
-        opacity: 1;
-        @include transform(none);
-    }
+  0% {
+    opacity: 0;
+    @include transform(translate3d(0px, -100%, 0px));
+  }
+  100% {
+    opacity: 1;
+    @include transform(none);
+  }
 }
 @-moz-keyframes fadeInDown {
-    0% {
-        opacity: 0;
-        @include transform(translate3d(0px, -100%, 0px));
-    }
-    100% {
-        opacity: 1;
-        @include transform(none);
-    }
+  0% {
+    opacity: 0;
+    @include transform(translate3d(0px, -100%, 0px));
+  }
+  100% {
+    opacity: 1;
+    @include transform(none);
+  }
 }
 @-o-keyframes fadeInDown {
-    0% {
-        opacity: 0;
-        @include transform(translate3d(0px, -100%, 0px));
-    }
-    100% {
-        opacity: 1;
-        @include transform(none);
-    }
+  0% {
+    opacity: 0;
+    @include transform(translate3d(0px, -100%, 0px));
+  }
+  100% {
+    opacity: 1;
+    @include transform(none);
+  }
 }
 @keyframes fadeInDown {
-    0% {
-        opacity: 0;
-        @include transform(translate3d(0px, -100%, 0px));
-    }
-    100% {
-        opacity: 1;
-        @include transform(none);
-    }
+  0% {
+    opacity: 0;
+    @include transform(translate3d(0px, -100%, 0px));
+  }
+  100% {
+    opacity: 1;
+    @include transform(none);
+  }
 }

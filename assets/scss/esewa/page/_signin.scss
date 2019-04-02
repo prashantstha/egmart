@@ -1,0 +1,71 @@
+.section-sign-in {
+  @include breakpoint(lg) {
+    padding-bottom: rem(150px);
+  }
+  .card-wrapper {
+    border: rem(1px) solid $border-color-light;
+    padding: rem(30px);
+    border-radius: rem(5px);
+    min-height: 100%;
+    h3 {
+      font-size: rem(18px);
+      margin-bottom: rem(10px);
+    }
+    .sub-title {
+      margin-bottom: rem(20px);
+    }
+    .input-group {
+      margin-bottom: rem(20px);
+      .input-group-prepend {
+        .input-group-text {
+          border-radius: rem(4px 0 0 4px);
+        }
+      }
+      .form-control {
+        border-radius: rem(0 4px 4px 0);
+        font-size: rem(14px);
+      }
+      &.has-danger {
+        &:after {
+          display: none;
+        }
+        .invalid-feedback {
+          display: block;
+          font-size: rem(12px);
+        }
+        .input-group-prepend {
+          .input-group-text {
+            color: lighten($danger-color, 30%);
+            border-color: lighten($danger-color, 30%);
+          }
+        }
+        .form-control {
+          border-left: 0;
+          border-color: lighten($danger-color, 30%);
+        }
+      }
+    }
+  }
+  .card-sign-in {
+    .forgot-password-link {
+      margin-top: rem(22px);
+    }
+    .alert {
+      margin-top: rem(0px);
+      margin-bottom: 0;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+// --------------------
+// card-sign-up
+// --------------------
+.card-sign-up {
+  .password-strength {
+    background: $smoke-bg;
+    font-size: rem(12px);
+    width: 100%;
+    padding: rem(5px 10px);
+  }
+}

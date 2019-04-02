@@ -1,0 +1,81 @@
+.mobile-toolbar {
+  .btn.filter-btn {
+    background: $white-color;
+    border-color: $border-color-light;
+    color: $gray;
+    font-weight: $font-weight-normal;
+    margin: 0;
+    &.active,
+    &:hover,
+    &:focus {
+      background-color: $brand-primary !important;
+      border-color: $button-border-color;
+      color: $text-color-dark !important;
+    }
+  }
+}
+.toolbar {
+  padding-bottom: rem(20px);
+  @include breakpoint(md) {
+    border-bottom: rem(1px) solid $border-color-light;
+  }
+  &.toolbar-bottom {
+    margin-top: rem(30px);
+    padding-top: rem(20px);
+    border-top: rem(1px) solid $border-color-light;
+  }
+  .toolbar-item {
+    margin-right: rem(20px);
+    &:last-child {
+      margin-right: 0;
+    }
+    .form-group {
+      margin-bottom: 0;
+      label {
+        margin-bottom: 0;
+      }
+      .nice-select {
+        float: none;
+        margin-bottom: 0;
+        margin-left: rem(10px);
+        display: inline-block;
+        vertical-align: middle;
+        height: rem(34px);
+        line-height: rem(32px);
+      }
+    }
+  }
+  .toolbar-sorter {}
+  .pagination-wrapper {
+    @include justify-self(flex-end);
+    margin-left: auto;
+    .pagination {
+      @include ul;
+    }
+  }
+}
+// -------------------
+// sidebar
+// -------------------
+.block-title {
+  margin-bottom: 0;
+  padding: rem(15px 0);
+}
+.block-content {
+  padding: rem(15px 0);
+}
+.block-filter {
+  border: rem(1px) solid $border-color-light;
+  display: none;
+  @include breakpoint(md) {
+    display: block;
+  }
+  .block-title {
+    padding: rem(15px);
+    border-bottom: rem(1px) solid $border-color-light;
+  }
+  .block-content {
+    padding: 0
+  }
+}
+.filter-option {}

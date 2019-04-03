@@ -24,6 +24,9 @@
       .form-control {
         border-radius: rem(0 4px 4px 0);
         font-size: rem(14px);
+        &[type="password"] {
+          border-left: 0px;
+        }
       }
       &.has-danger {
         &:after {

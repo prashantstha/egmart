@@ -77,8 +77,12 @@ $(document).ready(function() {
     $(window).scroll(function() {
         var sticky = $('.header-content'),
             scroll = $(window).scrollTop();
-        if (scroll >= 100) sticky.addClass('sticky-header');
-        else sticky.removeClass('sticky-header');
+        if (scroll >= 100) {
+            sticky.addClass('sticky-header');
+            $('.vertical-menu .menu-title').next().slideUp(500);
+        } else {
+            sticky.removeClass('sticky-header');
+        }
     });
     // ----------------------------
     // Header icon and mini cart Toggle

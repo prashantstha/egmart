@@ -148,7 +148,7 @@
             line-height: rem(50px);
             border-radius: 0px;
             @include breakpoint(xl) {
-              top: 35%;
+              top: 20%;
             }
             &:hover {
               background: $brand-primary;

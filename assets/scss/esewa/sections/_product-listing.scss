@@ -177,8 +177,9 @@
         position: relative;
         .product-action {
           position: absolute;
-          left: 0;
+          left: -10px;
           bottom: 0;
+          @include transitions(all 0.35s);
           .btn {
             margin: 0;
             width: rem(37px);
@@ -188,19 +189,19 @@
             line-height: rem(35px);
             opacity: 0;
             visibility: hidden;
+            border-radius: 100%;
             @include transitions(all 0.5s ease);
             .btn-tooltip {
               position: absolute;
               min-width: rem(72px);
               font-size: rem(12px);
               background: $black-bg;
-              border-radius: rem(3px);
               color: $white-color;
-              padding: rem(3px 5px);
+              padding: rem(5px);
               line-height: rem(16px);
               font-weight: $font-weight-normal;
-              top: - rem(35px);
-              left: - rem(90px);
+              @include y_center;
+              right: - rem(70px);
               opacity: 0;
               visibility: hidden;
               @include transitions(all 0.5s ease);
@@ -208,21 +209,21 @@
                 content: '';
                 width: 0;
                 height: 0;
-                border-left: 5px solid transparent;
-                border-right: 5px solid transparent;
-                border-top: 5px solid $black-bg;
-                @include x_center();
-                bottom: - rem(5px);
+                border-top: 5px solid transparent;
+                border-bottom: 5px solid transparent;
+                border-right: 5px solid $black-bg;
+                @include y_center();
+                left: - rem(5px);
               }
             }
             &:hover {
               border-color: $button-border-color !important;
               background: $brand-primary;
-              color: $black-color !important;
+              color: $white-color !important;
               .btn-tooltip {
                 opacity: 1;
                 visibility: visible;
-                @include x_center();
+                right: - rem(80px);
               }
             }
           }
@@ -335,6 +336,7 @@
       &:hover {
         .product-image {
           .product-action {
+            left: 10px;
             .btn {
               opacity: 1;
               visibility: visible;

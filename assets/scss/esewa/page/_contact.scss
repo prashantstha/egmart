@@ -1,0 +1,40 @@
+.section-contact-us {
+  .title {
+    padding-top: 0;
+  }
+}
+.contact-items {
+  @include breakpoint(lg) {
+    padding-right: rem(50px);
+  }
+  ul {
+    @include ul;
+    list-style: none;
+    li {
+      margin-bottom: rem(15px);
+      @include flexbox;
+      @include flex-wrap(wrap);
+      .icon-wrap {
+        width: rem(30px);
+        margin-right: rem(10px);
+        font-size: rem(20px);
+      }
+      .contact-item-content {
+        @include calc(widht, '100% - 40px');
+        .item-title {
+          font-weight: $font-weight-semi;
+        }
+      }
+    }
+  }
+}
+.contact-form {
+  .form-control {
+    font-size: rem(14px);
+  }
+  .textarea-container {
+    .form-control {
+      border: none;
+    }
+  }
+}

@@ -17,6 +17,7 @@
 .rating-stars .btn.btnrating.btn-warning .navbar .vertical-menu .v-megemenu-content .level1 > li.hasChild .full-width .v-mega-content .level2 > li.hasChild > a:after,
 .navbar .vertical-menu .v-megemenu-content .level1 > li.hasChild .full-width .v-mega-content .rating-stars .btn.btnrating.btn-warning .level2 > li.hasChild > a:after,
 .far,
+.accordion .card .card-header .btn:after,
 .footer-widget .widget-title:after,
 ul.accordion > li a.accordion-title:after,
 .cart-summary .grand-total .block-title:after,
@@ -116,6 +117,7 @@ ul.accordion > li a.accordion-title:after,
 .rating-stars .btn.btnrating.btn-warning .navbar .vertical-menu .v-megemenu-content .level1 > li.hasChild .full-width .v-mega-content .level2 > li.hasChild > a.fa-pull-left:after,
 .navbar .vertical-menu .v-megemenu-content .level1 > li.hasChild .full-width .v-mega-content .rating-stars .btn.btnrating.btn-warning .level2 > li.hasChild > a.fa-pull-left:after,
 .far.fa-pull-left,
+.accordion .card .card-header .fa-pull-left.btn:after,
 .footer-widget .fa-pull-left.widget-title:after,
 ul.accordion > li a.fa-pull-left.accordion-title:after,
 .cart-summary .grand-total .fa-pull-left.block-title:after,
@@ -139,6 +141,7 @@ ul.accordion > li a.fa-pull-left.accordion-title:after,
 .rating-stars .btn.btnrating.btn-warning .navbar .vertical-menu .v-megemenu-content .level1 > li.hasChild .full-width .v-mega-content .level2 > li.hasChild > a.fa-pull-right:after,
 .navbar .vertical-menu .v-megemenu-content .level1 > li.hasChild .full-width .v-mega-content .rating-stars .btn.btnrating.btn-warning .level2 > li.hasChild > a.fa-pull-right:after,
 .far.fa-pull-right,
+.accordion .card .card-header .fa-pull-right.btn:after,
 .footer-widget .fa-pull-right.widget-title:after,
 ul.accordion > li a.fa-pull-right.accordion-title:after,
 .cart-summary .grand-total .fa-pull-right.block-title:after,
@@ -4716,6 +4719,7 @@ readers do not read off random characters that represent icons */
 
 
 .far,
+.accordion .card .card-header .btn:after,
 .footer-widget .widget-title:after,
 ul.accordion > li a.accordion-title:after,
 .cart-summary .grand-total .block-title:after {
@@ -9057,6 +9061,8 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     background: #222222;
     color: #FFFFFF !important;
     border-color: #6f6f6f !important; }
+  .btn-primary.btn-simple:hover, .btn-primary.btn-simple:focus {
+    color: #222222 !important; }
 
 .btn-success {
   background-color: #18ce0f;
@@ -11314,6 +11320,34 @@ img {
       margin-bottom: 0;
       box-shadow: 0px 5px 50px 0px rgba(0, 0, 0, 0.2); }
 
+.accordion {
+  margin-top: 3.125rem; }
+  .accordion .card {
+    box-shadow: none;
+    border: 1px solid #dfdfdf !important;
+    margin-bottom: 1.25rem;
+    border-radius: 0.1875rem !important; }
+    .accordion .card .card-header .btn {
+      margin: 0;
+      width: 100%;
+      text-align: left;
+      padding: 0.9375rem;
+      font-weight: 400;
+      color: #222222;
+      position: relative; }
+      .accordion .card .card-header .btn:after {
+        content: '\f106';
+        right: 0.9375rem;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        font-size: 1.25rem; }
+      .accordion .card .card-header .btn.collapsed:after {
+        content: '\f107'; }
+
 .section {
   padding: 70px 0;
   position: relative;
@@ -13008,6 +13042,36 @@ ul.accordion {
       width: auto; } }
   .btn-groups .btn.continue-shop {
     color: #222222; }
+
+.section-contact-us .title {
+  padding-top: 0; }
+
+@media (min-width: 992px) {
+  .contact-items {
+    padding-right: 3.125rem; } }
+
+.contact-items ul {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+  .contact-items ul li {
+    margin-bottom: 0.9375rem;
+    display: flex;
+    flex-wrap: wrap; }
+    .contact-items ul li .icon-wrap {
+      width: 1.875rem;
+      margin-right: 0.625rem;
+      font-size: 1.25rem; }
+    .contact-items ul li .contact-item-content {
+      widht: calc(100% - 40px); }
+      .contact-items ul li .contact-item-content .item-title {
+        font-weight: 600; }
+
+.contact-form .form-control {
+  font-size: 0.875rem; }
+
+.contact-form .textarea-container .form-control {
+  border: none; }
 
 @media screen and (max-width: 991px) {
   .sidebar-collapse .navbar-collapse {

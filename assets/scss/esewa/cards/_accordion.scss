@@ -1,0 +1,32 @@
+.accordion {
+  margin-top: rem(50px);
+  .card {
+    box-shadow: none;
+    border: 1px solid $border-color-light !important;
+    margin-bottom: rem(20px);
+    border-radius: rem(3px) !important;
+    .card-header {
+      .btn {
+        margin: 0;
+        width: 100%;
+        text-align: left;
+        padding: rem(15px);
+        font-weight: $font-weight-normal;
+        color: $text-color-dark;
+        position: relative;
+        &:after {
+          content: '\f106';
+          @extend .far;
+          right: rem(15px);
+          @include y_center;
+          font-size: rem(20px);
+        }
+        &.collapsed {
+          &:after {
+            content: '\f107';
+          }
+        }
+      }
+    }
+  }
+}

@@ -80,6 +80,12 @@
     color: $white-color !important;
     border-color: lighten($black-bg, 30%) !important;
   }
+  &.btn-simple {
+    &:hover,
+    &:focus {
+      color: $black-bg !important;
+    }
+  }
 }
 .btn-success {
   @include btn-styles($success-color, $success-states-color);

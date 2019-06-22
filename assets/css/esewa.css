@@ -9058,9 +9058,9 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
       text-decoration: none;
       box-shadow: none; }
   .btn-primary:hover, .btn-primary:focus {
-    background: #222222;
+    background: #76bb1e;
     color: #FFFFFF !important;
-    border-color: #6f6f6f !important; }
+    border-color: #76bb1e !important; }
   .btn-primary.btn-simple:hover, .btn-primary.btn-simple:focus {
     color: #222222 !important; }
 
@@ -11349,6 +11349,9 @@ img {
         font-size: 1.125rem; }
       .accordion .card .card-header .btn.collapsed:after {
         content: '\f107'; }
+    .accordion .card .card-body {
+      font-weight: 300;
+      line-height: 1.6875rem; }
 
 .section {
   padding: 70px 0;
@@ -11902,10 +11905,6 @@ img {
     .home-collection .collection-inner .img-wrapper:hover img {
       -webkit-transform: scale(1.1);
       transform: scale(1.1); }
-
-@media (min-width: 992px) {
-  .section-product-listing {
-    padding: 0 15px; } }
 
 .product-listing-block {
   margin-top: 1.25rem;
@@ -13039,6 +13038,17 @@ ul.accordion {
     border-bottom: 0.0625rem solid #dfdfdf; }
   .block-filter .block-content {
     padding: 0; }
+
+.price-filter .form-group {
+  width: calc(50% - 15px); }
+  .price-filter .form-group label {
+    width: 100%; }
+  .price-filter .form-group .form-control {
+    width: 100%; }
+
+.price-filter .seperator {
+  width: 1.875rem;
+  text-align: center; }
 
 .table-responsive .table {
   width: 68.75rem; }

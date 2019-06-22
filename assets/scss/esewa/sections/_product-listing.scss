@@ -1,8 +1,4 @@
-.section-product-listing {
-  @include breakpoint(lg) {
-    padding: 0 15px;
-  }
-}
+.section-product-listing {}
 .product-listing-block {
   margin-top: rem(20px);
   background: $white-bg;

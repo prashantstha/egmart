@@ -30,5 +30,9 @@
         }
       }
     }
+    .card-body {
+      font-weight: $font-weight-light;
+      line-height: rem(27px);
+    }
   }
 }

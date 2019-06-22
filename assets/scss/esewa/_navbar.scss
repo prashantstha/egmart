@@ -1,6 +1,6 @@
 .navbar {
   padding: 0;
-  background: $green-bg;
+  background: darken($green-bg, 7);
   a {
     vertical-align: middle;
     color: $white-color;

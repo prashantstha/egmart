@@ -79,3 +79,18 @@
   }
 }
 .filter-option {}
+.price-filter {
+  .form-group {
+    @include calc(width, '50% - 15px');
+    label {
+      width: 100%;
+    }
+    .form-control {
+      width: 100%;
+    }
+  }
+  .seperator {
+    width: rem(30px);
+    text-align: center;
+  }
+}

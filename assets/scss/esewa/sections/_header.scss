@@ -134,7 +134,7 @@
     // Header Logo
     // -----------------------
     .logo {
-      max-width: rem(160px);
+      max-width: rem(120px);
       display: inline-block;
       vertical-align: middle;
       @include breakpoint(lg) {
@@ -221,8 +221,21 @@
         color: $black-color;
         margin-right: 10px;
         position: relative;
+        display: none;
+        @include breakpoint(md) {
+          display: inline-block;
+        }
+        &.mini-cart {
+          display: inline-block;
+        }
         &:last-child {
           margin-right: 0;
+        }
+        a {
+          color: $black-color;
+          &:hover {
+            color: $brand-primary;
+          }
         }
         .icon-wrap {
           font-size: rem(18px);

@@ -14,12 +14,14 @@
         font-weight: $font-weight-normal;
         color: $text-color-dark;
         position: relative;
+        font-size: rem(18px);
+        font-weight: bold;
         &:after {
           content: '\f106';
           @extend .far;
           right: rem(15px);
           @include y_center;
-          font-size: rem(20px);
+          font-size: rem(18px);
         }
         &.collapsed {
           &:after {
@@ -27,6 +29,10 @@
           }
         }
       }
+    }
+    .card-body {
+      font-weight: $font-weight-light;
+      line-height: rem(27px);
     }
   }
 }

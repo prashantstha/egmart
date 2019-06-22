@@ -1,19 +1,25 @@
 .home-collection {
-	padding: rem(15px);
-	.col-lg-2 {
-		padding: rem(0 5px);
-	}
-	.collection-inner {
-		.img-wrapper {
-			overflow: hidden;
-			img{
-				@include transitions(all 1s ease);
-			}
-			&:hover{
-				img{
-					@include transform(scale(1.1));
-				}
-			}
-		}
-	}
+  padding: rem(15px 0);
+  .col-lg-2 {
+    padding: rem(0 5px);
+  }
+  .owl-carousel .owl-nav button.owl-prev,
+  .owl-carousel .owl-nav button.owl-next {
+    width: rem(30px);
+    height: rem(30px);
+    line-height: rem(30px);
+  }
+  .collection-inner {
+    .img-wrapper {
+      overflow: hidden;
+      img {
+        @include transitions(all 1s ease);
+      }
+      &:hover {
+        img {
+          @include transform(scale(1.1));
+        }
+      }
+    }
+  }
 }

@@ -76,9 +76,9 @@
   color: $white-color;
   &:hover,
   &:focus {
-    background: $black-bg;
+    background: $green-bg;
     color: $white-color !important;
-    border-color: lighten($black-bg, 30%) !important;
+    border-color: $green-bg !important;
   }
   &.btn-simple {
     &:hover,

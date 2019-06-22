@@ -79,9 +79,9 @@ $(document).ready(function() {
             scroll = $(window).scrollTop();
         if (scroll >= 100) {
             sticky.addClass('sticky-header');
-            if ($(window).width() >= 992) {
-                $('.vertical-menu .menu-title').next().slideUp(500);
-            }
+            // if ($(window).width() >= 992) {
+            //     $('.vertical-menu .menu-title').next().slideUp(500);
+            // }
         } else {
             sticky.removeClass('sticky-header');
         }
@@ -89,9 +89,9 @@ $(document).ready(function() {
     // ----------------------------
     // Header icon and mini cart Toggle
     // ----------------------------
-    $('.header-icons ul li.account').click(function() {
-        $(this).parent().parent().find('.toggle-content.account').toggle();
-    });
+    // $('.header-icons ul li.account').click(function() {
+    //     $(this).parent().parent().find('.toggle-content.account').toggle();
+    // });
     $('.header-icons ul li.mini-cart').click(function() {
         $(this).parent().parent().find('.toggle-content.mini-cart-content').toggle();
     });
@@ -120,6 +120,31 @@ $(document).ready(function() {
         navText: ['<i class="fal fa-angle-left"></i>', '<i class="fal fa-angle-right"></i>'],
         items: 1
     });
+    // ----------------------------
+    // Home collection
+    // ----------------------------
+    if ($(".home-collection-items").length) {
+        $('.home-collection-items').owlCarousel({
+            loop: false,
+            autoplay: false,
+            margin: 30,
+            nav: true,
+            dots: false,
+            autoplayHoverPause: true,
+            navText: ['<i class="fal fa-angle-left"></i>', '<i class="fal fa-angle-right"></i>'],
+            responsive: {
+                0: {
+                    items: 2
+                },
+                768: {
+                    items: 3,
+                },
+                1024: {
+                    items: 6,
+                }
+            }
+        });
+    }
     // ----------------------------
     // Steal Deals
     // ----------------------------
@@ -396,9 +421,11 @@ $(window).resize(function() {
 // -------------------------
 // Sub menu toggle
 // -------------------------
-$(".vertical-menu .menu-title").click(function() {
-    $(this).next().slideToggle("slow");
-});
+// $(".vertical-menu .menu-title").hover(function() {
+//     $(this).next().slideDown("slow");
+// }, function() {
+//     $(this).next().slideUp("slow");
+// });
 menuToggle();
 $(window).resize(function() {
     menuToggle();

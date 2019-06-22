@@ -34,7 +34,17 @@
   }
   .textarea-container {
     .form-control {
-      border: none;
+      padding-left: rem(20px);
+      padding-right: rem(20px);
+      height: rem(150px);
+      max-height: rem(150px);
+    }
+  }
+  .send-button {
+    text-align: center;
+    .btn {
+      margin-top: rem(20px);
+      display: inline-block;
     }
   }
 }

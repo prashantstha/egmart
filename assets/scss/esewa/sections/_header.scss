@@ -28,7 +28,75 @@
         border-radius: 100%;
       }
     }
-  }
+  } // top header
+  .top-header {
+    background-color: $black-bg;
+    padding: rem(5px 0 5px 0);
+    color: $white-color;
+    a {
+      color: $white-color;
+    }
+    ul {
+      @include ul;
+      list-style: none;
+      &>li {
+        display: inline-block;
+        border-right: rem(1px) solid rgba($border-color-light, 0.5);
+        padding: rem(0 7px);
+        line-height: 1;
+        cursor: pointer;
+        @include breakpoint(lg) {
+          padding: rem(0 15px);
+        }
+        i {
+          font-size: rem(20px);
+          display: inline-block;
+          vertical-align: middle;
+          margin-left: rem(10px);
+        }
+        &:last-child {
+          border-right: 0;
+        }
+      }
+      &>li.has-dropdown {
+        position: relative;
+        ul {
+          display: none;
+          position: absolute;
+          left: 0;
+          top: 100%;
+          background: $white-color;
+          z-index: 9999;
+          border-radius: rem(5px);
+          padding-bottom: rem(10px);
+          border: rem(1px) solid $brand-primary;
+          li {
+            display: block;
+            color: $black-color;
+            a {
+              color: $black-color;
+              &:hover {
+                color: $brand-primary;
+              }
+            }
+            .form-check-radio .form-check-sign::before,
+            .form-check-radio .form-check-sign::after {
+              border-color: $black-bg;
+            }
+            .form-check-radio input[type="radio"]:checked+.form-check-sign::after {
+              border-color: $brand-primary;
+              background-color: $brand-primary;
+            }
+          }
+        }
+        &:hover {
+          ul {
+            display: block;
+          }
+        }
+      }
+    }
+  } // main header
   .header-content {
     background: $white-bg;
     padding: rem(12px) 0;
@@ -82,34 +150,54 @@
       margin-top: 0;
     }
     .header-search-form {
+      // search dropdown
+      select,
+      .header-search-dropdown {
+        border: rem(2px) solid $brand-primary;
+        border-right: none;
+        border-radius: rem(5px 0 0 5px);
+        background-color: $border-color-light;
+        .list {
+          border: 1px solid $brand-primary;
+        }
+        .option {
+          line-height: rem(25px);
+          min-height: rem(25px);
+          &:hover {
+            background: $brand-primary;
+            color: $white-color;
+          }
+        }
+      }
       .input-group {
         margin-bottom: 0;
         .form-control {
           background-color: $white-color;
           border: rem(2px) solid $brand-primary;
-          border-right: 1px solid $border-color-light;
-          border-radius: rem(30px 0 0 30px);
+          border-left: none;
+          border-right: none;
+          border-radius: rem(0px 0 0 0px);
         }
         .input-group-append {
-          width: 68px;
+          width: rem(45px);
           text-align: center;
           display: inline-block;
           .input-group-text {
             padding: 0;
             border: rem(2px) solid $brand-primary;
             border-left: 0px;
-            border-radius: rem(0 30px 30px 0);
+            border-radius: rem(0 5px 5px 0);
             .search-action {
               border: none;
               box-shadow: none;
-              background: none;
-              height: rem(37px);
+              background: $brand-primary;
+              height: rem(38px);
               width: 100%;
               padding: 0;
               cursor: pointer;
+              color: $white-color;
               &:hover,
               &:focus {
-                color: $brand-primary;
                 outline: none;
                 border: none;
                 box-shadow: none;

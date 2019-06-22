@@ -79,7 +79,9 @@ $(document).ready(function() {
             scroll = $(window).scrollTop();
         if (scroll >= 100) {
             sticky.addClass('sticky-header');
-            $('.vertical-menu .menu-title').next().slideUp(500);
+            if ($(window).width() >= 992) {
+                $('.vertical-menu .menu-title').next().slideUp(500);
+            }
         } else {
             sticky.removeClass('sticky-header');
         }
@@ -358,29 +360,6 @@ $(document).on('click', '.nav-toggle', function() {
         $('.nav-toggle .fal').removeClass('fa-times');
         $('#bodyClick').remove();
     });
-    // if (esewa.misc.navbar_menu_visible == 1) {
-    //     $('html').removeClass('nav-open');
-    //     esewa.misc.navbar_menu_visible = 0;
-    //     $('#bodyClick').remove();
-    //     setTimeout(function() {
-    //         $toggle.removeClass('toggled');
-    //     }, 550);
-    // } else {
-    //     setTimeout(function() {
-    //         $toggle.addClass('toggled');
-    //     }, 580);
-    //     div = '<div id="bodyClick"></div>';
-    //     $(div).appendTo('body').click(function() {
-    //         $('html').removeClass('nav-open');
-    //         esewa.misc.navbar_menu_visible = 0;
-    //         setTimeout(function() {
-    //             $toggle.removeClass('toggled');
-    //             $('#bodyClick').remove();
-    //         }, 550);
-    //     });
-    //     $('html').addClass('nav-open');
-    //     esewa.misc.navbar_menu_visible = 1;
-    // }
 });
 esewa = {
     misc: {

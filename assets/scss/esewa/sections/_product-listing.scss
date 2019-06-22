@@ -128,9 +128,16 @@
           display: inline-block;
           vertical-align: middle;
           a {
-            font-size: rem(14px);
+            text-transform: uppercase;
+            font-size: rem(11px);
+            line-height: 25px;
             color: $text-color-dark;
             font-weight: $font-weight-bold;
+            i.fas {
+              font-size: rem(18px);
+              display: inline-block;
+              vertical-align: middle;
+            }
           }
         }
       }
@@ -397,7 +404,7 @@
     // padding: rem(20px 50px);
   }
   .product-listing-block {
-    padding: rem(20px);
+    padding: rem(20px 0);
     margin-top: rem(20px);
   }
 }

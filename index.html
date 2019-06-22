@@ -105,7 +105,7 @@
 <div class="container">
 <div class="row align-items-center">
 <!-- Logo Start -->
-<div class="col-9 col-sm-6 col-lg-3 order-1">
+<div class="col-9 col-sm-6 col-lg-2 col-xl-3 order-1">
 <div class="action nav-toggle d-lg-none">
 <i class="fal fa-bars">
 </i>
@@ -157,22 +157,18 @@
 </div>
 <!-- Header Search Box End -->
 <!-- Header Icons and Mini Cart Start -->
-<div class="col-3 col-sm-6 col-lg-3 order-2 order-lg-3">
+<div class="col-3 col-sm-6 col-lg-4 col-xl-3 order-2 order-lg-3">
 <div class="header-icons content-cart">
 <ul>
-<li class="account">
-  <div class="icon-wrap">
-    <i class="fal fa-user">
-    </i>
-  </div>
-  <div class="header-icon-item-content">
-    <div class="title">
-      Account
-    </div>
-    <div class="sub-title">
-      Sign in
-    </div>
-  </div>
+<li>
+  <a href="sign-in.html">
+    <i class="fal fa-sign-in"></i> Sign In
+  </a>
+</li>
+<li>
+  <a href="create-account.html">
+    <i class="fal fa-user-plus"></i> Register
+  </a>
 </li>
 <li class="mini-cart">
   <div class="icon-wrap">
@@ -192,21 +188,6 @@
   </div>
 </li>
 </ul>
-<!-- Toogle content account -->
-<div class="toggle-content account">
-<ul class="header-icon-links">
-  <li class="signin">
-    <a class="btn btn-primary" href="sign-in.html">
-      Sign In
-    </a>
-  </li>
-  <li class="register">
-    <a class="" href="create-account.html">
-      Rergister
-    </a>
-  </li>
-</ul>
-</div>
 <!-- Toggle Content Mini Cart -->
 <div class="toggle-content mini-cart-content">
 <div class="close-mini-cart">
@@ -1202,6 +1183,17 @@ Holi Special
 </a>
 </li>
 </ul>
+<ul class="navbar-nav d-lg-none">
+<li>
+<a href="sign-in.html">
+<i class="fal fa-sign-in"></i> Sign In
+</a>
+</li>
+<li>
+<a href="create-account.html">
+<i class="fal fa-user-plus"></i> Register
+</a>
+</li></ul>
 </div>
 </div>
 </nav>
@@ -1217,50 +1209,17 @@ Holi Special
 <div class="home-main-banner owl-carousel">
 <div class="banner-content">
 <a href="#">
-<img alt="banner image" class="desktop d-none d-lg-block" src="assets/img/banner1.png"/>
-</a>
-<a href="#">
-<img alt="banner image" class="mobile d-lg-none" src="assets/img/mob-banner1.png"/>
+  <img alt="banner image" src="assets/img/banner1.jpg"/>
 </a>
 </div>
 <div class="banner-content">
 <a href="#">
-<img alt="banner image" class="desktop d-none d-lg-block" src="assets/img/banner2.png"/>
-</a>
-<a href="#">
-<img alt="banner image" class="mobile d-lg-none" src="assets/img/mob-banner2.png"/>
+  <img alt="banner image" src="assets/img/banner2.jpg"/>
 </a>
 </div>
 <div class="banner-content">
 <a href="#">
-<img alt="banner image" class="desktop d-none d-lg-block" src="assets/img/banner3.png"/>
-</a>
-<a href="#">
-<img alt="banner image" class="mobile d-lg-none" src="assets/img/mob-banner3.png"/>
-</a>
-</div>
-<div class="banner-content">
-<a href="#">
-<img alt="banner image" class="desktop d-none d-lg-block" src="assets/img/banner4.png"/>
-</a>
-<a href="#">
-<img alt="banner image" class="mobile d-lg-none" src="assets/img/mob-banner4.png"/>
-</a>
-</div>
-<div class="banner-content">
-<a href="#">
-<img alt="banner image" class="desktop d-none d-lg-block" src="assets/img/banner5.jpg"/>
-</a>
-<a href="#">
-<img alt="banner image" class="mobile d-lg-none" src="assets/img/mob-banner5.jpg"/>
-</a>
-</div>
-<div class="banner-content">
-<a href="#">
-<img alt="banner image" class="desktop d-none d-lg-block" src="assets/img/banner6.png"/>
-</a>
-<a href="#">
-<img alt="banner image" class="mobile d-lg-none" src="assets/img/mob-banner6.png"/>
+  <img alt="banner image" src="assets/img/banner3.jpg"/>
 </a>
 </div>
 </div>
@@ -1270,59 +1229,86 @@ Holi Special
 <!-- Home Collection Start -->
 <div class="section home-collection d-none d-lg-block">
 <div class="container-fluid">
-<div class="row">
-<div class="col-lg-2 collection-item">
+<div class="home-collection-items owl-carousel">
+<div class="collection-item">
 <div class="collection-inner">
-<div class="img-wrapper">
-  <a href="#">
-    <img alt="Esewapasal_sub_banner_bags" src="./assets/img/Esewapasal_sub_banner_bags.jpg"/>
-  </a>
+  <div class="img-wrapper">
+    <a href="#">
+      <img alt="Esewapasal_sub_banner_bags" src="./assets/img/Esewapasal_sub_banner_bags.jpg"/>
+    </a>
+  </div>
 </div>
 </div>
-</div>
-<div class="col-lg-2 collection-item">
+<div class="collection-item">
 <div class="collection-inner">
-<div class="img-wrapper">
-  <a href="#">
-    <img alt="liquor" src="./assets/img/liquor.png"/>
-  </a>
+  <div class="img-wrapper">
+    <a href="#">
+      <img alt="liquor" src="./assets/img/liquor.png"/>
+    </a>
+  </div>
 </div>
 </div>
-</div>
-<div class="col-lg-2 collection-item">
+<div class="collection-item">
 <div class="collection-inner">
-<div class="img-wrapper">
-  <a href="#">
-    <img alt="magic-shoes-sub-banner" src="./assets/img/magic-shoes-sub-banner.png"/>
-  </a>
+  <div class="img-wrapper">
+    <a href="#">
+      <img alt="magic-shoes-sub-banner" src="./assets/img/magic-shoes-sub-banner.png"/>
+    </a>
+  </div>
 </div>
 </div>
-</div>
-<div class="col-lg-2 collection-item">
+<div class="collection-item">
 <div class="collection-inner">
-<div class="img-wrapper">
-  <a href="#">
-    <img alt="lipstick" src="./assets/img/lipstick.png"/>
-  </a>
+  <div class="img-wrapper">
+    <a href="#">
+      <img alt="lipstick" src="./assets/img/lipstick.png"/>
+    </a>
+  </div>
 </div>
 </div>
-</div>
-<div class="col-lg-2 collection-item">
+<div class="collection-item">
 <div class="collection-inner">
-<div class="img-wrapper">
-  <a href="#">
-    <img alt="Esewapasal_sub_banner_bags.jpg" src="./assets/img/cake-sub-banner.jpg"/>
-  </a>
+  <div class="img-wrapper">
+    <a href="#">
+      <img alt="Esewapasal_sub_banner_bags.jpg" src="./assets/img/cake-sub-banner.jpg"/>
+    </a>
+  </div>
 </div>
 </div>
-</div>
-<div class="col-lg-2 collection-item">
+<div class="collection-item">
 <div class="collection-inner">
-<div class="img-wrapper">
-  <a href="#">
-    <img alt="Esewapasal_sub_banner_bags.jpg" src="./assets/img/goldstar_website_sub_banner_finalll.jpg"/>
-  </a>
+  <div class="img-wrapper">
+    <a href="#">
+      <img alt="Esewapasal_sub_banner_bags.jpg" src="./assets/img/goldstar_website_sub_banner_finalll.jpg"/>
+    </a>
+  </div>
 </div>
+</div>
+<div class="collection-item">
+<div class="collection-inner">
+  <div class="img-wrapper">
+    <a href="#">
+      <img alt="Esewapasal_sub_banner_bags.jpg" src="./assets/img/goldstar_website_sub_banner_finalll.jpg"/>
+    </a>
+  </div>
+</div>
+</div>
+<div class="collection-item">
+<div class="collection-inner">
+  <div class="img-wrapper">
+    <a href="#">
+      <img alt="Esewapasal_sub_banner_bags.jpg" src="./assets/img/goldstar_website_sub_banner_finalll.jpg"/>
+    </a>
+  </div>
+</div>
+</div>
+<div class="collection-item">
+<div class="collection-inner">
+  <div class="img-wrapper">
+    <a href="#">
+      <img alt="Esewapasal_sub_banner_bags.jpg" src="./assets/img/goldstar_website_sub_banner_finalll.jpg"/>
+    </a>
+  </div>
 </div>
 </div>
 </div>
@@ -1335,717 +1321,717 @@ Holi Special
 <div class="row">
 <div class="col-12 col-lg-6">
 <div class="product-listing-block steal-deals-products">
-<div class="block-title-tabs">
-  <h4 class="block-title">
-  Steal Deals
-  </h4>
-  <div class="block-action type-1">
-    <a href="#">
-      View All
-      <i class="fas fa-caret-right">
-      </i>
-    </a>
-  </div>
-</div>
-<div class="products-wrapper">
-  <div class="product-slider steal-deals owl-carousel" id="steal-deals">
-    <div class="product-item">
-      <div class="product-inner">
-        <div class="product-image">
-          <a href="product-details.html">
-            <img alt="" src="./assets/img/product1.jpg"/>
-          </a>
-          <div class="product-action action-cart">
-            <button class="btn btn-primary">
-            <i class="fal fa-shopping-bag"></i>
-            <span class="btn-tooltip">
-              Add to cart
-            </span>
-            </button>
-          </div>
-        </div>
-        <div class="product-details">
-          <div class="info-details">
-            <div class="product-price">
-              <span class="final-price">
-                <span class="currancy">
-                  RS.
-                </span>
-                816.00
-              </span>
-              <span class="old-price">
-                <span class="currancy">
-                  Rs.
-                </span>
-                960.00
-              </span>
-            </div>
-          </div>
-          <div class="product-label">
-            <div class="sticker">
-              -35%
-            </div>
-          </div>
-          <h3 class="product-name">
-          <a href="#">
-            How to Be a Bawse by Lilly Singh
-          </a>
-          </h3>
-        </div>
-      </div>
-    </div>
-    <div class="product-item">
-      <div class="product-inner">
-        <div class="product-image">
-          <a href="product-details.html">
-            <img alt="" src="./assets/img/product2.jpeg"/>
-          </a>
-          <div class="product-action action-cart">
-            <button class="btn btn-primary">
-            <i class="fal fa-shopping-bag"></i>
-            <span class="btn-tooltip">
-              Add to cart
-            </span>
-            </button>
-          </div>
-        </div>
-        <div class="product-details">
-          <div class="info-details">
-            <div class="product-price">
-              <span class="final-price">
-                <span class="currancy">
-                  RS.
-                </span>
-                816.00
-              </span>
-              <span class="old-price">
-                <span class="currancy">
-                  Rs.
-                </span>
-                960.00
-              </span>
-            </div>
-          </div>
-          <div class="product-label">
-            <div class="sticker">
-              -35%
-            </div>
-          </div>
-          <h3 class="product-name">
-          <a href="#">
-            How to Be a Bawse by Lilly Singh
-          </a>
-          </h3>
-        </div>
-      </div>
-    </div>
-    <div class="product-item">
-      <div class="product-inner">
-        <div class="product-image">
-          <a href="product-details.html">
-            <img alt="" src="./assets/img/product3.jpg"/>
-          </a>
-          <div class="product-action action-cart">
-            <button class="btn btn-primary">
-            <i class="fal fa-shopping-bag"></i>
-            <span class="btn-tooltip">
-              Add to cart
-            </span>
-            </button>
-          </div>
-        </div>
-        <div class="product-details">
-          <div class="info-details">
-            <div class="product-price">
-              <span class="final-price">
-                <span class="currancy">
-                  RS.
-                </span>
-                816.00
-              </span>
-              <span class="old-price">
-                <span class="currancy">
-                  Rs.
-                </span>
-                960.00
-              </span>
-            </div>
-          </div>
-          <div class="product-label">
-            <div class="sticker">
-              -35%
-            </div>
-          </div>
-          <h3 class="product-name">
-          <a href="#">
-            How to Be a Bawse by Lilly Singh
-          </a>
-          </h3>
-        </div>
-      </div>
-    </div>
-    <div class="product-item">
-      <div class="product-inner">
-        <div class="product-image">
-          <a href="product-details.html">
-            <img alt="" src="./assets/img/product4.jpg"/>
-          </a>
-          <div class="product-action action-cart">
-            <button class="btn btn-primary">
-            <i class="fal fa-shopping-bag"></i>
-            <span class="btn-tooltip">
-              Add to cart
-            </span>
-            </button>
-          </div>
-        </div>
-        <div class="product-details">
-          <div class="info-details">
-            <div class="product-price">
-              <span class="final-price">
-                <span class="currancy">
-                  RS.
-                </span>
-                816.00
-              </span>
-              <span class="old-price">
-                <span class="currancy">
-                  Rs.
-                </span>
-                960.00
-              </span>
-            </div>
-          </div>
-          <div class="product-label">
-            <div class="sticker">
-              -35%
-            </div>
-          </div>
-          <h3 class="product-name">
-          <a href="#">
-            How to Be a Bawse by Lilly Singh
-          </a>
-          </h3>
-        </div>
-      </div>
-    </div>
-    <div class="product-item">
-      <div class="product-inner">
-        <div class="product-image">
-          <a href="product-details.html">
-            <img alt="" src="./assets/img/product5.jpg"/>
-          </a>
-          <div class="product-action action-cart">
-            <button class="btn btn-primary">
-            <i class="fal fa-shopping-bag"></i>
-            <span class="btn-tooltip">
-              Add to cart
-            </span>
-            </button>
-          </div>
-        </div>
-        <div class="product-details">
-          <div class="info-details">
-            <div class="product-price">
-              <span class="final-price">
-                <span class="currancy">
-                  RS.
-                </span>
-                816.00
-              </span>
-              <span class="old-price">
-                <span class="currancy">
-                  Rs.
-                </span>
-                960.00
-              </span>
-            </div>
-          </div>
-          <div class="product-label">
-            <div class="sticker">
-              -35%
-            </div>
-          </div>
-          <h3 class="product-name">
-          <a href="#">
-            How to Be a Bawse by Lilly Singh
-          </a>
-          </h3>
-        </div>
-      </div>
-    </div>
-    <div class="product-item">
-      <div class="product-inner">
-        <div class="product-image">
-          <a href="product-details.html">
-            <img alt="" src="./assets/img/product6.jpg"/>
-          </a>
-          <div class="product-action action-cart">
-            <button class="btn btn-primary">
-            <i class="fal fa-shopping-bag"></i>
-            <span class="btn-tooltip">
-              Add to cart
-            </span>
-            </button>
-          </div>
-        </div>
-        <div class="product-details">
-          <div class="info-details">
-            <div class="product-price">
-              <span class="final-price">
-                <span class="currancy">
-                  RS.
-                </span>
-                816.00
-              </span>
-              <span class="old-price">
-                <span class="currancy">
-                  Rs.
-                </span>
-                960.00
-              </span>
-            </div>
-          </div>
-          <div class="product-label">
-            <div class="sticker">
-              -35%
-            </div>
-          </div>
-          <h3 class="product-name">
-          <a href="#">
-            How to Be a Bawse by Lilly Singh
-          </a>
-          </h3>
-        </div>
-      </div>
-    </div>
-    <div class="product-item">
-      <div class="product-inner">
-        <div class="product-image">
-          <a href="product-details.html">
-            <img alt="" src="./assets/img/product7.jpg"/>
-          </a>
-          <div class="product-action action-cart">
-            <button class="btn btn-primary">
-            <i class="fal fa-shopping-bag"></i>
-            <span class="btn-tooltip">
-              Add to cart
-            </span>
-            </button>
-          </div>
-        </div>
-        <div class="product-details">
-          <div class="info-details">
-            <div class="product-price">
-              <span class="final-price">
-                <span class="currancy">
-                  RS.
-                </span>
-                816.00
-              </span>
-              <span class="old-price">
-                <span class="currancy">
-                  Rs.
-                </span>
-                960.00
-              </span>
-            </div>
-          </div>
-          <div class="product-label">
-            <div class="sticker">
-              -35%
-            </div>
-          </div>
-          <h3 class="product-name">
-          <a href="#">
-            How to Be a Bawse by Lilly Singh
-          </a>
-          </h3>
-        </div>
-      </div>
+  <div class="block-title-tabs">
+    <h4 class="block-title">
+    Steal Deals
+    </h4>
+    <div class="block-action type-1">
+      <a href="#">
+        View All
+        <i class="fas fa-caret-right">
+        </i>
+      </a>
     </div>
   </div>
-</div>
+  <div class="products-wrapper">
+    <div class="product-slider steal-deals owl-carousel" id="steal-deals">
+      <div class="product-item">
+        <div class="product-inner">
+          <div class="product-image">
+            <a href="product-details.html">
+              <img alt="" src="./assets/img/product1.jpg"/>
+            </a>
+            <div class="product-action action-cart">
+              <button class="btn btn-primary">
+              <i class="fal fa-shopping-bag"></i>
+              <span class="btn-tooltip">
+                Add to cart
+              </span>
+              </button>
+            </div>
+          </div>
+          <div class="product-details">
+            <div class="info-details">
+              <div class="product-price">
+                <span class="final-price">
+                  <span class="currancy">
+                    RS.
+                  </span>
+                  816.00
+                </span>
+                <span class="old-price">
+                  <span class="currancy">
+                    Rs.
+                  </span>
+                  960.00
+                </span>
+              </div>
+            </div>
+            <div class="product-label">
+              <div class="sticker">
+                -35%
+              </div>
+            </div>
+            <h3 class="product-name">
+            <a href="#">
+              How to Be a Bawse by Lilly Singh
+            </a>
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="product-item">
+        <div class="product-inner">
+          <div class="product-image">
+            <a href="product-details.html">
+              <img alt="" src="./assets/img/product2.jpeg"/>
+            </a>
+            <div class="product-action action-cart">
+              <button class="btn btn-primary">
+              <i class="fal fa-shopping-bag"></i>
+              <span class="btn-tooltip">
+                Add to cart
+              </span>
+              </button>
+            </div>
+          </div>
+          <div class="product-details">
+            <div class="info-details">
+              <div class="product-price">
+                <span class="final-price">
+                  <span class="currancy">
+                    RS.
+                  </span>
+                  816.00
+                </span>
+                <span class="old-price">
+                  <span class="currancy">
+                    Rs.
+                  </span>
+                  960.00
+                </span>
+              </div>
+            </div>
+            <div class="product-label">
+              <div class="sticker">
+                -35%
+              </div>
+            </div>
+            <h3 class="product-name">
+            <a href="#">
+              How to Be a Bawse by Lilly Singh
+            </a>
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="product-item">
+        <div class="product-inner">
+          <div class="product-image">
+            <a href="product-details.html">
+              <img alt="" src="./assets/img/product3.jpg"/>
+            </a>
+            <div class="product-action action-cart">
+              <button class="btn btn-primary">
+              <i class="fal fa-shopping-bag"></i>
+              <span class="btn-tooltip">
+                Add to cart
+              </span>
+              </button>
+            </div>
+          </div>
+          <div class="product-details">
+            <div class="info-details">
+              <div class="product-price">
+                <span class="final-price">
+                  <span class="currancy">
+                    RS.
+                  </span>
+                  816.00
+                </span>
+                <span class="old-price">
+                  <span class="currancy">
+                    Rs.
+                  </span>
+                  960.00
+                </span>
+              </div>
+            </div>
+            <div class="product-label">
+              <div class="sticker">
+                -35%
+              </div>
+            </div>
+            <h3 class="product-name">
+            <a href="#">
+              How to Be a Bawse by Lilly Singh
+            </a>
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="product-item">
+        <div class="product-inner">
+          <div class="product-image">
+            <a href="product-details.html">
+              <img alt="" src="./assets/img/product4.jpg"/>
+            </a>
+            <div class="product-action action-cart">
+              <button class="btn btn-primary">
+              <i class="fal fa-shopping-bag"></i>
+              <span class="btn-tooltip">
+                Add to cart
+              </span>
+              </button>
+            </div>
+          </div>
+          <div class="product-details">
+            <div class="info-details">
+              <div class="product-price">
+                <span class="final-price">
+                  <span class="currancy">
+                    RS.
+                  </span>
+                  816.00
+                </span>
+                <span class="old-price">
+                  <span class="currancy">
+                    Rs.
+                  </span>
+                  960.00
+                </span>
+              </div>
+            </div>
+            <div class="product-label">
+              <div class="sticker">
+                -35%
+              </div>
+            </div>
+            <h3 class="product-name">
+            <a href="#">
+              How to Be a Bawse by Lilly Singh
+            </a>
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="product-item">
+        <div class="product-inner">
+          <div class="product-image">
+            <a href="product-details.html">
+              <img alt="" src="./assets/img/product5.jpg"/>
+            </a>
+            <div class="product-action action-cart">
+              <button class="btn btn-primary">
+              <i class="fal fa-shopping-bag"></i>
+              <span class="btn-tooltip">
+                Add to cart
+              </span>
+              </button>
+            </div>
+          </div>
+          <div class="product-details">
+            <div class="info-details">
+              <div class="product-price">
+                <span class="final-price">
+                  <span class="currancy">
+                    RS.
+                  </span>
+                  816.00
+                </span>
+                <span class="old-price">
+                  <span class="currancy">
+                    Rs.
+                  </span>
+                  960.00
+                </span>
+              </div>
+            </div>
+            <div class="product-label">
+              <div class="sticker">
+                -35%
+              </div>
+            </div>
+            <h3 class="product-name">
+            <a href="#">
+              How to Be a Bawse by Lilly Singh
+            </a>
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="product-item">
+        <div class="product-inner">
+          <div class="product-image">
+            <a href="product-details.html">
+              <img alt="" src="./assets/img/product6.jpg"/>
+            </a>
+            <div class="product-action action-cart">
+              <button class="btn btn-primary">
+              <i class="fal fa-shopping-bag"></i>
+              <span class="btn-tooltip">
+                Add to cart
+              </span>
+              </button>
+            </div>
+          </div>
+          <div class="product-details">
+            <div class="info-details">
+              <div class="product-price">
+                <span class="final-price">
+                  <span class="currancy">
+                    RS.
+                  </span>
+                  816.00
+                </span>
+                <span class="old-price">
+                  <span class="currancy">
+                    Rs.
+                  </span>
+                  960.00
+                </span>
+              </div>
+            </div>
+            <div class="product-label">
+              <div class="sticker">
+                -35%
+              </div>
+            </div>
+            <h3 class="product-name">
+            <a href="#">
+              How to Be a Bawse by Lilly Singh
+            </a>
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="product-item">
+        <div class="product-inner">
+          <div class="product-image">
+            <a href="product-details.html">
+              <img alt="" src="./assets/img/product7.jpg"/>
+            </a>
+            <div class="product-action action-cart">
+              <button class="btn btn-primary">
+              <i class="fal fa-shopping-bag"></i>
+              <span class="btn-tooltip">
+                Add to cart
+              </span>
+              </button>
+            </div>
+          </div>
+          <div class="product-details">
+            <div class="info-details">
+              <div class="product-price">
+                <span class="final-price">
+                  <span class="currancy">
+                    RS.
+                  </span>
+                  816.00
+                </span>
+                <span class="old-price">
+                  <span class="currancy">
+                    Rs.
+                  </span>
+                  960.00
+                </span>
+              </div>
+            </div>
+            <div class="product-label">
+              <div class="sticker">
+                -35%
+              </div>
+            </div>
+            <h3 class="product-name">
+            <a href="#">
+              How to Be a Bawse by Lilly Singh
+            </a>
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 </div>
 <div class="col-12 col-lg-6">
 <div class="product-listing-block featured-products">
-<div class="block-title-tabs">
-  <h4 class="block-title">
-  Featured Products
-  </h4>
-  <div class="block-action type-1">
-    <a href="#">
-      View All
-      <i class="fas fa-caret-right">
-      </i>
-    </a>
-  </div>
-</div>
-<div class="products-wrapper">
-  <div class="product-slider featured owl-carousel" id="featured-products">
-    <div class="product-item">
-      <div class="product-inner">
-        <div class="product-image">
-          <a href="product-details.html">
-            <img alt="" src="./assets/img/product8.jpg"/>
-          </a>
-          <div class="product-action action-cart">
-            <button class="btn btn-primary">
-            <i class="fal fa-shopping-bag"></i>
-            <span class="btn-tooltip">
-              Add to cart
-            </span>
-            </button>
-          </div>
-        </div>
-        <div class="product-details">
-          <div class="info-details">
-            <div class="product-price">
-              <span class="final-price">
-                <span class="currancy">
-                  RS.
-                </span>
-                816.00
-              </span>
-              <span class="old-price">
-                <span class="currancy">
-                  Rs.
-                </span>
-                960.00
-              </span>
-            </div>
-          </div>
-          <div class="product-label">
-            <div class="sticker">
-              -35%
-            </div>
-          </div>
-          <h3 class="product-name">
-          <a href="#">
-            How to Be a Bawse by Lilly Singh
-          </a>
-          </h3>
-        </div>
-      </div>
-    </div>
-    <div class="product-item">
-      <div class="product-inner">
-        <div class="product-image">
-          <a href="product-details.html">
-            <img alt="" src="./assets/img/product9.jpg"/>
-          </a>
-          <div class="product-action action-cart">
-            <button class="btn btn-primary">
-            <i class="fal fa-shopping-bag"></i>
-            <span class="btn-tooltip">
-              Add to cart
-            </span>
-            </button>
-          </div>
-        </div>
-        <div class="product-details">
-          <div class="info-details">
-            <div class="product-price">
-              <span class="final-price">
-                <span class="currancy">
-                  RS.
-                </span>
-                816.00
-              </span>
-              <span class="old-price">
-                <span class="currancy">
-                  Rs.
-                </span>
-                960.00
-              </span>
-            </div>
-          </div>
-          <div class="product-label">
-            <div class="sticker">
-              -35%
-            </div>
-          </div>
-          <h3 class="product-name">
-          <a href="#">
-            How to Be a Bawse by Lilly Singh
-          </a>
-          </h3>
-        </div>
-      </div>
-    </div>
-    <div class="product-item">
-      <div class="product-inner">
-        <div class="product-image">
-          <a href="product-details.html">
-            <img alt="" src="./assets/img/product10.png"/>
-          </a>
-          <div class="product-action action-cart">
-            <button class="btn btn-primary">
-            <i class="fal fa-shopping-bag"></i>
-            <span class="btn-tooltip">
-              Add to cart
-            </span>
-            </button>
-          </div>
-        </div>
-        <div class="product-details">
-          <div class="info-details">
-            <div class="product-price">
-              <span class="final-price">
-                <span class="currancy">
-                  RS.
-                </span>
-                816.00
-              </span>
-              <span class="old-price">
-                <span class="currancy">
-                  Rs.
-                </span>
-                960.00
-              </span>
-            </div>
-          </div>
-          <div class="product-label">
-            <div class="sticker">
-              -35%
-            </div>
-          </div>
-          <h3 class="product-name">
-          <a href="#">
-            How to Be a Bawse by Lilly Singh
-          </a>
-          </h3>
-        </div>
-      </div>
-    </div>
-    <div class="product-item">
-      <div class="product-inner">
-        <div class="product-image">
-          <a href="product-details.html">
-            <img alt="" src="./assets/img/product11.jpg"/>
-          </a>
-          <div class="product-action action-cart">
-            <button class="btn btn-primary">
-            <i class="fal fa-shopping-bag"></i>
-            <span class="btn-tooltip">
-              Add to cart
-            </span>
-            </button>
-          </div>
-        </div>
-        <div class="product-details">
-          <div class="info-details">
-            <div class="product-price">
-              <span class="final-price">
-                <span class="currancy">
-                  RS.
-                </span>
-                816.00
-              </span>
-              <span class="old-price">
-                <span class="currancy">
-                  Rs.
-                </span>
-                960.00
-              </span>
-            </div>
-          </div>
-          <div class="product-label">
-            <div class="sticker">
-              -35%
-            </div>
-          </div>
-          <h3 class="product-name">
-          <a href="#">
-            How to Be a Bawse by Lilly Singh
-          </a>
-          </h3>
-        </div>
-      </div>
-    </div>
-    <div class="product-item">
-      <div class="product-inner">
-        <div class="product-image">
-          <a href="product-details.html">
-            <img alt="" src="./assets/img/product12.jpg"/>
-          </a>
-          <div class="product-action action-cart">
-            <button class="btn btn-primary">
-            <i class="fal fa-shopping-bag"></i>
-            <span class="btn-tooltip">
-              Add to cart
-            </span>
-            </button>
-          </div>
-        </div>
-        <div class="product-details">
-          <div class="info-details">
-            <div class="product-price">
-              <span class="final-price">
-                <span class="currancy">
-                  RS.
-                </span>
-                816.00
-              </span>
-              <span class="old-price">
-                <span class="currancy">
-                  Rs.
-                </span>
-                960.00
-              </span>
-            </div>
-          </div>
-          <div class="product-label">
-            <div class="sticker">
-              -35%
-            </div>
-          </div>
-          <h3 class="product-name">
-          <a href="#">
-            How to Be a Bawse by Lilly Singh
-          </a>
-          </h3>
-        </div>
-      </div>
-    </div>
-    <div class="product-item">
-      <div class="product-inner">
-        <div class="product-image">
-          <a href="product-details.html">
-            <img alt="" src="./assets/img/product13.jpg"/>
-          </a>
-          <div class="product-action action-cart">
-            <button class="btn btn-primary">
-            <i class="fal fa-shopping-bag"></i>
-            <span class="btn-tooltip">
-              Add to cart
-            </span>
-            </button>
-          </div>
-        </div>
-        <div class="product-details">
-          <div class="info-details">
-            <div class="product-price">
-              <span class="final-price">
-                <span class="currancy">
-                  RS.
-                </span>
-                816.00
-              </span>
-              <span class="old-price">
-                <span class="currancy">
-                  Rs.
-                </span>
-                960.00
-              </span>
-            </div>
-          </div>
-          <div class="product-label">
-            <div class="sticker">
-              -35%
-            </div>
-          </div>
-          <h3 class="product-name">
-          <a href="#">
-            How to Be a Bawse by Lilly Singh
-          </a>
-          </h3>
-        </div>
-      </div>
-    </div>
-    <div class="product-item">
-      <div class="product-inner">
-        <div class="product-image">
-          <a href="product-details.html">
-            <img alt="" src="./assets/img/product14.jpg"/>
-          </a>
-          <div class="product-action action-cart">
-            <button class="btn btn-primary">
-            <i class="fal fa-shopping-bag"></i>
-            <span class="btn-tooltip">
-              Add to cart
-            </span>
-            </button>
-          </div>
-        </div>
-        <div class="product-details">
-          <div class="info-details">
-            <div class="product-price">
-              <span class="final-price">
-                <span class="currancy">
-                  RS.
-                </span>
-                816.00
-              </span>
-              <span class="old-price">
-                <span class="currancy">
-                  Rs.
-                </span>
-                960.00
-              </span>
-            </div>
-          </div>
-          <div class="product-label">
-            <div class="sticker">
-              -35%
-            </div>
-          </div>
-          <h3 class="product-name">
-          <a href="#">
-            How to Be a Bawse by Lilly Singh
-          </a>
-          </h3>
-        </div>
-      </div>
-    </div>
-    <div class="product-item">
-      <div class="product-inner">
-        <div class="product-image">
-          <a href="product-details.html">
-            <img alt="" src="./assets/img/product15.jpg"/>
-          </a>
-          <div class="product-action action-cart">
-            <button class="btn btn-primary">
-            <i class="fal fa-shopping-bag"></i>
-            <span class="btn-tooltip">
-              Add to cart
-            </span>
-            </button>
-          </div>
-        </div>
-        <div class="product-details">
-          <div class="info-details">
-            <div class="product-price">
-              <span class="final-price">
-                <span class="currancy">
-                  RS.
-                </span>
-                816.00
-              </span>
-              <span class="old-price">
-                <span class="currancy">
-                  Rs.
-                </span>
-                960.00
-              </span>
-            </div>
-          </div>
-          <div class="product-label">
-            <div class="sticker">
-              -35%
-            </div>
-          </div>
-          <h3 class="product-name">
-          <a href="#">
-            How to Be a Bawse by Lilly Singh
-          </a>
-          </h3>
-        </div>
-      </div>
+  <div class="block-title-tabs">
+    <h4 class="block-title">
+    Featured Products
+    </h4>
+    <div class="block-action type-1">
+      <a href="#">
+        View All
+        <i class="fas fa-caret-right">
+        </i>
+      </a>
     </div>
   </div>
-</div>
+  <div class="products-wrapper">
+    <div class="product-slider featured owl-carousel" id="featured-products">
+      <div class="product-item">
+        <div class="product-inner">
+          <div class="product-image">
+            <a href="product-details.html">
+              <img alt="" src="./assets/img/product8.jpg"/>
+            </a>
+            <div class="product-action action-cart">
+              <button class="btn btn-primary">
+              <i class="fal fa-shopping-bag"></i>
+              <span class="btn-tooltip">
+                Add to cart
+              </span>
+              </button>
+            </div>
+          </div>
+          <div class="product-details">
+            <div class="info-details">
+              <div class="product-price">
+                <span class="final-price">
+                  <span class="currancy">
+                    RS.
+                  </span>
+                  816.00
+                </span>
+                <span class="old-price">
+                  <span class="currancy">
+                    Rs.
+                  </span>
+                  960.00
+                </span>
+              </div>
+            </div>
+            <div class="product-label">
+              <div class="sticker">
+                -35%
+              </div>
+            </div>
+            <h3 class="product-name">
+            <a href="#">
+              How to Be a Bawse by Lilly Singh
+            </a>
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="product-item">
+        <div class="product-inner">
+          <div class="product-image">
+            <a href="product-details.html">
+              <img alt="" src="./assets/img/product9.jpg"/>
+            </a>
+            <div class="product-action action-cart">
+              <button class="btn btn-primary">
+              <i class="fal fa-shopping-bag"></i>
+              <span class="btn-tooltip">
+                Add to cart
+              </span>
+              </button>
+            </div>
+          </div>
+          <div class="product-details">
+            <div class="info-details">
+              <div class="product-price">
+                <span class="final-price">
+                  <span class="currancy">
+                    RS.
+                  </span>
+                  816.00
+                </span>
+                <span class="old-price">
+                  <span class="currancy">
+                    Rs.
+                  </span>
+                  960.00
+                </span>
+              </div>
+            </div>
+            <div class="product-label">
+              <div class="sticker">
+                -35%
+              </div>
+            </div>
+            <h3 class="product-name">
+            <a href="#">
+              How to Be a Bawse by Lilly Singh
+            </a>
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="product-item">
+        <div class="product-inner">
+          <div class="product-image">
+            <a href="product-details.html">
+              <img alt="" src="./assets/img/product10.png"/>
+            </a>
+            <div class="product-action action-cart">
+              <button class="btn btn-primary">
+              <i class="fal fa-shopping-bag"></i>
+              <span class="btn-tooltip">
+                Add to cart
+              </span>
+              </button>
+            </div>
+          </div>
+          <div class="product-details">
+            <div class="info-details">
+              <div class="product-price">
+                <span class="final-price">
+                  <span class="currancy">
+                    RS.
+                  </span>
+                  816.00
+                </span>
+                <span class="old-price">
+                  <span class="currancy">
+                    Rs.
+                  </span>
+                  960.00
+                </span>
+              </div>
+            </div>
+            <div class="product-label">
+              <div class="sticker">
+                -35%
+              </div>
+            </div>
+            <h3 class="product-name">
+            <a href="#">
+              How to Be a Bawse by Lilly Singh
+            </a>
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="product-item">
+        <div class="product-inner">
+          <div class="product-image">
+            <a href="product-details.html">
+              <img alt="" src="./assets/img/product11.jpg"/>
+            </a>
+            <div class="product-action action-cart">
+              <button class="btn btn-primary">
+              <i class="fal fa-shopping-bag"></i>
+              <span class="btn-tooltip">
+                Add to cart
+              </span>
+              </button>
+            </div>
+          </div>
+          <div class="product-details">
+            <div class="info-details">
+              <div class="product-price">
+                <span class="final-price">
+                  <span class="currancy">
+                    RS.
+                  </span>
+                  816.00
+                </span>
+                <span class="old-price">
+                  <span class="currancy">
+                    Rs.
+                  </span>
+                  960.00
+                </span>
+              </div>
+            </div>
+            <div class="product-label">
+              <div class="sticker">
+                -35%
+              </div>
+            </div>
+            <h3 class="product-name">
+            <a href="#">
+              How to Be a Bawse by Lilly Singh
+            </a>
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="product-item">
+        <div class="product-inner">
+          <div class="product-image">
+            <a href="product-details.html">
+              <img alt="" src="./assets/img/product12.jpg"/>
+            </a>
+            <div class="product-action action-cart">
+              <button class="btn btn-primary">
+              <i class="fal fa-shopping-bag"></i>
+              <span class="btn-tooltip">
+                Add to cart
+              </span>
+              </button>
+            </div>
+          </div>
+          <div class="product-details">
+            <div class="info-details">
+              <div class="product-price">
+                <span class="final-price">
+                  <span class="currancy">
+                    RS.
+                  </span>
+                  816.00
+                </span>
+                <span class="old-price">
+                  <span class="currancy">
+                    Rs.
+                  </span>
+                  960.00
+                </span>
+              </div>
+            </div>
+            <div class="product-label">
+              <div class="sticker">
+                -35%
+              </div>
+            </div>
+            <h3 class="product-name">
+            <a href="#">
+              How to Be a Bawse by Lilly Singh
+            </a>
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="product-item">
+        <div class="product-inner">
+          <div class="product-image">
+            <a href="product-details.html">
+              <img alt="" src="./assets/img/product13.jpg"/>
+            </a>
+            <div class="product-action action-cart">
+              <button class="btn btn-primary">
+              <i class="fal fa-shopping-bag"></i>
+              <span class="btn-tooltip">
+                Add to cart
+              </span>
+              </button>
+            </div>
+          </div>
+          <div class="product-details">
+            <div class="info-details">
+              <div class="product-price">
+                <span class="final-price">
+                  <span class="currancy">
+                    RS.
+                  </span>
+                  816.00
+                </span>
+                <span class="old-price">
+                  <span class="currancy">
+                    Rs.
+                  </span>
+                  960.00
+                </span>
+              </div>
+            </div>
+            <div class="product-label">
+              <div class="sticker">
+                -35%
+              </div>
+            </div>
+            <h3 class="product-name">
+            <a href="#">
+              How to Be a Bawse by Lilly Singh
+            </a>
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="product-item">
+        <div class="product-inner">
+          <div class="product-image">
+            <a href="product-details.html">
+              <img alt="" src="./assets/img/product14.jpg"/>
+            </a>
+            <div class="product-action action-cart">
+              <button class="btn btn-primary">
+              <i class="fal fa-shopping-bag"></i>
+              <span class="btn-tooltip">
+                Add to cart
+              </span>
+              </button>
+            </div>
+          </div>
+          <div class="product-details">
+            <div class="info-details">
+              <div class="product-price">
+                <span class="final-price">
+                  <span class="currancy">
+                    RS.
+                  </span>
+                  816.00
+                </span>
+                <span class="old-price">
+                  <span class="currancy">
+                    Rs.
+                  </span>
+                  960.00
+                </span>
+              </div>
+            </div>
+            <div class="product-label">
+              <div class="sticker">
+                -35%
+              </div>
+            </div>
+            <h3 class="product-name">
+            <a href="#">
+              How to Be a Bawse by Lilly Singh
+            </a>
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="product-item">
+        <div class="product-inner">
+          <div class="product-image">
+            <a href="product-details.html">
+              <img alt="" src="./assets/img/product15.jpg"/>
+            </a>
+            <div class="product-action action-cart">
+              <button class="btn btn-primary">
+              <i class="fal fa-shopping-bag"></i>
+              <span class="btn-tooltip">
+                Add to cart
+              </span>
+              </button>
+            </div>
+          </div>
+          <div class="product-details">
+            <div class="info-details">
+              <div class="product-price">
+                <span class="final-price">
+                  <span class="currancy">
+                    RS.
+                  </span>
+                  816.00
+                </span>
+                <span class="old-price">
+                  <span class="currancy">
+                    Rs.
+                  </span>
+                  960.00
+                </span>
+              </div>
+            </div>
+            <div class="product-label">
+              <div class="sticker">
+                -35%
+              </div>
+            </div>
+            <h3 class="product-name">
+            <a href="#">
+              How to Be a Bawse by Lilly Singh
+            </a>
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 </div>
 </div>
@@ -2061,421 +2047,421 @@ Holi Special
 Deals Of The Week
 </h4>
 <div class="block-action type-2">
-<div class="tab-opener d-lg-none">
-  <div class="icon-wrap">
-    <i class="far fa-bars">
-    </i>
+  <div class="tab-opener d-lg-none">
+    <div class="icon-wrap">
+      <i class="far fa-bars">
+      </i>
+    </div>
   </div>
-</div>
-<!-- Nav tabs -->
-<div class="block-action-inner">
-  <ul class="nav nav-tabs justify-content-center" role="tablist">
-    <li class="nav-item">
-      <a data-toggle="tab" href="#new" role="tab">
-        NEW
+  <!-- Nav tabs -->
+  <div class="block-action-inner">
+    <ul class="nav nav-tabs justify-content-center" role="tablist">
+      <li class="nav-item">
+        <a data-toggle="tab" href="#new" role="tab">
+          NEW
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#collection" role="tab">
+          Collection
+        </a>
+      </li>
+    </ul>
+    <div class="link-wrapper">
+      <a href="#">
+        View more <i class="fas fa-caret-right"></i>
       </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link active" data-toggle="tab" href="#collection" role="tab">
-        Collection
-      </a>
-    </li>
-  </ul>
-  <div class="link-wrapper">
-    <a href="#">
-      View more
-    </a>
+    </div>
   </div>
-</div>
 </div>
 </div>
 <!-- Tab panes -->
 <div class="tab-content">
 <div class="tab-pane" id="new" role="tabpanel">
-<div class="alert alert-warning text-left" role="alert">
-  <div class="alert-icon">
-    <i class="fas fa-exclamation-triangle">
-    </i>
+  <div class="alert alert-warning text-left" role="alert">
+    <div class="alert-icon">
+      <i class="fas fa-exclamation-triangle">
+      </i>
+    </div>
+    We can't find products matching the selection.
   </div>
-  We can't find products matching the selection.
-</div>
 </div>
 <div class="tab-pane active" id="collection" role="tabpanel">
-<div class="products-wrapper product-listing-type-2">
-  <div class="product-slider owl-carousel" id="cat-collection">
-    <div class="product-item">
-      <div class="product-inner">
-        <div class="product-image">
-          <a href="product-details.html">
-            <img alt="" src="./assets/img/product1.jpg"/>
-          </a>
-          <div class="product-action action-cart">
-            <button class="btn btn-primary">
-            <i class="fal fa-shopping-bag"></i>
-            <span class="btn-tooltip">
-              Add to cart
-            </span>
-            </button>
-          </div>
-          <div class="quick-view">
-            <div class="icon-wrapper">
-              <button class="quick-view-button" data-target="#quickview" data-toggle="modal">
-              <i class="far fa-search-plus">
-              </i>
+  <div class="products-wrapper product-listing-type-2">
+    <div class="product-slider owl-carousel" id="cat-collection">
+      <div class="product-item">
+        <div class="product-inner">
+          <div class="product-image">
+            <a href="product-details.html">
+              <img alt="" src="./assets/img/product1.jpg"/>
+            </a>
+            <div class="product-action action-cart">
+              <button class="btn btn-primary">
+              <i class="fal fa-shopping-bag"></i>
+              <span class="btn-tooltip">
+                Add to cart
+              </span>
               </button>
             </div>
-          </div>
-        </div>
-        <div class="product-details">
-          <div class="info-details">
-            <div class="product-price">
-              <span class="final-price">
-                <span class="currancy">
-                  RS.
-                </span>
-                816.00
-              </span>
-              <span class="old-price">
-                <span class="currancy">
-                  Rs.
-                </span>
-                960.00
-              </span>
+            <div class="quick-view">
+              <div class="icon-wrapper">
+                <button class="quick-view-button" data-target="#quickview" data-toggle="modal">
+                <i class="far fa-search-plus">
+                </i>
+                </button>
+              </div>
             </div>
           </div>
-          <div class="product-label">
-            <div class="sticker">
-              -35%
+          <div class="product-details">
+            <div class="info-details">
+              <div class="product-price">
+                <span class="final-price">
+                  <span class="currancy">
+                    RS.
+                  </span>
+                  816.00
+                </span>
+                <span class="old-price">
+                  <span class="currancy">
+                    Rs.
+                  </span>
+                  960.00
+                </span>
+              </div>
             </div>
+            <div class="product-label">
+              <div class="sticker">
+                -35%
+              </div>
+            </div>
+            <h3 class="product-name">
+            <a href="#">
+              How to Be a Bawse by Lilly Singh
+            </a>
+            </h3>
           </div>
-          <h3 class="product-name">
-          <a href="#">
-            How to Be a Bawse by Lilly Singh
-          </a>
-          </h3>
         </div>
       </div>
-    </div>
-    <div class="product-item">
-      <div class="product-inner">
-        <div class="product-image">
-          <a href="product-details.html">
-            <img alt="" src="./assets/img/product2.jpeg"/>
-          </a>
-          <div class="product-action action-cart">
-            <button class="btn btn-primary">
-            <i class="fal fa-shopping-bag"></i>
-            <span class="btn-tooltip">
-              Add to cart
-            </span>
-            </button>
-          </div>
-          <div class="quick-view">
-            <div class="icon-wrapper">
-              <button class="quick-view-button" data-target="#quickview" data-toggle="modal">
-              <i class="far fa-search-plus">
-              </i>
+      <div class="product-item">
+        <div class="product-inner">
+          <div class="product-image">
+            <a href="product-details.html">
+              <img alt="" src="./assets/img/product2.jpeg"/>
+            </a>
+            <div class="product-action action-cart">
+              <button class="btn btn-primary">
+              <i class="fal fa-shopping-bag"></i>
+              <span class="btn-tooltip">
+                Add to cart
+              </span>
               </button>
             </div>
-          </div>
-        </div>
-        <div class="product-details">
-          <div class="info-details">
-            <div class="product-price">
-              <span class="final-price">
-                <span class="currancy">
-                  RS.
-                </span>
-                816.00
-              </span>
-              <span class="old-price">
-                <span class="currancy">
-                  Rs.
-                </span>
-                960.00
-              </span>
+            <div class="quick-view">
+              <div class="icon-wrapper">
+                <button class="quick-view-button" data-target="#quickview" data-toggle="modal">
+                <i class="far fa-search-plus">
+                </i>
+                </button>
+              </div>
             </div>
           </div>
-          <div class="product-label">
-            <div class="sticker">
-              -35%
+          <div class="product-details">
+            <div class="info-details">
+              <div class="product-price">
+                <span class="final-price">
+                  <span class="currancy">
+                    RS.
+                  </span>
+                  816.00
+                </span>
+                <span class="old-price">
+                  <span class="currancy">
+                    Rs.
+                  </span>
+                  960.00
+                </span>
+              </div>
             </div>
+            <div class="product-label">
+              <div class="sticker">
+                -35%
+              </div>
+            </div>
+            <h3 class="product-name">
+            <a href="#">
+              How to Be a Bawse by Lilly Singh
+            </a>
+            </h3>
           </div>
-          <h3 class="product-name">
-          <a href="#">
-            How to Be a Bawse by Lilly Singh
-          </a>
-          </h3>
         </div>
       </div>
-    </div>
-    <div class="product-item">
-      <div class="product-inner">
-        <div class="product-image">
-          <a href="product-details.html">
-            <img alt="" src="./assets/img/product3.jpg"/>
-          </a>
-          <div class="product-action action-cart">
-            <button class="btn btn-primary">
-            <i class="fal fa-shopping-bag"></i>
-            <span class="btn-tooltip">
-              Add to cart
-            </span>
-            </button>
-          </div>
-          <div class="quick-view">
-            <div class="icon-wrapper">
-              <button class="quick-view-button" data-target="#quickview" data-toggle="modal">
-              <i class="far fa-search-plus">
-              </i>
+      <div class="product-item">
+        <div class="product-inner">
+          <div class="product-image">
+            <a href="product-details.html">
+              <img alt="" src="./assets/img/product3.jpg"/>
+            </a>
+            <div class="product-action action-cart">
+              <button class="btn btn-primary">
+              <i class="fal fa-shopping-bag"></i>
+              <span class="btn-tooltip">
+                Add to cart
+              </span>
               </button>
             </div>
-          </div>
-        </div>
-        <div class="product-details">
-          <div class="info-details">
-            <div class="product-price">
-              <span class="final-price">
-                <span class="currancy">
-                  RS.
-                </span>
-                816.00
-              </span>
-              <span class="old-price">
-                <span class="currancy">
-                  Rs.
-                </span>
-                960.00
-              </span>
+            <div class="quick-view">
+              <div class="icon-wrapper">
+                <button class="quick-view-button" data-target="#quickview" data-toggle="modal">
+                <i class="far fa-search-plus">
+                </i>
+                </button>
+              </div>
             </div>
           </div>
-          <div class="product-label">
-            <div class="sticker">
-              -35%
+          <div class="product-details">
+            <div class="info-details">
+              <div class="product-price">
+                <span class="final-price">
+                  <span class="currancy">
+                    RS.
+                  </span>
+                  816.00
+                </span>
+                <span class="old-price">
+                  <span class="currancy">
+                    Rs.
+                  </span>
+                  960.00
+                </span>
+              </div>
             </div>
+            <div class="product-label">
+              <div class="sticker">
+                -35%
+              </div>
+            </div>
+            <h3 class="product-name">
+            <a href="#">
+              How to Be a Bawse by Lilly Singh
+            </a>
+            </h3>
           </div>
-          <h3 class="product-name">
-          <a href="#">
-            How to Be a Bawse by Lilly Singh
-          </a>
-          </h3>
         </div>
       </div>
-    </div>
-    <div class="product-item">
-      <div class="product-inner">
-        <div class="product-image">
-          <a href="product-details.html">
-            <img alt="" src="./assets/img/product4.jpg"/>
-          </a>
-          <div class="product-action action-cart">
-            <button class="btn btn-primary">
-            <i class="fal fa-shopping-bag"></i>
-            <span class="btn-tooltip">
-              Add to cart
-            </span>
-            </button>
-          </div>
-          <div class="quick-view">
-            <div class="icon-wrapper">
-              <button class="quick-view-button" data-target="#quickview" data-toggle="modal">
-              <i class="far fa-search-plus">
-              </i>
+      <div class="product-item">
+        <div class="product-inner">
+          <div class="product-image">
+            <a href="product-details.html">
+              <img alt="" src="./assets/img/product4.jpg"/>
+            </a>
+            <div class="product-action action-cart">
+              <button class="btn btn-primary">
+              <i class="fal fa-shopping-bag"></i>
+              <span class="btn-tooltip">
+                Add to cart
+              </span>
               </button>
             </div>
-          </div>
-        </div>
-        <div class="product-details">
-          <div class="info-details">
-            <div class="product-price">
-              <span class="final-price">
-                <span class="currancy">
-                  RS.
-                </span>
-                816.00
-              </span>
-              <span class="old-price">
-                <span class="currancy">
-                  Rs.
-                </span>
-                960.00
-              </span>
+            <div class="quick-view">
+              <div class="icon-wrapper">
+                <button class="quick-view-button" data-target="#quickview" data-toggle="modal">
+                <i class="far fa-search-plus">
+                </i>
+                </button>
+              </div>
             </div>
           </div>
-          <div class="product-label">
-            <div class="sticker">
-              -35%
+          <div class="product-details">
+            <div class="info-details">
+              <div class="product-price">
+                <span class="final-price">
+                  <span class="currancy">
+                    RS.
+                  </span>
+                  816.00
+                </span>
+                <span class="old-price">
+                  <span class="currancy">
+                    Rs.
+                  </span>
+                  960.00
+                </span>
+              </div>
             </div>
+            <div class="product-label">
+              <div class="sticker">
+                -35%
+              </div>
+            </div>
+            <h3 class="product-name">
+            <a href="#">
+              How to Be a Bawse by Lilly Singh
+            </a>
+            </h3>
           </div>
-          <h3 class="product-name">
-          <a href="#">
-            How to Be a Bawse by Lilly Singh
-          </a>
-          </h3>
         </div>
       </div>
-    </div>
-    <div class="product-item">
-      <div class="product-inner">
-        <div class="product-image">
-          <a href="product-details.html">
-            <img alt="" src="./assets/img/product5.jpg"/>
-          </a>
-          <div class="product-action action-cart">
-            <button class="btn btn-primary">
-            <i class="fal fa-shopping-bag"></i>
-            <span class="btn-tooltip">
-              Add to cart
-            </span>
-            </button>
-          </div>
-          <div class="quick-view">
-            <div class="icon-wrapper">
-              <button class="quick-view-button" data-target="#quickview" data-toggle="modal">
-              <i class="far fa-search-plus">
-              </i>
+      <div class="product-item">
+        <div class="product-inner">
+          <div class="product-image">
+            <a href="product-details.html">
+              <img alt="" src="./assets/img/product5.jpg"/>
+            </a>
+            <div class="product-action action-cart">
+              <button class="btn btn-primary">
+              <i class="fal fa-shopping-bag"></i>
+              <span class="btn-tooltip">
+                Add to cart
+              </span>
               </button>
             </div>
-          </div>
-        </div>
-        <div class="product-details">
-          <div class="info-details">
-            <div class="product-price">
-              <span class="final-price">
-                <span class="currancy">
-                  RS.
-                </span>
-                816.00
-              </span>
-              <span class="old-price">
-                <span class="currancy">
-                  Rs.
-                </span>
-                960.00
-              </span>
+            <div class="quick-view">
+              <div class="icon-wrapper">
+                <button class="quick-view-button" data-target="#quickview" data-toggle="modal">
+                <i class="far fa-search-plus">
+                </i>
+                </button>
+              </div>
             </div>
           </div>
-          <div class="product-label">
-            <div class="sticker">
-              -35%
+          <div class="product-details">
+            <div class="info-details">
+              <div class="product-price">
+                <span class="final-price">
+                  <span class="currancy">
+                    RS.
+                  </span>
+                  816.00
+                </span>
+                <span class="old-price">
+                  <span class="currancy">
+                    Rs.
+                  </span>
+                  960.00
+                </span>
+              </div>
             </div>
+            <div class="product-label">
+              <div class="sticker">
+                -35%
+              </div>
+            </div>
+            <h3 class="product-name">
+            <a href="#">
+              How to Be a Bawse by Lilly Singh
+            </a>
+            </h3>
           </div>
-          <h3 class="product-name">
-          <a href="#">
-            How to Be a Bawse by Lilly Singh
-          </a>
-          </h3>
         </div>
       </div>
-    </div>
-    <div class="product-item">
-      <div class="product-inner">
-        <div class="product-image">
-          <a href="product-details.html">
-            <img alt="" src="./assets/img/product6.jpg"/>
-          </a>
-          <div class="product-action action-cart">
-            <button class="btn btn-primary">
-            <i class="fal fa-shopping-bag"></i>
-            <span class="btn-tooltip">
-              Add to cart
-            </span>
-            </button>
-          </div>
-          <div class="quick-view">
-            <div class="icon-wrapper">
-              <button class="quick-view-button" data-target="#quickview" data-toggle="modal">
-              <i class="far fa-search-plus">
-              </i>
+      <div class="product-item">
+        <div class="product-inner">
+          <div class="product-image">
+            <a href="product-details.html">
+              <img alt="" src="./assets/img/product6.jpg"/>
+            </a>
+            <div class="product-action action-cart">
+              <button class="btn btn-primary">
+              <i class="fal fa-shopping-bag"></i>
+              <span class="btn-tooltip">
+                Add to cart
+              </span>
               </button>
             </div>
-          </div>
-        </div>
-        <div class="product-details">
-          <div class="info-details">
-            <div class="product-price">
-              <span class="final-price">
-                <span class="currancy">
-                  RS.
-                </span>
-                816.00
-              </span>
-              <span class="old-price">
-                <span class="currancy">
-                  Rs.
-                </span>
-                960.00
-              </span>
+            <div class="quick-view">
+              <div class="icon-wrapper">
+                <button class="quick-view-button" data-target="#quickview" data-toggle="modal">
+                <i class="far fa-search-plus">
+                </i>
+                </button>
+              </div>
             </div>
           </div>
-          <div class="product-label">
-            <div class="sticker">
-              -35%
+          <div class="product-details">
+            <div class="info-details">
+              <div class="product-price">
+                <span class="final-price">
+                  <span class="currancy">
+                    RS.
+                  </span>
+                  816.00
+                </span>
+                <span class="old-price">
+                  <span class="currancy">
+                    Rs.
+                  </span>
+                  960.00
+                </span>
+              </div>
             </div>
+            <div class="product-label">
+              <div class="sticker">
+                -35%
+              </div>
+            </div>
+            <h3 class="product-name">
+            <a href="#">
+              How to Be a Bawse by Lilly Singh
+            </a>
+            </h3>
           </div>
-          <h3 class="product-name">
-          <a href="#">
-            How to Be a Bawse by Lilly Singh
-          </a>
-          </h3>
         </div>
       </div>
-    </div>
-    <div class="product-item">
-      <div class="product-inner">
-        <div class="product-image">
-          <a href="product-details.html">
-            <img alt="" src="./assets/img/product7.jpg"/>
-          </a>
-          <div class="product-action action-cart">
-            <button class="btn btn-primary">
-            <i class="fal fa-shopping-bag"></i>
-            <span class="btn-tooltip">
-              Add to cart
-            </span>
-            </button>
-          </div>
-          <div class="quick-view">
-            <div class="icon-wrapper">
-              <button class="quick-view-button" data-target="#quickview" data-toggle="modal">
-              <i class="far fa-search-plus">
-              </i>
+      <div class="product-item">
+        <div class="product-inner">
+          <div class="product-image">
+            <a href="product-details.html">
+              <img alt="" src="./assets/img/product7.jpg"/>
+            </a>
+            <div class="product-action action-cart">
+              <button class="btn btn-primary">
+              <i class="fal fa-shopping-bag"></i>
+              <span class="btn-tooltip">
+                Add to cart
+              </span>
               </button>
             </div>
-          </div>
-        </div>
-        <div class="product-details">
-          <div class="info-details">
-            <div class="product-price">
-              <span class="final-price">
-                <span class="currancy">
-                  RS.
-                </span>
-                816.00
-              </span>
-              <span class="old-price">
-                <span class="currancy">
-                  Rs.
-                </span>
-                960.00
-              </span>
+            <div class="quick-view">
+              <div class="icon-wrapper">
+                <button class="quick-view-button" data-target="#quickview" data-toggle="modal">
+                <i class="far fa-search-plus">
+                </i>
+                </button>
+              </div>
             </div>
           </div>
-          <div class="product-label">
-            <div class="sticker">
-              -35%
+          <div class="product-details">
+            <div class="info-details">
+              <div class="product-price">
+                <span class="final-price">
+                  <span class="currancy">
+                    RS.
+                  </span>
+                  816.00
+                </span>
+                <span class="old-price">
+                  <span class="currancy">
+                    Rs.
+                  </span>
+                  960.00
+                </span>
+              </div>
             </div>
+            <div class="product-label">
+              <div class="sticker">
+                -35%
+              </div>
+            </div>
+            <h3 class="product-name">
+            <a href="#">
+              How to Be a Bawse by Lilly Singh
+            </a>
+            </h3>
           </div>
-          <h3 class="product-name">
-          <a href="#">
-            How to Be a Bawse by Lilly Singh
-          </a>
-          </h3>
         </div>
       </div>
     </div>
   </div>
-</div>
 </div>
 </div>
 </div>
@@ -2485,789 +2471,789 @@ Deals Of The Week
 CAKES & GIFTS
 </h4>
 <div class="block-action type-2">
-<div class="tab-opener d-lg-none">
-  <div class="icon-wrap">
-    <i class="far fa-bars">
-    </i>
+  <div class="tab-opener d-lg-none">
+    <div class="icon-wrap">
+      <i class="far fa-bars">
+      </i>
+    </div>
   </div>
-</div>
-<!-- Nav tabs -->
-<div class="block-action-inner">
-  <ul class="nav nav-tabs justify-content-center" role="tablist">
-    <li class="nav-item">
-      <a data-toggle="tab" href="#latest" role="tab">
-        latest
+  <!-- Nav tabs -->
+  <div class="block-action-inner">
+    <ul class="nav nav-tabs justify-content-center" role="tablist">
+      <li class="nav-item">
+        <a data-toggle="tab" href="#latest" role="tab">
+          latest
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#cake-collection" role="tab">
+          Collection
+        </a>
+      </li>
+    </ul>
+    <div class="link-wrapper">
+      <a href="#">
+        View more <i class="fas fa-caret-right"></i>
       </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link active" data-toggle="tab" href="#cake-collection" role="tab">
-        Collection
-      </a>
-    </li>
-  </ul>
-  <div class="link-wrapper">
-    <a href="#">
-      View more
-    </a>
+    </div>
   </div>
-</div>
 </div>
 </div>
 <!-- Tab panes -->
 <div class="tab-content">
 <div class="tab-pane" id="latest" role="tabpanel">
-<div class="products-wrapper product-listing-type-2">
-  <div class="product-slider owl-carousel" id="cake-latest">
-    <div class="product-item">
-      <div class="product-inner">
-        <div class="product-image">
-          <a href="product-details.html">
-            <img alt="" src="./assets/img/product1.jpg"/>
-          </a>
-          <div class="product-action action-cart">
-            <button class="btn btn-primary">
-            <i class="fal fa-shopping-bag"></i>
-            <span class="btn-tooltip">
-              Add to cart
-            </span>
-            </button>
-          </div>
-          <div class="quick-view">
-            <div class="icon-wrapper">
-              <button class="quick-view-button" data-target="#quickview" data-toggle="modal">
-              <i class="far fa-search-plus">
-              </i>
+  <div class="products-wrapper product-listing-type-2">
+    <div class="product-slider owl-carousel" id="cake-latest">
+      <div class="product-item">
+        <div class="product-inner">
+          <div class="product-image">
+            <a href="product-details.html">
+              <img alt="" src="./assets/img/product1.jpg"/>
+            </a>
+            <div class="product-action action-cart">
+              <button class="btn btn-primary">
+              <i class="fal fa-shopping-bag"></i>
+              <span class="btn-tooltip">
+                Add to cart
+              </span>
               </button>
             </div>
-          </div>
-        </div>
-        <div class="product-details">
-          <div class="info-details">
-            <div class="product-price">
-              <span class="final-price">
-                <span class="currancy">
-                  RS.
-                </span>
-                816.00
-              </span>
-              <span class="old-price">
-                <span class="currancy">
-                  Rs.
-                </span>
-                960.00
-              </span>
+            <div class="quick-view">
+              <div class="icon-wrapper">
+                <button class="quick-view-button" data-target="#quickview" data-toggle="modal">
+                <i class="far fa-search-plus">
+                </i>
+                </button>
+              </div>
             </div>
           </div>
-          <div class="product-label">
-            <div class="sticker">
-              -35%
+          <div class="product-details">
+            <div class="info-details">
+              <div class="product-price">
+                <span class="final-price">
+                  <span class="currancy">
+                    RS.
+                  </span>
+                  816.00
+                </span>
+                <span class="old-price">
+                  <span class="currancy">
+                    Rs.
+                  </span>
+                  960.00
+                </span>
+              </div>
             </div>
+            <div class="product-label">
+              <div class="sticker">
+                -35%
+              </div>
+            </div>
+            <h3 class="product-name">
+            <a href="#">
+              How to Be a Bawse by Lilly Singh
+            </a>
+            </h3>
           </div>
-          <h3 class="product-name">
-          <a href="#">
-            How to Be a Bawse by Lilly Singh
-          </a>
-          </h3>
         </div>
       </div>
-    </div>
-    <div class="product-item">
-      <div class="product-inner">
-        <div class="product-image">
-          <a href="product-details.html">
-            <img alt="" src="./assets/img/product2.jpeg"/>
-          </a>
-          <div class="product-action action-cart">
-            <button class="btn btn-primary">
-            <i class="fal fa-shopping-bag"></i>
-            <span class="btn-tooltip">
-              Add to cart
-            </span>
-            </button>
-          </div>
-          <div class="quick-view">
-            <div class="icon-wrapper">
-              <button class="quick-view-button" data-target="#quickview" data-toggle="modal">
-              <i class="far fa-search-plus">
-              </i>
+      <div class="product-item">
+        <div class="product-inner">
+          <div class="product-image">
+            <a href="product-details.html">
+              <img alt="" src="./assets/img/product2.jpeg"/>
+            </a>
+            <div class="product-action action-cart">
+              <button class="btn btn-primary">
+              <i class="fal fa-shopping-bag"></i>
+              <span class="btn-tooltip">
+                Add to cart
+              </span>
               </button>
             </div>
-          </div>
-        </div>
-        <div class="product-details">
-          <div class="info-details">
-            <div class="product-price">
-              <span class="final-price">
-                <span class="currancy">
-                  RS.
-                </span>
-                816.00
-              </span>
-              <span class="old-price">
-                <span class="currancy">
-                  Rs.
-                </span>
-                960.00
-              </span>
+            <div class="quick-view">
+              <div class="icon-wrapper">
+                <button class="quick-view-button" data-target="#quickview" data-toggle="modal">
+                <i class="far fa-search-plus">
+                </i>
+                </button>
+              </div>
             </div>
           </div>
-          <div class="product-label">
-            <div class="sticker">
-              -35%
+          <div class="product-details">
+            <div class="info-details">
+              <div class="product-price">
+                <span class="final-price">
+                  <span class="currancy">
+                    RS.
+                  </span>
+                  816.00
+                </span>
+                <span class="old-price">
+                  <span class="currancy">
+                    Rs.
+                  </span>
+                  960.00
+                </span>
+              </div>
             </div>
+            <div class="product-label">
+              <div class="sticker">
+                -35%
+              </div>
+            </div>
+            <h3 class="product-name">
+            <a href="#">
+              How to Be a Bawse by Lilly Singh
+            </a>
+            </h3>
           </div>
-          <h3 class="product-name">
-          <a href="#">
-            How to Be a Bawse by Lilly Singh
-          </a>
-          </h3>
         </div>
       </div>
-    </div>
-    <div class="product-item">
-      <div class="product-inner">
-        <div class="product-image">
-          <a href="product-details.html">
-            <img alt="" src="./assets/img/product3.jpg"/>
-          </a>
-          <div class="product-action action-cart">
-            <button class="btn btn-primary">
-            <i class="fal fa-shopping-bag"></i>
-            <span class="btn-tooltip">
-              Add to cart
-            </span>
-            </button>
-          </div>
-          <div class="quick-view">
-            <div class="icon-wrapper">
-              <button class="quick-view-button" data-target="#quickview" data-toggle="modal">
-              <i class="far fa-search-plus">
-              </i>
+      <div class="product-item">
+        <div class="product-inner">
+          <div class="product-image">
+            <a href="product-details.html">
+              <img alt="" src="./assets/img/product3.jpg"/>
+            </a>
+            <div class="product-action action-cart">
+              <button class="btn btn-primary">
+              <i class="fal fa-shopping-bag"></i>
+              <span class="btn-tooltip">
+                Add to cart
+              </span>
               </button>
             </div>
-          </div>
-        </div>
-        <div class="product-details">
-          <div class="info-details">
-            <div class="product-price">
-              <span class="final-price">
-                <span class="currancy">
-                  RS.
-                </span>
-                816.00
-              </span>
-              <span class="old-price">
-                <span class="currancy">
-                  Rs.
-                </span>
-                960.00
-              </span>
+            <div class="quick-view">
+              <div class="icon-wrapper">
+                <button class="quick-view-button" data-target="#quickview" data-toggle="modal">
+                <i class="far fa-search-plus">
+                </i>
+                </button>
+              </div>
             </div>
           </div>
-          <div class="product-label">
-            <div class="sticker">
-              -35%
+          <div class="product-details">
+            <div class="info-details">
+              <div class="product-price">
+                <span class="final-price">
+                  <span class="currancy">
+                    RS.
+                  </span>
+                  816.00
+                </span>
+                <span class="old-price">
+                  <span class="currancy">
+                    Rs.
+                  </span>
+                  960.00
+                </span>
+              </div>
             </div>
+            <div class="product-label">
+              <div class="sticker">
+                -35%
+              </div>
+            </div>
+            <h3 class="product-name">
+            <a href="#">
+              How to Be a Bawse by Lilly Singh
+            </a>
+            </h3>
           </div>
-          <h3 class="product-name">
-          <a href="#">
-            How to Be a Bawse by Lilly Singh
-          </a>
-          </h3>
         </div>
       </div>
-    </div>
-    <div class="product-item">
-      <div class="product-inner">
-        <div class="product-image">
-          <a href="product-details.html">
-            <img alt="" src="./assets/img/product4.jpg"/>
-          </a>
-          <div class="product-action action-cart">
-            <button class="btn btn-primary">
-            <i class="fal fa-shopping-bag"></i>
-            <span class="btn-tooltip">
-              Add to cart
-            </span>
-            </button>
-          </div>
-          <div class="quick-view">
-            <div class="icon-wrapper">
-              <button class="quick-view-button" data-target="#quickview" data-toggle="modal">
-              <i class="far fa-search-plus">
-              </i>
+      <div class="product-item">
+        <div class="product-inner">
+          <div class="product-image">
+            <a href="product-details.html">
+              <img alt="" src="./assets/img/product4.jpg"/>
+            </a>
+            <div class="product-action action-cart">
+              <button class="btn btn-primary">
+              <i class="fal fa-shopping-bag"></i>
+              <span class="btn-tooltip">
+                Add to cart
+              </span>
               </button>
             </div>
-          </div>
-        </div>
-        <div class="product-details">
-          <div class="info-details">
-            <div class="product-price">
-              <span class="final-price">
-                <span class="currancy">
-                  RS.
-                </span>
-                816.00
-              </span>
-              <span class="old-price">
-                <span class="currancy">
-                  Rs.
-                </span>
-                960.00
-              </span>
+            <div class="quick-view">
+              <div class="icon-wrapper">
+                <button class="quick-view-button" data-target="#quickview" data-toggle="modal">
+                <i class="far fa-search-plus">
+                </i>
+                </button>
+              </div>
             </div>
           </div>
-          <div class="product-label">
-            <div class="sticker">
-              -35%
+          <div class="product-details">
+            <div class="info-details">
+              <div class="product-price">
+                <span class="final-price">
+                  <span class="currancy">
+                    RS.
+                  </span>
+                  816.00
+                </span>
+                <span class="old-price">
+                  <span class="currancy">
+                    Rs.
+                  </span>
+                  960.00
+                </span>
+              </div>
             </div>
+            <div class="product-label">
+              <div class="sticker">
+                -35%
+              </div>
+            </div>
+            <h3 class="product-name">
+            <a href="#">
+              How to Be a Bawse by Lilly Singh
+            </a>
+            </h3>
           </div>
-          <h3 class="product-name">
-          <a href="#">
-            How to Be a Bawse by Lilly Singh
-          </a>
-          </h3>
         </div>
       </div>
-    </div>
-    <div class="product-item">
-      <div class="product-inner">
-        <div class="product-image">
-          <a href="product-details.html">
-            <img alt="" src="./assets/img/product5.jpg"/>
-          </a>
-          <div class="product-action action-cart">
-            <button class="btn btn-primary">
-            <i class="fal fa-shopping-bag"></i>
-            <span class="btn-tooltip">
-              Add to cart
-            </span>
-            </button>
-          </div>
-          <div class="quick-view">
-            <div class="icon-wrapper">
-              <button class="quick-view-button" data-target="#quickview" data-toggle="modal">
-              <i class="far fa-search-plus">
-              </i>
+      <div class="product-item">
+        <div class="product-inner">
+          <div class="product-image">
+            <a href="product-details.html">
+              <img alt="" src="./assets/img/product5.jpg"/>
+            </a>
+            <div class="product-action action-cart">
+              <button class="btn btn-primary">
+              <i class="fal fa-shopping-bag"></i>
+              <span class="btn-tooltip">
+                Add to cart
+              </span>
               </button>
             </div>
-          </div>
-        </div>
-        <div class="product-details">
-          <div class="info-details">
-            <div class="product-price">
-              <span class="final-price">
-                <span class="currancy">
-                  RS.
-                </span>
-                816.00
-              </span>
-              <span class="old-price">
-                <span class="currancy">
-                  Rs.
-                </span>
-                960.00
-              </span>
+            <div class="quick-view">
+              <div class="icon-wrapper">
+                <button class="quick-view-button" data-target="#quickview" data-toggle="modal">
+                <i class="far fa-search-plus">
+                </i>
+                </button>
+              </div>
             </div>
           </div>
-          <div class="product-label">
-            <div class="sticker">
-              -35%
+          <div class="product-details">
+            <div class="info-details">
+              <div class="product-price">
+                <span class="final-price">
+                  <span class="currancy">
+                    RS.
+                  </span>
+                  816.00
+                </span>
+                <span class="old-price">
+                  <span class="currancy">
+                    Rs.
+                  </span>
+                  960.00
+                </span>
+              </div>
             </div>
+            <div class="product-label">
+              <div class="sticker">
+                -35%
+              </div>
+            </div>
+            <h3 class="product-name">
+            <a href="#">
+              How to Be a Bawse by Lilly Singh
+            </a>
+            </h3>
           </div>
-          <h3 class="product-name">
-          <a href="#">
-            How to Be a Bawse by Lilly Singh
-          </a>
-          </h3>
         </div>
       </div>
-    </div>
-    <div class="product-item">
-      <div class="product-inner">
-        <div class="product-image">
-          <a href="product-details.html">
-            <img alt="" src="./assets/img/product6.jpg"/>
-          </a>
-          <div class="product-action action-cart">
-            <button class="btn btn-primary">
-            <i class="fal fa-shopping-bag"></i>
-            <span class="btn-tooltip">
-              Add to cart
-            </span>
-            </button>
-          </div>
-          <div class="quick-view">
-            <div class="icon-wrapper">
-              <button class="quick-view-button" data-target="#quickview" data-toggle="modal">
-              <i class="far fa-search-plus">
-              </i>
+      <div class="product-item">
+        <div class="product-inner">
+          <div class="product-image">
+            <a href="product-details.html">
+              <img alt="" src="./assets/img/product6.jpg"/>
+            </a>
+            <div class="product-action action-cart">
+              <button class="btn btn-primary">
+              <i class="fal fa-shopping-bag"></i>
+              <span class="btn-tooltip">
+                Add to cart
+              </span>
               </button>
             </div>
-          </div>
-        </div>
-        <div class="product-details">
-          <div class="info-details">
-            <div class="product-price">
-              <span class="final-price">
-                <span class="currancy">
-                  RS.
-                </span>
-                816.00
-              </span>
-              <span class="old-price">
-                <span class="currancy">
-                  Rs.
-                </span>
-                960.00
-              </span>
+            <div class="quick-view">
+              <div class="icon-wrapper">
+                <button class="quick-view-button" data-target="#quickview" data-toggle="modal">
+                <i class="far fa-search-plus">
+                </i>
+                </button>
+              </div>
             </div>
           </div>
-          <div class="product-label">
-            <div class="sticker">
-              -35%
+          <div class="product-details">
+            <div class="info-details">
+              <div class="product-price">
+                <span class="final-price">
+                  <span class="currancy">
+                    RS.
+                  </span>
+                  816.00
+                </span>
+                <span class="old-price">
+                  <span class="currancy">
+                    Rs.
+                  </span>
+                  960.00
+                </span>
+              </div>
             </div>
+            <div class="product-label">
+              <div class="sticker">
+                -35%
+              </div>
+            </div>
+            <h3 class="product-name">
+            <a href="#">
+              How to Be a Bawse by Lilly Singh
+            </a>
+            </h3>
           </div>
-          <h3 class="product-name">
-          <a href="#">
-            How to Be a Bawse by Lilly Singh
-          </a>
-          </h3>
         </div>
       </div>
-    </div>
-    <div class="product-item">
-      <div class="product-inner">
-        <div class="product-image">
-          <a href="product-details.html">
-            <img alt="" src="./assets/img/product7.jpg"/>
-          </a>
-          <div class="product-action action-cart">
-            <button class="btn btn-primary">
-            <i class="fal fa-shopping-bag"></i>
-            <span class="btn-tooltip">
-              Add to cart
-            </span>
-            </button>
-          </div>
-          <div class="quick-view">
-            <div class="icon-wrapper">
-              <button class="quick-view-button" data-target="#quickview" data-toggle="modal">
-              <i class="far fa-search-plus">
-              </i>
+      <div class="product-item">
+        <div class="product-inner">
+          <div class="product-image">
+            <a href="product-details.html">
+              <img alt="" src="./assets/img/product7.jpg"/>
+            </a>
+            <div class="product-action action-cart">
+              <button class="btn btn-primary">
+              <i class="fal fa-shopping-bag"></i>
+              <span class="btn-tooltip">
+                Add to cart
+              </span>
               </button>
             </div>
-          </div>
-        </div>
-        <div class="product-details">
-          <div class="info-details">
-            <div class="product-price">
-              <span class="final-price">
-                <span class="currancy">
-                  RS.
-                </span>
-                816.00
-              </span>
-              <span class="old-price">
-                <span class="currancy">
-                  Rs.
-                </span>
-                960.00
-              </span>
+            <div class="quick-view">
+              <div class="icon-wrapper">
+                <button class="quick-view-button" data-target="#quickview" data-toggle="modal">
+                <i class="far fa-search-plus">
+                </i>
+                </button>
+              </div>
             </div>
           </div>
-          <div class="product-label">
-            <div class="sticker">
-              -35%
+          <div class="product-details">
+            <div class="info-details">
+              <div class="product-price">
+                <span class="final-price">
+                  <span class="currancy">
+                    RS.
+                  </span>
+                  816.00
+                </span>
+                <span class="old-price">
+                  <span class="currancy">
+                    Rs.
+                  </span>
+                  960.00
+                </span>
+              </div>
             </div>
+            <div class="product-label">
+              <div class="sticker">
+                -35%
+              </div>
+            </div>
+            <h3 class="product-name">
+            <a href="#">
+              How to Be a Bawse by Lilly Singh
+            </a>
+            </h3>
           </div>
-          <h3 class="product-name">
-          <a href="#">
-            How to Be a Bawse by Lilly Singh
-          </a>
-          </h3>
         </div>
       </div>
     </div>
   </div>
-</div>
 </div>
 <div class="tab-pane active" id="cake-collection" role="tabpanel">
-<div class="products-wrapper product-listing-type-2">
-  <div class="product-slider owl-carousel" id="cat-cake-gift">
-    <div class="product-item">
-      <div class="product-inner">
-        <div class="product-image">
-          <a href="product-details.html">
-            <img alt="" src="./assets/img/product1.jpg"/>
-          </a>
-          <div class="product-action action-cart">
-            <button class="btn btn-primary">
-            <i class="fal fa-shopping-bag"></i>
-            <span class="btn-tooltip">
-              Add to cart
-            </span>
-            </button>
-          </div>
-          <div class="quick-view">
-            <div class="icon-wrapper">
-              <button class="quick-view-button" data-target="#quickview" data-toggle="modal">
-              <i class="far fa-search-plus">
-              </i>
+  <div class="products-wrapper product-listing-type-2">
+    <div class="product-slider owl-carousel" id="cat-cake-gift">
+      <div class="product-item">
+        <div class="product-inner">
+          <div class="product-image">
+            <a href="product-details.html">
+              <img alt="" src="./assets/img/product1.jpg"/>
+            </a>
+            <div class="product-action action-cart">
+              <button class="btn btn-primary">
+              <i class="fal fa-shopping-bag"></i>
+              <span class="btn-tooltip">
+                Add to cart
+              </span>
               </button>
             </div>
-          </div>
-        </div>
-        <div class="product-details">
-          <div class="info-details">
-            <div class="product-price">
-              <span class="final-price">
-                <span class="currancy">
-                  RS.
-                </span>
-                816.00
-              </span>
-              <span class="old-price">
-                <span class="currancy">
-                  Rs.
-                </span>
-                960.00
-              </span>
+            <div class="quick-view">
+              <div class="icon-wrapper">
+                <button class="quick-view-button" data-target="#quickview" data-toggle="modal">
+                <i class="far fa-search-plus">
+                </i>
+                </button>
+              </div>
             </div>
           </div>
-          <div class="product-label">
-            <div class="sticker">
-              -35%
+          <div class="product-details">
+            <div class="info-details">
+              <div class="product-price">
+                <span class="final-price">
+                  <span class="currancy">
+                    RS.
+                  </span>
+                  816.00
+                </span>
+                <span class="old-price">
+                  <span class="currancy">
+                    Rs.
+                  </span>
+                  960.00
+                </span>
+              </div>
             </div>
+            <div class="product-label">
+              <div class="sticker">
+                -35%
+              </div>
+            </div>
+            <h3 class="product-name">
+            <a href="#">
+              How to Be a Bawse by Lilly Singh
+            </a>
+            </h3>
           </div>
-          <h3 class="product-name">
-          <a href="#">
-            How to Be a Bawse by Lilly Singh
-          </a>
-          </h3>
         </div>
       </div>
-    </div>
-    <div class="product-item">
-      <div class="product-inner">
-        <div class="product-image">
-          <a href="product-details.html">
-            <img alt="" src="./assets/img/product2.jpeg"/>
-          </a>
-          <div class="product-action action-cart">
-            <button class="btn btn-primary">
-            <i class="fal fa-shopping-bag"></i>
-            <span class="btn-tooltip">
-              Add to cart
-            </span>
-            </button>
-          </div>
-          <div class="quick-view">
-            <div class="icon-wrapper">
-              <button class="quick-view-button" data-target="#quickview" data-toggle="modal">
-              <i class="far fa-search-plus">
-              </i>
+      <div class="product-item">
+        <div class="product-inner">
+          <div class="product-image">
+            <a href="product-details.html">
+              <img alt="" src="./assets/img/product2.jpeg"/>
+            </a>
+            <div class="product-action action-cart">
+              <button class="btn btn-primary">
+              <i class="fal fa-shopping-bag"></i>
+              <span class="btn-tooltip">
+                Add to cart
+              </span>
               </button>
             </div>
-          </div>
-        </div>
-        <div class="product-details">
-          <div class="info-details">
-            <div class="product-price">
-              <span class="final-price">
-                <span class="currancy">
-                  RS.
-                </span>
-                816.00
-              </span>
-              <span class="old-price">
-                <span class="currancy">
-                  Rs.
-                </span>
-                960.00
-              </span>
+            <div class="quick-view">
+              <div class="icon-wrapper">
+                <button class="quick-view-button" data-target="#quickview" data-toggle="modal">
+                <i class="far fa-search-plus">
+                </i>
+                </button>
+              </div>
             </div>
           </div>
-          <div class="product-label">
-            <div class="sticker">
-              -35%
+          <div class="product-details">
+            <div class="info-details">
+              <div class="product-price">
+                <span class="final-price">
+                  <span class="currancy">
+                    RS.
+                  </span>
+                  816.00
+                </span>
+                <span class="old-price">
+                  <span class="currancy">
+                    Rs.
+                  </span>
+                  960.00
+                </span>
+              </div>
             </div>
+            <div class="product-label">
+              <div class="sticker">
+                -35%
+              </div>
+            </div>
+            <h3 class="product-name">
+            <a href="#">
+              How to Be a Bawse by Lilly Singh
+            </a>
+            </h3>
           </div>
-          <h3 class="product-name">
-          <a href="#">
-            How to Be a Bawse by Lilly Singh
-          </a>
-          </h3>
         </div>
       </div>
-    </div>
-    <div class="product-item">
-      <div class="product-inner">
-        <div class="product-image">
-          <a href="product-details.html">
-            <img alt="" src="./assets/img/product3.jpg"/>
-          </a>
-          <div class="product-action action-cart">
-            <button class="btn btn-primary">
-            <i class="fal fa-shopping-bag"></i>
-            <span class="btn-tooltip">
-              Add to cart
-            </span>
-            </button>
-          </div>
-          <div class="quick-view">
-            <div class="icon-wrapper">
-              <button class="quick-view-button" data-target="#quickview" data-toggle="modal">
-              <i class="far fa-search-plus">
-              </i>
+      <div class="product-item">
+        <div class="product-inner">
+          <div class="product-image">
+            <a href="product-details.html">
+              <img alt="" src="./assets/img/product3.jpg"/>
+            </a>
+            <div class="product-action action-cart">
+              <button class="btn btn-primary">
+              <i class="fal fa-shopping-bag"></i>
+              <span class="btn-tooltip">
+                Add to cart
+              </span>
               </button>
             </div>
-          </div>
-        </div>
-        <div class="product-details">
-          <div class="info-details">
-            <div class="product-price">
-              <span class="final-price">
-                <span class="currancy">
-                  RS.
-                </span>
-                816.00
-              </span>
-              <span class="old-price">
-                <span class="currancy">
-                  Rs.
-                </span>
-                960.00
-              </span>
+            <div class="quick-view">
+              <div class="icon-wrapper">
+                <button class="quick-view-button" data-target="#quickview" data-toggle="modal">
+                <i class="far fa-search-plus">
+                </i>
+                </button>
+              </div>
             </div>
           </div>
-          <div class="product-label">
-            <div class="sticker">
-              -35%
+          <div class="product-details">
+            <div class="info-details">
+              <div class="product-price">
+                <span class="final-price">
+                  <span class="currancy">
+                    RS.
+                  </span>
+                  816.00
+                </span>
+                <span class="old-price">
+                  <span class="currancy">
+                    Rs.
+                  </span>
+                  960.00
+                </span>
+              </div>
             </div>
+            <div class="product-label">
+              <div class="sticker">
+                -35%
+              </div>
+            </div>
+            <h3 class="product-name">
+            <a href="#">
+              How to Be a Bawse by Lilly Singh
+            </a>
+            </h3>
           </div>
-          <h3 class="product-name">
-          <a href="#">
-            How to Be a Bawse by Lilly Singh
-          </a>
-          </h3>
         </div>
       </div>
-    </div>
-    <div class="product-item">
-      <div class="product-inner">
-        <div class="product-image">
-          <a href="product-details.html">
-            <img alt="" src="./assets/img/product4.jpg"/>
-          </a>
-          <div class="product-action action-cart">
-            <button class="btn btn-primary">
-            <i class="fal fa-shopping-bag"></i>
-            <span class="btn-tooltip">
-              Add to cart
-            </span>
-            </button>
-          </div>
-          <div class="quick-view">
-            <div class="icon-wrapper">
-              <button class="quick-view-button" data-target="#quickview" data-toggle="modal">
-              <i class="far fa-search-plus">
-              </i>
+      <div class="product-item">
+        <div class="product-inner">
+          <div class="product-image">
+            <a href="product-details.html">
+              <img alt="" src="./assets/img/product4.jpg"/>
+            </a>
+            <div class="product-action action-cart">
+              <button class="btn btn-primary">
+              <i class="fal fa-shopping-bag"></i>
+              <span class="btn-tooltip">
+                Add to cart
+              </span>
               </button>
             </div>
-          </div>
-        </div>
-        <div class="product-details">
-          <div class="info-details">
-            <div class="product-price">
-              <span class="final-price">
-                <span class="currancy">
-                  RS.
-                </span>
-                816.00
-              </span>
-              <span class="old-price">
-                <span class="currancy">
-                  Rs.
-                </span>
-                960.00
-              </span>
+            <div class="quick-view">
+              <div class="icon-wrapper">
+                <button class="quick-view-button" data-target="#quickview" data-toggle="modal">
+                <i class="far fa-search-plus">
+                </i>
+                </button>
+              </div>
             </div>
           </div>
-          <div class="product-label">
-            <div class="sticker">
-              -35%
+          <div class="product-details">
+            <div class="info-details">
+              <div class="product-price">
+                <span class="final-price">
+                  <span class="currancy">
+                    RS.
+                  </span>
+                  816.00
+                </span>
+                <span class="old-price">
+                  <span class="currancy">
+                    Rs.
+                  </span>
+                  960.00
+                </span>
+              </div>
             </div>
+            <div class="product-label">
+              <div class="sticker">
+                -35%
+              </div>
+            </div>
+            <h3 class="product-name">
+            <a href="#">
+              How to Be a Bawse by Lilly Singh
+            </a>
+            </h3>
           </div>
-          <h3 class="product-name">
-          <a href="#">
-            How to Be a Bawse by Lilly Singh
-          </a>
-          </h3>
         </div>
       </div>
-    </div>
-    <div class="product-item">
-      <div class="product-inner">
-        <div class="product-image">
-          <a href="product-details.html">
-            <img alt="" src="./assets/img/product5.jpg"/>
-          </a>
-          <div class="product-action action-cart">
-            <button class="btn btn-primary">
-            <i class="fal fa-shopping-bag"></i>
-            <span class="btn-tooltip">
-              Add to cart
-            </span>
-            </button>
-          </div>
-          <div class="quick-view">
-            <div class="icon-wrapper">
-              <button class="quick-view-button" data-target="#quickview" data-toggle="modal">
-              <i class="far fa-search-plus">
-              </i>
+      <div class="product-item">
+        <div class="product-inner">
+          <div class="product-image">
+            <a href="product-details.html">
+              <img alt="" src="./assets/img/product5.jpg"/>
+            </a>
+            <div class="product-action action-cart">
+              <button class="btn btn-primary">
+              <i class="fal fa-shopping-bag"></i>
+              <span class="btn-tooltip">
+                Add to cart
+              </span>
               </button>
             </div>
-          </div>
-        </div>
-        <div class="product-details">
-          <div class="info-details">
-            <div class="product-price">
-              <span class="final-price">
-                <span class="currancy">
-                  RS.
-                </span>
-                816.00
-              </span>
-              <span class="old-price">
-                <span class="currancy">
-                  Rs.
-                </span>
-                960.00
-              </span>
+            <div class="quick-view">
+              <div class="icon-wrapper">
+                <button class="quick-view-button" data-target="#quickview" data-toggle="modal">
+                <i class="far fa-search-plus">
+                </i>
+                </button>
+              </div>
             </div>
           </div>
-          <div class="product-label">
-            <div class="sticker">
-              -35%
+          <div class="product-details">
+            <div class="info-details">
+              <div class="product-price">
+                <span class="final-price">
+                  <span class="currancy">
+                    RS.
+                  </span>
+                  816.00
+                </span>
+                <span class="old-price">
+                  <span class="currancy">
+                    Rs.
+                  </span>
+                  960.00
+                </span>
+              </div>
             </div>
+            <div class="product-label">
+              <div class="sticker">
+                -35%
+              </div>
+            </div>
+            <h3 class="product-name">
+            <a href="#">
+              How to Be a Bawse by Lilly Singh
+            </a>
+            </h3>
           </div>
-          <h3 class="product-name">
-          <a href="#">
-            How to Be a Bawse by Lilly Singh
-          </a>
-          </h3>
         </div>
       </div>
-    </div>
-    <div class="product-item">
-      <div class="product-inner">
-        <div class="product-image">
-          <a href="product-details.html">
-            <img alt="" src="./assets/img/product6.jpg"/>
-          </a>
-          <div class="product-action action-cart">
-            <button class="btn btn-primary">
-            <i class="fal fa-shopping-bag"></i>
-            <span class="btn-tooltip">
-              Add to cart
-            </span>
-            </button>
-          </div>
-          <div class="quick-view">
-            <div class="icon-wrapper">
-              <button class="quick-view-button" data-target="#quickview" data-toggle="modal">
-              <i class="far fa-search-plus">
-              </i>
+      <div class="product-item">
+        <div class="product-inner">
+          <div class="product-image">
+            <a href="product-details.html">
+              <img alt="" src="./assets/img/product6.jpg"/>
+            </a>
+            <div class="product-action action-cart">
+              <button class="btn btn-primary">
+              <i class="fal fa-shopping-bag"></i>
+              <span class="btn-tooltip">
+                Add to cart
+              </span>
               </button>
             </div>
-          </div>
-        </div>
-        <div class="product-details">
-          <div class="info-details">
-            <div class="product-price">
-              <span class="final-price">
-                <span class="currancy">
-                  RS.
-                </span>
-                816.00
-              </span>
-              <span class="old-price">
-                <span class="currancy">
-                  Rs.
-                </span>
-                960.00
-              </span>
+            <div class="quick-view">
+              <div class="icon-wrapper">
+                <button class="quick-view-button" data-target="#quickview" data-toggle="modal">
+                <i class="far fa-search-plus">
+                </i>
+                </button>
+              </div>
             </div>
           </div>
-          <div class="product-label">
-            <div class="sticker">
-              -35%
+          <div class="product-details">
+            <div class="info-details">
+              <div class="product-price">
+                <span class="final-price">
+                  <span class="currancy">
+                    RS.
+                  </span>
+                  816.00
+                </span>
+                <span class="old-price">
+                  <span class="currancy">
+                    Rs.
+                  </span>
+                  960.00
+                </span>
+              </div>
             </div>
+            <div class="product-label">
+              <div class="sticker">
+                -35%
+              </div>
+            </div>
+            <h3 class="product-name">
+            <a href="#">
+              How to Be a Bawse by Lilly Singh
+            </a>
+            </h3>
           </div>
-          <h3 class="product-name">
-          <a href="#">
-            How to Be a Bawse by Lilly Singh
-          </a>
-          </h3>
         </div>
       </div>
-    </div>
-    <div class="product-item">
-      <div class="product-inner">
-        <div class="product-image">
-          <a href="product-details.html">
-            <img alt="" src="./assets/img/product7.jpg"/>
-          </a>
-          <div class="product-action action-cart">
-            <button class="btn btn-primary">
-            <i class="fal fa-shopping-bag"></i>
-            <span class="btn-tooltip">
-              Add to cart
-            </span>
-            </button>
-          </div>
-          <div class="quick-view">
-            <div class="icon-wrapper">
-              <button class="quick-view-button" data-target="#quickview" data-toggle="modal">
-              <i class="far fa-search-plus">
-              </i>
+      <div class="product-item">
+        <div class="product-inner">
+          <div class="product-image">
+            <a href="product-details.html">
+              <img alt="" src="./assets/img/product7.jpg"/>
+            </a>
+            <div class="product-action action-cart">
+              <button class="btn btn-primary">
+              <i class="fal fa-shopping-bag"></i>
+              <span class="btn-tooltip">
+                Add to cart
+              </span>
               </button>
             </div>
-          </div>
-        </div>
-        <div class="product-details">
-          <div class="info-details">
-            <div class="product-price">
-              <span class="final-price">
-                <span class="currancy">
-                  RS.
-                </span>
-                816.00
-              </span>
-              <span class="old-price">
-                <span class="currancy">
-                  Rs.
-                </span>
-                960.00
-              </span>
+            <div class="quick-view">
+              <div class="icon-wrapper">
+                <button class="quick-view-button" data-target="#quickview" data-toggle="modal">
+                <i class="far fa-search-plus">
+                </i>
+                </button>
+              </div>
             </div>
           </div>
-          <div class="product-label">
-            <div class="sticker">
-              -35%
+          <div class="product-details">
+            <div class="info-details">
+              <div class="product-price">
+                <span class="final-price">
+                  <span class="currancy">
+                    RS.
+                  </span>
+                  816.00
+                </span>
+                <span class="old-price">
+                  <span class="currancy">
+                    Rs.
+                  </span>
+                  960.00
+                </span>
+              </div>
             </div>
+            <div class="product-label">
+              <div class="sticker">
+                -35%
+              </div>
+            </div>
+            <h3 class="product-name">
+            <a href="#">
+              How to Be a Bawse by Lilly Singh
+            </a>
+            </h3>
           </div>
-          <h3 class="product-name">
-          <a href="#">
-            How to Be a Bawse by Lilly Singh
-          </a>
-          </h3>
         </div>
       </div>
     </div>
   </div>
-</div>
 </div>
 </div>
 </div>
@@ -3286,144 +3272,144 @@ CAKES & GIFTS
 </button>
 <div class="product-details">
 <div class="row">
-<div class="col-12 col-lg-7">
-  <div class="product-media">
-    <div class="product-slider-wrapper">
-      <div class="big-image">
-        <div class="big-image__item magnify" data-src="assets/img/coat1.jpg">
-          <img src="assets/img/coat1.jpg" alt="" />
+  <div class="col-12 col-lg-7">
+    <div class="product-media">
+      <div class="product-slider-wrapper">
+        <div class="big-image">
+          <div class="big-image__item magnify" data-src="assets/img/coat1.jpg">
+            <img src="assets/img/coat1.jpg" alt="" />
+          </div>
+          <div class="big-image__item magnify" data-src="assets/img/coat2.jpg">
+            <img src="assets/img/coat2.jpg" alt="" />
+          </div>
+          <div class="big-image__item magnify" data-src="assets/img/coat3.jpg">
+            <img src="assets/img/coat3.jpg" alt="" />
+          </div>
+          <div class="big-image__item magnify" data-src="assets/img/coat4.jpg">
+            <img src="assets/img/coat4.jpg" alt="" />
+          </div>
+          <div class="big-image__item magnify" data-src="assets/img/coat5.jpg">
+            <img src="assets/img/coat5.jpg" alt="" />
+          </div>
         </div>
-        <div class="big-image__item magnify" data-src="assets/img/coat2.jpg">
-          <img src="assets/img/coat2.jpg" alt="" />
-        </div>
-        <div class="big-image__item magnify" data-src="assets/img/coat3.jpg">
-          <img src="assets/img/coat3.jpg" alt="" />
-        </div>
-        <div class="big-image__item magnify" data-src="assets/img/coat4.jpg">
-          <img src="assets/img/coat4.jpg" alt="" />
-        </div>
-        <div class="big-image__item magnify" data-src="assets/img/coat5.jpg">
-          <img src="assets/img/coat5.jpg" alt="" />
+        <div class="thumb">
+          <div class="thumb__item">
+            <img src="assets/img/coat1.jpg" alt="" />
+          </div>
+          <div class="thumb__item">
+            <img src="assets/img/coat2.jpg" alt="" />
+          </div>
+          <div class="thumb__item">
+            <img src="assets/img/coat3.jpg" alt="" />
+          </div>
+          <div class="thumb__item">
+            <img src="assets/img/coat4.jpg" alt="" />
+          </div>
+          <div class="thumb__item">
+            <img src="assets/img/coat5.jpg" alt="" />
+          </div>
         </div>
       </div>
-      <div class="thumb">
-        <div class="thumb__item">
-          <img src="assets/img/coat1.jpg" alt="" />
-        </div>
-        <div class="thumb__item">
-          <img src="assets/img/coat2.jpg" alt="" />
-        </div>
-        <div class="thumb__item">
-          <img src="assets/img/coat3.jpg" alt="" />
-        </div>
-        <div class="thumb__item">
-          <img src="assets/img/coat4.jpg" alt="" />
-        </div>
-        <div class="thumb__item">
-          <img src="assets/img/coat5.jpg" alt="" />
-        </div>
+    </div>
+  </div>
+  <div class="col-12 col-lg-5">
+    <div class="prodcut-content">
+      <div class="pr-summury">
+        <span class="pr-summary-starrating">
+          <i class="fas fa-star text-warning"></i>
+          <i class="fas fa-star text-warning"></i>
+          <i class="fas fa-star text-warning"></i>
+          <i class="fas fa-star text-warning"></i>
+          <i class="fas fa-star"></i>
+        </span>
+        <span class="pr-summary-caption"><span class="pr-summary-actions-togglereviews">Based on 3 reviews</span>
+      </span>
+    </div>
+    <div class="product-info-price">
+      <div class="product-info-stock-sku">
+        <span class="label">
+          SKU:
+        </span>
+        <span class="value">
+          GMB188 - W
+        </span>
+      </div>
+      <div class="product-price">
+        <span class="final-price">
+          <span class="currancy">
+            RS.
+          </span>
+          816.00
+        </span>
+        <span class="old-price">
+          <span class="currancy">
+            Rs.
+          </span>
+          960.00
+        </span>
       </div>
     </div>
-  </div>
-</div>
-<div class="col-12 col-lg-5">
-  <div class="prodcut-content">
-    <div class="pr-summury">
-      <span class="pr-summary-starrating">
-        <i class="fas fa-star text-warning"></i>
-        <i class="fas fa-star text-warning"></i>
-        <i class="fas fa-star text-warning"></i>
-        <i class="fas fa-star text-warning"></i>
-        <i class="fas fa-star"></i>
-      </span>
-      <span class="pr-summary-caption"><span class="pr-summary-actions-togglereviews">Based on 3 reviews</span>
-    </span>
-  </div>
-  <div class="product-info-price">
-    <div class="product-info-stock-sku">
-      <span class="label">
-        SKU:
-      </span>
-      <span class="value">
-        GMB188 - W
-      </span>
-    </div>
-    <div class="product-price">
-      <span class="final-price">
-        <span class="currancy">
-          RS.
-        </span>
-        816.00
-      </span>
-      <span class="old-price">
-        <span class="currancy">
-          Rs.
-        </span>
-        960.00
-      </span>
-    </div>
-  </div>
-  <div class="add-to-cart-action">
-    <div class="input-box">
-      <label for="quant[2]">
-        QTY
-      </label>
-      <div class="form-group spinner">
-        <span class="input-group-btn btn-down">
-          <button class="btn-number" data-field="quant[2]" data-type="minus" disabled="disabled" type="button">
-          <i class="far fa-minus">
-          </i>
-          </button>
-        </span>
-        <input class="form-control input-number" max="100000" min="1" name="quant[2]" type="text" value="1">
-        <span class="input-group-btn btn-up">
-          <button class="btn-number" data-field="quant[2]" data-type="plus" type="button">
-          <i class="far fa-plus">
-          </i>
-          </button>
-        </span>
-        </input>
+    <div class="add-to-cart-action">
+      <div class="input-box">
+        <label for="quant[2]">
+          QTY
+        </label>
+        <div class="form-group spinner">
+          <span class="input-group-btn btn-down">
+            <button class="btn-number" data-field="quant[2]" data-type="minus" disabled="disabled" type="button">
+            <i class="far fa-minus">
+            </i>
+            </button>
+          </span>
+          <input class="form-control input-number" max="100000" min="1" name="quant[2]" type="text" value="1">
+          <span class="input-group-btn btn-up">
+            <button class="btn-number" data-field="quant[2]" data-type="plus" type="button">
+            <i class="far fa-plus">
+            </i>
+            </button>
+          </span>
+          </input>
+        </div>
+      </div>
+      <div class="product-action">
+        <button class="btn btn-primary">
+        Add to cart
+        </button>
       </div>
     </div>
-    <div class="product-action">
-      <button class="btn btn-primary">
-      Add to cart
-      </button>
+    <div class="product-compare">
+      <a href="#">
+        <i class="far fa-retweet">
+        </i>
+        Add Compare
+      </a>
+    </div>
+    <div class="social-icon">
+      <h3>
+      Share it:
+      </h3>
+      <ul>
+        <li>
+          <a href="#" target="_blacnk">
+            <i class="fab fa-twitter">
+            </i>
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blacnk">
+            <i class="fab fa-facebook-f">
+            </i>
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blacnk">
+            <i class="fab fa-instagram">
+            </i>
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
-  <div class="product-compare">
-    <a href="#">
-      <i class="far fa-retweet">
-      </i>
-      Add Compare
-    </a>
-  </div>
-  <div class="social-icon">
-    <h3>
-    Share it:
-    </h3>
-    <ul>
-      <li>
-        <a href="#" target="_blacnk">
-          <i class="fab fa-twitter">
-          </i>
-        </a>
-      </li>
-      <li>
-        <a href="#" target="_blacnk">
-          <i class="fab fa-facebook-f">
-          </i>
-        </a>
-      </li>
-      <li>
-        <a href="#" target="_blacnk">
-          <i class="fab fa-instagram">
-          </i>
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
 </div>
 </div>
 </div>
@@ -3445,65 +3431,65 @@ CAKES & GIFTS
 Contact Details
 </h5>
 <div class="widget-content">
-<ul>
-  <li class="phone">
-    <span class="icon-wrap">
-      <i class="fas fa-phone">
-      </i>
-    </span>
-    <span class="itme-content">
-      <a href="tel:97715261603">
-        +977 1 5261603
-      </a>
-      ,
-      <a href="tel:97715261877">
-        +977 1 5261877
-      </a>
-    </span>
-  </li>
-  <li class="email">
-    <span class="icon-wrap">
-      <i class="fas fa-envelope">
-      </i>
-    </span>
-    <span class="item-content">
-      <a href="mailto:info@esewapasal.com">
-        info@esewapasal.com
-      </a>
-    </span>
-  </li>
-  <li class="office-time">
-    <span class="icon-wrap">
-      <i class="far fa-clock">
-      </i>
-    </span>
-    <span class="item-content">
-      Sun-Fri 9:00am - 6:00pm, Sat: Closed
-    </span>
-  </li>
-</ul>
+  <ul>
+    <li class="phone">
+      <span class="icon-wrap">
+        <i class="fas fa-phone">
+        </i>
+      </span>
+      <span class="itme-content">
+        <a href="tel:97715261603">
+          +977 1 5261603
+        </a>
+        ,
+        <a href="tel:97715261877">
+          +977 1 5261877
+        </a>
+      </span>
+    </li>
+    <li class="email">
+      <span class="icon-wrap">
+        <i class="fas fa-envelope">
+        </i>
+      </span>
+      <span class="item-content">
+        <a href="mailto:info@esewapasal.com">
+          info@esewapasal.com
+        </a>
+      </span>
+    </li>
+    <li class="office-time">
+      <span class="icon-wrap">
+        <i class="far fa-clock">
+        </i>
+      </span>
+      <span class="item-content">
+        Sun-Fri 9:00am - 6:00pm, Sat: Closed
+      </span>
+    </li>
+  </ul>
 </div>
 <div class="social-icon">
-<ul>
-  <li>
-    <a href="#" target="_blacnk">
-      <i class="fab fa-twitter">
-      </i>
-    </a>
-  </li>
-  <li>
-    <a href="#" target="_blacnk">
-      <i class="fab fa-facebook-f">
-      </i>
-    </a>
-  </li>
-  <li>
-    <a href="#" target="_blacnk">
-      <i class="fab fa-instagram">
-      </i>
-    </a>
-  </li>
-</ul>
+  <ul>
+    <li>
+      <a href="#" target="_blacnk">
+        <i class="fab fa-twitter">
+        </i>
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_blacnk">
+        <i class="fab fa-facebook-f">
+        </i>
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_blacnk">
+        <i class="fab fa-instagram">
+        </i>
+      </a>
+    </li>
+  </ul>
 </div>
 </div>
 </div>
@@ -3513,23 +3499,23 @@ Contact Details
 Quick Links
 </h5>
 <div class="widget-content">
-<ul>
-  <li>
-    <a href="#">
-      About Us
-    </a>
-  </li>
-  <li>
-    <a href="#">
-      Faq
-    </a>
-  </li>
-  <li>
-    <a href="#">
-      Contact
-    </a>
-  </li>
-</ul>
+  <ul>
+    <li>
+      <a href="#">
+        About Us
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        Faq
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        Contact
+      </a>
+    </li>
+  </ul>
 </div>
 </div>
 </div>
@@ -3539,25 +3525,25 @@ Quick Links
 Information
 </h5>
 <div class="widget-content">
-<ul>
-  <li>
-    <a href="#">
-      Terms & Conditions
-    </a>
-  </li>
-  <li>
-    <a href="#">
-      Privacy Policy
-    </a>
-  </li>
-</ul>
+  <ul>
+    <li>
+      <a href="#">
+        Terms & Conditions
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        Privacy Policy
+      </a>
+    </li>
+  </ul>
 </div>
 </div>
 </div>
 <div class="col-12 col-md-12 col-lg-4">
 <div class="footer-widget image-widget">
 <div class="widget-content">
-<img alt="secured_payment" src="./assets/img/secured_payment.jpg">
+  <img alt="secured_payment" src="./assets/img/secured_payment.jpg">
 </div>
 </div>
 </div>

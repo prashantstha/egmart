@@ -2,6 +2,9 @@
 .product-listing-block {
   margin-top: rem(20px);
   background: $white-bg;
+  @include breakpoint(lg){
+    margin-top: 0;
+  }
   .block-title-tabs {
     border-bottom: rem(1px) solid $border-color-light;
     padding-bottom: rem(15px);
@@ -305,7 +308,7 @@
             height: rem(27px);
             line-height: rem(27px);
             position: relative;
-            padding: rem(0 15px);
+            padding: rem(0 5px);
             &:after {
               content: '';
               border-top-color: transparent;
@@ -322,10 +325,27 @@
             }
           }
         }
+        .sticker-review {
+          @include flexbox;
+          @include flex-wrap(wrap);
+          @include justify-content(space-between);
+          @include align-items(center);
+          .review {
+            width: 100%;
+            font-size: rem(12px);
+            margin-top: rem(10px);
+            @include breakpoint(md){
+              margin-top: 0;
+            @include calc(width, '100% - 70px');
+            text-align: right;
+
+            }
+          }
+        }
         .product-name {
           font-size: rem(12px);
           font-weight: $font-weight-normal;
-          margin-top: rem(5px);
+          margin-top: rem(10px);
           margin-bottom: 0;
           a {
             color: $text-color-dark;
@@ -334,6 +354,31 @@
               text-decoration: none;
             }
           }
+        }
+        .service-lists {
+          @include ul;
+          list-style: none;
+          margin-top: rem(5px);
+          li {
+            display: inline-block;
+            font-size: rem(12px);
+            &:not(:last-child){
+              margin-right: rem(10px);
+
+            }
+            &.rewards {
+             
+            }
+            &.free-delivery{
+              color: $danger-color;
+            }
+          }
+        }
+        .short-description{
+          font-size: rem(12px);
+          font-weight: $font-weight-normal;
+          padding: 0;
+          margin-top: rem(10px);
         }
       }
       &:hover {

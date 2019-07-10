@@ -159,9 +159,15 @@ $(document).ready(function() {
             navText: ['<i class="fal fa-angle-left"></i>', '<i class="fal fa-angle-right"></i>'],
             responsive: {
                 0: {
-                    items: 3
+                    items: 2
                 },
                 768: {
+                    items: 4,
+                },
+                992: {
+                    items: 2,
+                },
+                1200: {
                     items: 3,
                 }
             }
@@ -181,9 +187,15 @@ $(document).ready(function() {
             navText: ['<i class="fal fa-angle-left"></i>', '<i class="fal fa-angle-right"></i>'],
             responsive: {
                 0: {
-                    items: 3
+                    items: 2
                 },
                 768: {
+                    items: 4,
+                },
+                992: {
+                    items: 2,
+                },
+                1200: {
                     items: 3,
                 }
             }
@@ -196,7 +208,7 @@ $(document).ready(function() {
         $('#cat-collection').owlCarousel({
             loop: true,
             autoplay: true,
-            margin: 0,
+            margin: 30,
             dots: false,
             autoplayHoverPause: true,
             navText: ['<i class="fal fa-angle-left"></i>', '<i class="fal fa-angle-right"></i>'],
@@ -209,9 +221,9 @@ $(document).ready(function() {
                     items: 4,
                 },
                 992: {
-                    items: 6,
+                    items: 5,
                 },
-                1024: {
+                1200: {
                     items: 6,
                 }
             }
@@ -221,7 +233,7 @@ $(document).ready(function() {
         $('#cake-latest').owlCarousel({
             loop: true,
             autoplay: true,
-            margin: 0,
+            margin: 30,
             dots: false,
             autoplayHoverPause: true,
             navText: ['<i class="fal fa-angle-left"></i>', '<i class="fal fa-angle-right"></i>'],
@@ -234,9 +246,9 @@ $(document).ready(function() {
                     items: 4,
                 },
                 992: {
-                    items: 6,
+                    items: 5,
                 },
-                1024: {
+                1200: {
                     items: 6,
                 }
             }
@@ -246,7 +258,7 @@ $(document).ready(function() {
         $('#cat-cake-gift').owlCarousel({
             loop: true,
             autoplay: true,
-            margin: 0,
+            margin: 30,
             dots: false,
             autoplayHoverPause: true,
             navText: ['<i class="fal fa-angle-left"></i>', '<i class="fal fa-angle-right"></i>'],
@@ -259,9 +271,9 @@ $(document).ready(function() {
                     items: 4,
                 },
                 992: {
-                    items: 6,
+                    items: 5,
                 },
-                1024: {
+                1200: {
                     items: 6,
                 }
             }

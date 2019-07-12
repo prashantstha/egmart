@@ -113,7 +113,7 @@
       <div class="header-search-box">
         <form action="" class="header-search-form">
           <div class="input-group">
-            
+
             <select class="header-search-dropdown" id="header-search-dropdown" name="header-search-dropdown">
               <option value="ALL">All</option>
               <option value="aps">All Departments</option>
@@ -1213,6 +1213,11 @@
       <div class="row">
         <div class="col-12 col-md-5">
           <div class="product-media">
+            <div class="product-label">
+              <div class="sticker">
+                <i class="fal fa-tag"></i> -35%
+              </div>
+            </div>
             <div class="product-slider-wrapper">
               <div class="big-image">
                 <div class="big-image__item magnify" data-src="assets/img/coat1.jpg">
@@ -1254,7 +1259,6 @@
         <div class="col-12 col-md-4">
           <div class="product-details">
             <div class="prodcut-content">
-              <h1 class="product_title h3">Float Coats Haavy</h1>
               <div class="pr-summury">
                 <span class="pr-summary-starrating">
                   <i class="fas fa-star text-warning"></i>
@@ -1266,44 +1270,22 @@
                 <span class="pr-summary-caption"><span class="pr-summary-actions-togglereviews">Based on 3 reviews</span>
               </span>
             </div>
+              <h1 class="product_title h3">Float Coats Haavy</h1>
             <div class="short-description">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo beatae optio, atque vel ex hic culpa nobis adipisci nisi, architecto facere quis laudantium deleniti! Porro laudantium iusto dignissimos. Sequi, hic.
             </div>
+
             <div class="product-variation">
               <!-- product variation color -->
               <div class="poduct-pv-color">
-                <div class="poduct-pv-title h5 m-0">Color</div>
-                <div class="form-check form-check-radio pv-black">
-                  <label class="form-check-label" data-toggle="tooltip" data-placement="top" title="Black" data-container="body" data-animation="true">
-                    <input class="form-check-input" type="radio" name="color" id="color" value="Black" checked="">
-                    <span class="form-check-sign"></span>
-                    
-                  </label>
-                </div>
-                <div class="form-check form-check-radio pv-white">
-                  <label class="form-check-label" data-toggle="tooltip" data-placement="top" title="White" data-container="body" data-animation="true">
-                    <input class="form-check-input" type="radio" name="color" id="color" value="White" >
-                    <span class="form-check-sign"></span>
-                  </label>
-                </div>
-                <div class="form-check form-check-radio pv-red">
-                  <label class="form-check-label" data-toggle="tooltip" data-placement="top" title="Red" data-container="body" data-animation="true">
-                    <input class="form-check-input" type="radio" name="color" id="color" value="Red">
-                    <span class="form-check-sign"></span>
-                  </label>
-                </div>
-                <div class="form-check form-check-radio pv-green">
-                  <label class="form-check-label" data-toggle="tooltip" data-placement="top" title="Green" data-container="body" data-animation="true">
-                    <input class="form-check-input" type="radio" name="color" id="color" value="Green">
-                    <span class="form-check-sign"></span>
-                  </label>
-                </div>
-                <div class="form-check form-check-radio pv-pink">
-                  <label class="form-check-label" data-toggle="tooltip" data-placement="top" title="Pink" data-container="body" data-animation="true">
-                    <input class="form-check-input" type="radio" name="color" id="color" value="pink">
-                    <span class="form-check-sign"></span>
-                  </label>
-                </div>
+                <div class="poduct-pv-title h5">Color</div>
+                <select name="color" id="product-color">
+                  <option value="">-- Choose Color --</option>
+                  <option value="Black">Black</option>
+                  <option value="red">Red</option>
+                  <option value="Green">Green</option>
+                  <option value="White">White</option>
+                </select>
               </div>
               <!-- product variation size -->
               <div class="poduct-pv-size">
@@ -1338,6 +1320,15 @@
                 </div>
               </div>
             </div>
+            <div class="product-brands-info">
+              <h5>Brands</h5>
+              <ul>
+                <li><a href="#" title="Nike"><img src="assets/img/nike.png" alt="nike"></a></li>
+                <li><a href="#" title="Adidas"><img src="assets/img/adidas.png" alt="adidas"></a></li>
+                <li><a href="#" title="Levis"><img src="assets/img/levis.png" alt="levis"></a></li>
+                <li><a href="#" title="Samsung"><img src="assets/img/samsung.png" alt="samsung"></a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -1351,6 +1342,9 @@
               <span class="value">
                 GMB188 - W
               </span>
+            </div>
+            <div class="product-info-stock">
+              <span class="label">In stock</span>: <span class="value">24</span>
             </div>
             <div class="product-price">
               <span class="final-price">
@@ -1385,7 +1379,7 @@
                   <i class="far fa-plus">
                   </i>
                   </button>
-                  
+
                 </div>
               </div>
               <div class="product-action">
@@ -1401,6 +1395,36 @@
                 Add Compare
               </a>
             </div>
+            <ul class="service-lists">
+              <li class="rewards"><strong>Rewards</strong> : 10</li>
+               <li class="free-delivery"><strong>Delivery</strong> : Free Delivery</li>
+               <li class="delivery-date"><strong>Delivery Date and Time</strong> : 07/12/2019 | <span class="time">02:30 PM</span></li>
+               <li class="delivery-charge"><strong>Delivery Charge</strong> : $15.00</li>
+               <li class="delivery-method"><strong>Delivery Method</strong> : Courier, Express Courier, Deep Courier. </li>
+               <li><a href="JavaScript:Void(0);" data-toggle="modal" data-target="#shippingInfo">Shipment and Delivery Info <i class="fal fa-info-circle"></i></a>
+                  <!-- Modal -->
+                  <div class="modal fade" id="shippingInfo" tabindex="-1" role="dialog" aria-labelledby="shippingInfoLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="shippingInfoLabel">Shipment and Delivery Info </h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                           <p>If you order it now, it will be shipped on DISPLAY_DATE and delivered with ..... days. </p>
+                           <p>Your order will be shipped to you via Japan Post EMS. Japan Post is a speedy delivery service that delivers to more than 120 countries. With an effective tracking system and insurance program, EMS is able to offer a secure delivery worldwide. You can track your package with the tracking code provided and it will be delivered within a week. See estimated shipping fee</p>
+                        </div>
+                        <div class="modal-footer">
+
+                          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+               </li>
+             </ul>
             <div class="social-icon">
               <h3>
               Share it:
@@ -1480,7 +1504,7 @@
                   <span class="pr-summary-actions">
                     <a href="#" class="pr-summary-actions-newreview"><i class="fal fa-comment-alt-edit"></i> Write a review</a>
                   </span>
-                  
+
                 </div>
               </div>
               <div class="pr-body">
@@ -1492,7 +1516,7 @@
                         <i class="fal fa-bell"></i>
                       </div>
                       We kindly request you to <a href="sign-in.html" class="text-info">sign in</a> or <a href="create-account.html" class="text-info">create an account</a> to write your reviews.
-                      
+
                     </div>
                   </div>
                   <div class="revew-info">Write a review</div>
@@ -1616,7 +1640,7 @@
                     <!-- <div class="pr-review-footer clearfix">
                       <button class="btn btn-primary btn-sm pull-right"><i class="fas fa-reply"></i> Reply</button>
                     </div> -->
-                    
+
                   </div>
                   <div class="pr-review pr-review-item" id="">
                     <div class="pr-review-header">
@@ -1636,7 +1660,7 @@
                     <!-- <div class="pr-review-footer clearfix">
                       <button class="btn btn-primary btn-sm pull-right"><i class="fas fa-reply"></i> Reply</button>
                     </div> -->
-                    
+
                   </div>
                 </div>
               </div>

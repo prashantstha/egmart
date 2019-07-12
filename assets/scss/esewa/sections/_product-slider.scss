@@ -1,3 +1,38 @@
+.product-media{
+  position: relative;
+  .product-label {
+          display: inline-block;
+          position: absolute;
+          right: 0;
+          top: 0;
+          z-index: 11;
+          .sticker {
+            background: $danger-color;
+            color: $white-color;
+            font-size: rem(13px);
+            font-weight: $font-weight-bold;
+            height: rem(27px);
+            line-height: rem(27px);
+            position: relative;
+            padding: rem(0 5px);
+            &:after {
+              content: '';
+              border-top-color: transparent;
+              border-left-color: transparent;
+              border-right-color: transparent;
+              border-bottom-color: $danger-color;
+              border-width: rem(0 8px 27px 0);
+              border-style: solid;
+              position: absolute;
+              width: 0;
+              height: 0;
+              top: 0;
+              left: - rem(8px);
+              @include transform(rotate(180deg));
+            }
+          }
+        }
+}
 .product-slider-wrapper {
   @include clearfix;
   .big-image {

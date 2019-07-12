@@ -1,12 +1,18 @@
 .product-essential {
   padding-top: rem(0px);
+  .prodcut-content {
+    .product_title {
+      margin-top: rem(15px);
+      margin-bottom: rem(0px);
+    }
+  }
 }
 .short-description {
-  font-size: rem(16px);
-  margin-top: rem(20px);
+  font-size: rem(14px);
+  margin-top: rem(15px);
   margin-bottom: rem(20px);
   @include breakpoint(xl) {
-    padding-right: 100px;
+    padding-right: rem(80px);
   }
 }
 .product-variation {
@@ -14,58 +20,59 @@
     font-weight: $font-weight-light;
   }
   .poduct-pv-color {
-    .form-check.form-check-radio {
-      display: inline-block;
-      .form-check-label {
-        display: block;
-        line-height: rem(30px);
-        padding-left: rem(40px);
-        height: rem(40px);
-        .form-check-sign {
-          &:before,
-          &:after {
-            width: rem(30px);
-            height: rem(30px);
-          }
-        }
-      }
-      input[type="radio"]:checked+.form-check-sign::after {
-        width: rem(20px);
-        height: rem(20px);
-        top: rem(8px);
-        left: rem(8px);
-      }
-      &.pv-black {
-        input[type="radio"]:checked+.form-check-sign::after {
-          background: $black-bg;
-          border-color: $black-bg;
-        }
-      }
-      &.pv-white {
-        input[type="radio"]:checked+.form-check-sign::after {
-          background: $smoke-bg;
-          border-color: $smoke-bg;
-        }
-      }
-      &.pv-red {
-        input[type="radio"]:checked+.form-check-sign::after {
-          background: $danger-color;
-          border-color: $danger-color;
-        }
-      }
-      &.pv-green {
-        input[type="radio"]:checked+.form-check-sign::after {
-          background: $green-bg;
-          border-color: $green-bg;
-        }
-      }
-      &.pv-pink {
-        input[type="radio"]:checked+.form-check-sign::after {
-          background: #E91E63;
-          border-color: #E91E63;
-        }
-      }
-    }
+    @include clearfix;
+    // .form-check.form-check-radio {
+    //   display: inline-block;
+    //   .form-check-label {
+    //     display: block;
+    //     line-height: rem(30px);
+    //     padding-left: rem(40px);
+    //     height: rem(40px);
+    //     .form-check-sign {
+    //       &:before,
+    //       &:after {
+    //         width: rem(30px);
+    //         height: rem(30px);
+    //       }
+    //     }
+    //   }
+    //   input[type="radio"]:checked+.form-check-sign::after {
+    //     width: rem(20px);
+    //     height: rem(20px);
+    //     top: rem(8px);
+    //     left: rem(8px);
+    //   }
+    //   &.pv-black {
+    //     input[type="radio"]:checked+.form-check-sign::after {
+    //       background: $black-bg;
+    //       border-color: $black-bg;
+    //     }
+    //   }
+    //   &.pv-white {
+    //     input[type="radio"]:checked+.form-check-sign::after {
+    //       background: $smoke-bg;
+    //       border-color: $smoke-bg;
+    //     }
+    //   }
+    //   &.pv-red {
+    //     input[type="radio"]:checked+.form-check-sign::after {
+    //       background: $danger-color;
+    //       border-color: $danger-color;
+    //     }
+    //   }
+    //   &.pv-green {
+    //     input[type="radio"]:checked+.form-check-sign::after {
+    //       background: $green-bg;
+    //       border-color: $green-bg;
+    //     }
+    //   }
+    //   &.pv-pink {
+    //     input[type="radio"]:checked+.form-check-sign::after {
+    //       background: #E91E63;
+    //       border-color: #E91E63;
+    //     }
+    //   }
+    // }
   }
   .poduct-pv-size {
     margin-top: rem(20px);
@@ -156,6 +163,17 @@
   }
 }
 .product-info-action {
+  .service-lists {
+      margin-top: rem(20px);
+      padding: 0;
+      list-style: none;
+      li{
+        font-size: rem(14px);
+        &:not(:last-child){
+          margin-bottom: rem(5px);
+        }
+      }
+  }
   .social-icon {
     margin-top: rem(20px);
     padding-top: rem(20px);
@@ -178,6 +196,27 @@
         a {
           color: $black-color;
         }
+      }
+    }
+  }
+}
+
+.product-brands-info {
+  margin-bottom: rem(25px);
+  h5 {
+    font-weight: $font-weight-light;
+  }
+  ul {
+    @include ul;
+    list-style:none;
+    li{
+      display: inline-block;
+      width: rem(60px);
+      border: 1px solid $border-color-light;
+      padding: rem(2px 5px);
+      &:not(:last-child){
+        margin-right: rem(5px);
+
       }
     }
   }

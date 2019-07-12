@@ -10694,14 +10694,13 @@ Created using IcoMoon - icomoon.io
   border: 0;
   padding: 15px 20px !important; }
   .nav-tabs:not(.nav-tabs-neutral) > .nav-item > .nav-link.active {
-    box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.3); }
+    box-shadow: none; }
   .card .nav-tabs {
     border-top-right-radius: 0.1875rem;
     border-top-left-radius: 0.1875rem; }
   .nav-tabs > .nav-item > .nav-link {
     color: #888888;
-    margin: 0;
-    margin-right: 5px;
+    margin: 0 5px 0 0;
     background-color: transparent;
     border: 1px solid transparent;
     border-radius: 30px;
@@ -12700,7 +12699,7 @@ img {
         background: #FFFFFF;
         color: #58585a;
         cursor: pointer; }
-        .add-to-cart-action .form-group .input-group-btn button:hover, .add-to-cart-action .form-group .input-group-btn button:focus {
+        .add-to-cart-action .form-group .input-group-btn button:focus, .add-to-cart-action .form-group .input-group-btn button:hover {
           outline: none; }
     .add-to-cart-action .form-group .form-control {
       display: inline-block;
@@ -13124,20 +13123,26 @@ ul.accordion {
   width: 1.875rem;
   text-align: center; }
 
-.table-responsive .table {
+.cart-template .table-responsive .table,
+.product-listing-template .table-responsive .table {
   width: 68.75rem; }
   @media (min-width: 1200px) {
-    .table-responsive .table {
+    .cart-template .table-responsive .table,
+    .product-listing-template .table-responsive .table {
       width: 100%;
       max-width: 100%; } }
-  .table-responsive .table tbody th,
-  .table-responsive .table tbody td {
+  .cart-template .table-responsive .table tbody td,
+  .cart-template .table-responsive .table tbody th,
+  .product-listing-template .table-responsive .table tbody td,
+  .product-listing-template .table-responsive .table tbody th {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
     vertical-align: middle; }
-  .table-responsive .table a {
+  .cart-template .table-responsive .table a,
+  .product-listing-template .table-responsive .table a {
     color: #58585a; }
-  .table-responsive .table .icon-wrap[data-toggle="modal"] {
+  .cart-template .table-responsive .table .icon-wrap[data-toggle="modal"],
+  .product-listing-template .table-responsive .table .icon-wrap[data-toggle="modal"] {
     cursor: pointer; }
 
 .cart-table-container .table-cart {
@@ -13273,6 +13278,59 @@ ul.accordion {
   .contact-form .send-button .btn {
     margin-top: 1.25rem;
     display: inline-block; }
+
+/*---------- vertical tab nav */
+.vertical-nav {
+  display: block;
+  width: 100%; }
+  .vertical-nav ul {
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    width: 100%; }
+    @media (min-width: 768px) {
+      .vertical-nav ul {
+        width: 25%; } }
+    .vertical-nav ul li {
+      border-bottom: 1px solid #dfdfdf;
+      text-align: left;
+      padding: 0; }
+      .vertical-nav ul li:last-child {
+        margin-bottom: 0;
+        border-bottom: 0; }
+      .vertical-nav ul li a {
+        display: block;
+        font-size: 1rem;
+        font-weight: 300;
+        text-decoration: none;
+        padding: 0.625rem 0;
+        color: #666666; }
+        .vertical-nav ul li a.selected, .vertical-nav ul li a:hover {
+          color: #2da89c; }
+  .vertical-nav .tab-content {
+    display: block;
+    float: left;
+    width: 100%;
+    min-height: 500px;
+    border-radius: 0 10px 10px 0;
+    margin-top: 1.875rem; }
+    @media (min-width: 768px) {
+      .vertical-nav .tab-content {
+        margin-top: 0;
+        width: 75%;
+        padding: 0 3% 3%; } }
+    .vertical-nav .tab-content article {
+      display: none;
+      margin: 0; }
+      .vertical-nav .tab-content article h3 {
+        margin-bottom: 0rem; }
+      .vertical-nav .tab-content article .accordion {
+        margin-top: 1.25rem; }
+        .vertical-nav .tab-content article .accordion .card .card-header .btn {
+          white-space: normal; }
 
 @media screen and (max-width: 991px) {
   .sidebar-collapse .navbar-collapse {

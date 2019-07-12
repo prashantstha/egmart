@@ -1,0 +1,74 @@
+/*---------- vertical tab nav */
+.vertical-nav {
+  display: block;
+  width: 100%;
+
+  ul {
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    @include breakpoint(md) {
+      width: 25%;
+    }
+
+    li {
+      border-bottom: 1px solid $border-color-light;
+      text-align: left;
+      padding: 0;
+
+      &:last-child {
+        margin-bottom: 0;
+        border-bottom: 0;
+      }
+
+      a {
+        display: block;
+        font-size: rem(16px);
+        font-weight: $font-weight-light;
+        text-decoration: none;
+        padding: rem(10px 0);
+        color: $text-color-light;
+
+        &.selected,
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
+  .tab-content {
+    display: block;
+    float: left;
+    width: 100%;
+    min-height: 500px;
+    border-radius: 0 10px 10px 0;
+    margin-top: rem(30px);
+    @include breakpoint(md) {
+      margin-top: 0;
+      width: 75%;
+      padding: 0 3% 3%;
+    }
+
+    article {
+      display: none;
+      margin: 0;
+
+      h3 {
+        margin-bottom: rem(0px);
+      }
+
+      .accordion {
+        margin-top: rem(20px);
+
+        .card .card-header .btn {
+          white-space: normal;
+        }
+      }
+    }
+  }
+}

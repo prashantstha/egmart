@@ -1,5 +1,6 @@
 .product-essential {
   padding-top: rem(0px);
+
   .prodcut-content {
     .product_title {
       margin-top: rem(15px);
@@ -7,6 +8,7 @@
     }
   }
 }
+
 .short-description {
   font-size: rem(14px);
   margin-top: rem(15px);
@@ -15,10 +17,12 @@
     padding-right: rem(80px);
   }
 }
+
 .product-variation {
   .poduct-pv-title {
     font-weight: $font-weight-light;
   }
+
   .poduct-pv-color {
     @include clearfix;
     // .form-check.form-check-radio {
@@ -74,35 +78,44 @@
     //   }
     // }
   }
+
   .poduct-pv-size {
     margin-top: rem(20px);
     margin-bottom: rem(20px);
+
     .form-check.form-check-radio {
       display: inline-block;
       margin-right: rem(5px);
+
       .form-check-label {
         text-transform: uppercase;
       }
     }
   }
 }
+
 .product-compare {
   a {
     color: $text-color-dark;
   }
 }
+
 .product-info-price {
   margin-top: rem(20px);
+
   .product-info-stock-sku {
     font-size: rem(15px);
     text-transform: uppercase;
     color: $text-color-dark;
+
     .label {
       font-weight: $font-weight-bold;
     }
   }
+
   .product-price {
     margin-top: rem(12px);
+
     .final-price {
       font-size: rem(26px);
       color: $text-color-dark;
@@ -110,24 +123,30 @@
       font-weight: $font-weight-bold;
       text-transform: none;
     }
+
     .old-price {
       text-decoration: line-through;
     }
   }
 }
+
 .add-to-cart-action {
   margin-top: rem(15px);
+
   label {
     display: block;
   }
+
   .form-group {
     display: inline-block;
     border: rem(1px) solid $border-color-light;
     text-align: center;
     padding: rem(5px 14px);
     border-radius: rem(3px);
+
     .input-group-btn {
       display: inline-block;
+
       button {
         width: rem(26px);
         height: rem(26px);
@@ -137,12 +156,14 @@
         background: $white-bg;
         color: $black-color;
         cursor: pointer;
-        &:hover,
-        &:focus {
+
+        &:focus,
+        &:hover {
           outline: none;
         }
       }
     }
+
     .form-control {
       display: inline-block;
       width: rem(65px);
@@ -152,6 +173,7 @@
       text-align: center;
     }
   }
+
   .product-action {
     .btn {
       margin: rem(20px 0);
@@ -162,22 +184,27 @@
     }
   }
 }
+
 .product-info-action {
   .service-lists {
-      margin-top: rem(20px);
-      padding: 0;
-      list-style: none;
-      li{
-        font-size: rem(14px);
-        &:not(:last-child){
-          margin-bottom: rem(5px);
-        }
+    margin-top: rem(20px);
+    padding: 0;
+    list-style: none;
+
+    li {
+      font-size: rem(14px);
+
+      &:not(:last-child) {
+        margin-bottom: rem(5px);
       }
+    }
   }
+
   .social-icon {
     margin-top: rem(20px);
     padding-top: rem(20px);
     border-top: rem(1px) solid $border-color-light;
+
     h3 {
       margin-top: 0;
       margin-bottom: 0;
@@ -188,11 +215,14 @@
       display: inline-block;
       vertical-align: middle;
     }
+
     ul {
       display: inline-block;
       vertical-align: middle;
+
       li {
         margin-right: rem(10px);
+
         a {
           color: $black-color;
         }
@@ -203,20 +233,23 @@
 
 .product-brands-info {
   margin-bottom: rem(25px);
+
   h5 {
     font-weight: $font-weight-light;
   }
+
   ul {
     @include ul;
-    list-style:none;
-    li{
+    list-style: none;
+
+    li {
       display: inline-block;
       width: rem(60px);
       border: 1px solid $border-color-light;
       padding: rem(2px 5px);
-      &:not(:last-child){
-        margin-right: rem(5px);
 
+      &:not(:last-child) {
+        margin-right: rem(5px);
       }
     }
   }

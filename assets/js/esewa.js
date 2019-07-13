@@ -448,7 +448,7 @@ $(window).resize(function() {
 // });
 menuToggle();
 $(window).resize(function() {
-  menuToggle();
+  //menuToggle();
 });
 
 function menuToggle() {
@@ -475,6 +475,7 @@ function menuToggle() {
   } else {
     $('.hasChild a').unbind('click');
   }
+
 }
 
 

@@ -108,6 +108,14 @@ $(document).ready(function() {
       $(this).next().toggle();
     });
   }
+  $(window).resize(function() {
+    if ($winWdith < 768) {
+      $('.widget-title').click(function() {
+        $(this).toggleClass('open');
+        $(this).next().toggle();
+      });
+    }
+  });
   // ----------------------------
   // Home Page Banner
   // ----------------------------
@@ -440,7 +448,7 @@ $(window).resize(function() {
 // });
 menuToggle();
 $(window).resize(function() {
-  menuToggle();
+  //menuToggle();
 });
 
 function menuToggle() {
@@ -467,6 +475,7 @@ function menuToggle() {
   } else {
     $('.hasChild a').unbind('click');
   }
+
 }
 
 

@@ -12625,6 +12625,10 @@ img {
         .quick-view-modal .modal-dialog .modal-content .product-details {
           margin-top: 0; } }
 
+@media (max-width: 767px) {
+  .product-details {
+    margin-top: 2.5rem; } }
+
 .product-essential {
   padding-top: 0rem; }
   .product-essential .prodcut-content .product_title {

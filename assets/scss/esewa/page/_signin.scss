@@ -1,47 +1,54 @@
 .section-sign-in {
-  @include breakpoint(lg) {
-    padding-bottom: rem(150px);
-  }
   .card-wrapper {
     border: rem(1px) solid $border-color-light;
     padding: rem(30px);
     border-radius: rem(5px);
     min-height: 100%;
+
     h3 {
       font-size: rem(18px);
       margin-bottom: rem(10px);
     }
+
     .sub-title {
       margin-bottom: rem(20px);
     }
+
     .input-group {
       margin-bottom: rem(20px);
+
       .input-group-prepend {
         .input-group-text {
           border-radius: rem(4px 0 0 4px);
         }
       }
+
       .form-control {
         border-radius: rem(0 4px 4px 0);
         font-size: rem(14px);
+
         &[type="password"] {
-          border-left: 0px;
+          border-left: 0;
         }
       }
+
       &.has-danger {
         &:after {
           display: none;
         }
+
         .invalid-feedback {
           display: block;
           font-size: rem(12px);
         }
+
         .input-group-prepend {
           .input-group-text {
             color: lighten($danger-color, 30%);
             border-color: lighten($danger-color, 30%);
           }
         }
+
         .form-control {
           border-left: 0;
           border-color: lighten($danger-color, 30%);
@@ -49,10 +56,12 @@
       }
     }
   }
+
   .card-sign-in {
     .forgot-password-link {
       margin-top: rem(22px);
     }
+
     .alert {
       margin-top: rem(0px);
       margin-bottom: 0;
@@ -64,6 +73,7 @@
 // --------------------
 // card-sign-up
 // --------------------
+
 .card-sign-up {
   .password-strength {
     background: $smoke-bg;
@@ -71,13 +81,137 @@
     width: 100%;
     padding: rem(5px 10px);
   }
-  select,
-  .nice-select {
-    height: rem(49px);
-    width: 100%;
-    margin-bottom: rem(20px);
+
+  .nice-select,
+  select {
+    height: rem(38px);
+    min-width: rem(190px);
+    margin-bottom: rem(15px);
     @include breakpoint(md) {
       margin-bottom: 0;
+    }
+
+    .list {
+      min-width: 100%;
+      height: rem(300px);
+      overflow-y: auto;
+    }
+
+    .option {
+      min-height: rem(25px);
+      line-height: rem(25px);
+    }
+  }
+
+  .form-row {
+    padding: rem(15px 0);
+    border-top: rem(1px) dotted $border-color-light;
+
+    label {
+      font-weight: $font-weight-semi;
+      font-size: rem(16);
+    }
+
+    .form-group {
+      margin-bottom: rem(15px);
+      @include breakpoint(md) {
+        margin-bottom: 0;
+      }
+
+      &.input_email,
+      &.input_password {
+        .form-control {
+          margin-bottom: rem(15px);
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      &.input_fax,
+      &.input_tel {
+        .form-control {
+          width: rem(80px);
+        }
+      }
+
+      &.input_dob {
+        .form-control {
+          margin-right: rem(15px);
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+
+      &.input_sex {
+        input {
+          display: none;
+        }
+
+        .form-check {
+          margin-right: rem(15px);
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+    .form-inline {}
+  }
+
+  .address-details {
+    .form-group {
+      @include clearfix;
+    }
+
+    .form-control {
+      margin-bottom: rem(15px);
+    }
+
+    .address-details-zip {
+      .form-control {
+        width: rem(80px);
+        display: inline-block;
+        vertical-align: middle;
+        margin-bottom: 0;
+        @include breakpoint(md) {}
+      }
+
+      .btn {
+        margin: rem(15px 0);
+      }
+    }
+
+    .question-circle {
+      width: 100%;
+      display: block;
+      margin-top: rem(10px);
+      @include breakpoint(sm) {
+        margin-top: rem(0px);
+        display: inline-block;
+        width: auto;
+        margin-left: rem(5px);
+      }
+
+      a {
+        margin-left: rem(5px);
+      }
+    }
+  }
+
+  .send-button {
+    margin-top: rem(30px);
+
+    .btn {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: rem(200px);
     }
   }
 }
